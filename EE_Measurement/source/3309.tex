@@ -1,0 +1,58 @@
+\documentclass[11pt,dvipdfmx]{ujarticle}
+\usepackage{eee,scalefnt,graphicx}
+\bibliography{3rd_ele-EE_Measurement}
+
+\newcounter{mycounter} 
+\setcounter{mycounter}{0} 
+\newcommand{\useMycounter}[1][]{\refstepcounter{mycounter}{#1}プログラム{\themycounter}: }
+
+\begin{document}
+
+\begin{jikkenTitle}
+ \gakunen{3} 
+ \numTitle{1}{仮想計測器の利用と基礎的な数値処理} 
+ \subTitle{(Use of Virtual Instruments and basic numeric processing)} 
+ \jikkenbi{令和04年05月12日(木)} 
+ \jikkenbiII{令和04年05月19日(木)} 
+ \kyoudou{3326 塚原 秀翔}
+ \yoteibi{05/19}
+ \yoteibiII{05/26}
+ \yoteibiIII{06/02}
+ \hanNumberName{1}{3309}{大山 主朗}
+\end{jikkenTitle}
+
+\section{目的}
+本実験では，
+\begin{itemize}
+	\item LabVIEWおよびMyRIOを使用して，素子の電圧電流特性について自動計測の方法を習得する．
+	\item 測定データから近似直線式の傾き，切片を求める計算方法を習得する．
+	\item 電圧電流特性から抵抗値を求める方法について習得する．
+	\item 実験による，センサ等の電流電圧特性を確認する
+\end{itemize}
+ことを目的とする．
+
+\input{/Users/ohyamasan/Downloads/TMCIT-Report/EE_Measurement/source/theory.tex}
+\input{/Users/ohyamasan/Downloads/TMCIT-Report/EE_Measurement/source/howto.tex}
+\input{/Users/ohyamasan/Downloads/TMCIT-Report/EE_Measurement/source/result2-1.tex}
+\input{/Users/ohyamasan/Downloads/TMCIT-Report/EE_Measurement/source/result2-2.tex}
+\input{/Users/ohyamasan/Downloads/TMCIT-Report/EE_Measurement/source/result3-1.tex}
+\input{/Users/ohyamasan/Downloads/TMCIT-Report/EE_Measurement/source/result3-2.tex}
+\input{/Users/ohyamasan/Downloads/TMCIT-Report/EE_Measurement/source/result3-3.tex}
+\input{/Users/ohyamasan/Downloads/TMCIT-Report/EE_Measurement/source/result3-4.tex}
+\input{/Users/ohyamasan/Downloads/TMCIT-Report/EE_Measurement/source/result3-5.tex}
+\input{/Users/ohyamasan/Downloads/TMCIT-Report/EE_Measurement/source/consideration.tex}
+
+\clearpage
+\section{結論}
+本実験を通して，
+\begin{itemize}
+	\item 自動計測の基礎をLabVIEWおよびMyRIOを使用して方法の習得．
+	\item 最小二乗法などの近年でも有用な数値処理について計算方法の習得．
+	\item 間接測定を利用した，測定データから抵抗値の導出．
+	\item さまざまな素子の電流電圧特性の確認．
+\end{itemize}
+を達成することができた．
+
+\newpage
+\printbibliography[title=参考文献]
+\end{document}
