@@ -196,7 +196,7 @@ set label 2 'P(V_{DP}, I_{DP})' at 0.79,19.8 right
 #set key left
 
 set arrow from 0.65,0 to 0.65,200 nohead lt 3 dt (10,5)
-plot "bias.txt" using 2:1 title "I_D",a*x**6+b*x**5+c*x**4+d*x**3+e*x**2+f*x+g title "Approximate curve",(-x/5+0.8/5)*1000 title "Load line" w lp , 380*x-246.2 title "Tangent" w lp
+plot "bias.txt" using 2:1 title "I_D",a*x**6+b*x**5+c*x**4+d*x**3+e*x**2+f*x+g title "Approximate curve",(-x/5+0.8/5)*1000 title "Load line" w l , 380*x-246.2 title "Tangent" w l
 ##plot [0.7:0][0.7:200] w l
 ## fit a*x "bias.txt" using 4:3 title "Approximate curve" via a
 #    EOF

@@ -1,24 +1,24 @@
 \documentclass[11pt,dvipdfmx]{ujarticle}
-\bibliography{3rd_power}
 \usepackage{eee}
 \usepackage{subfig}
 
 \renewcommand{\labelenumi}{\alph{enumi}}
 \renewcommand{\labelenumii}{\roman{enumii}}
 
+\bibliography{3rd_power}
 \begin{document}
 
 \begin{jikkenTitle}
  \gakunen{3} 
- \numTitle{3}{電力と力率} % 実験番号，タイトルを記述
- \subTitle{} % サブタイトルがあれば記述
- \jikkenbi{令和　　年　　月　　日(　　)} % 実験日を記述
- \jikkenbiII{令和　　年　　月　　日(　　)} % 実験日を記述(二日目がある場合．ない場合はこの行をコメントアウト)
- \kyoudou{共同実験者名} % 共同実験者名を記述
- \kyoudouII{} % その他の共同実験者名を記述
- \yoteibi{/ 　}% 予定日を記述
- \yoteibiII{}% 予定日2を記述
- \yoteibiIII{}% 予定日3を記述
+ \numTitle{3}{電力と力率}
+ \subTitle{} 
+ \jikkenbi{令和04年06月23日(木)} 
+ \jikkenbiII{令和04年06月30日(木)} 
+ \kyoudou{共同実験者名} 
+ \kyoudouII{}
+ \yoteibi{06/30}
+ \yoteibiII{07/07}
+ \yoteibiIII{07/14}
  \hanNumberName{1}{3309}{大山 主朗}
  \end{jikkenTitle}
 
@@ -32,20 +32,21 @@
 ことを目的とする．
 
 \section{原理}
-\subsection{瞬時電力}
-インピーダンス$\dot{Z}\,[\Omega]$へ印加された時刻$t\,[\mathrm{s}]$における交流電圧$v(t)\,[\mathrm{V}]$と，$\dot{Z}$に流れる交流電流$i(t)\,[\mathrm{A}]$がそれぞれ次式で表されるとする．
-\begin{eqnarray}
-	v(t) &=& V_m\sin(\omega t+\theta_V)\\
-	i(t) &=& I_m\sin(\omega t + \theta_I)
-\end{eqnarray}
-ここで，$V_m$，$I_m$は最大値，$\omega\,[\mathrm{rad/s}]$は角周波数，$\theta_V\,[\mathrm{rad}]$と$\theta_I\,[\mathrm{rad}]$はそれぞれの位相である．
+\section{瞬時電力(in-stantaneous power)\cite{11300007922816}\cite{1130282271973066112}}
+インピーダンス$\dot{Z}\,[\Omega]$へ印加された時刻$t\,[\rm{s}]$における交流電圧$v(t)\,[\rm{V}]$と，$\dot{Z}$に流れる交流電流$i(t)\,[\rm{A}]$がそれぞれ次式で表されるとする．
+\begin{align}
+	v(t) &= V_m\sin(\omega t+\theta_V)\\
+	i(t) &= I_m\sin(\omega t + \theta_I)
+\end{align}
+ここで，$V_m$，$I_m$は最大値，$\omega\,[\rm{rad/s}]$は角周波数，$\theta_V\,[\rm{rad}]$と$\theta_I\,[\rm{rad}]$はそれぞれの位相である．
 この$v(t)$と$i(t)$の積を瞬時電力$p(t)$と呼び，次式で表される．
-\begin{eqnarray}
-	p(t)&=& v(t)i(t)\nonumber\\
-	&=&V_mI_m\sin(\omega t+\theta_V)\sin(\omega t + \theta_I)\nonumber\\
-	&=& \frac{V_mI_m}{2}\Bigl(\cos(2\omega t + \theta_I+\theta_V)+\cos(\theta_I - \theta_V)\Bigr)
+\begin{align}
+	p(t)&= v(t)i(t)\nonumber\\
+	&=V_mI_m\sin(\omega t+\theta_V)\sin(\omega t + \theta_I)\nonumber\\
+	&= \frac{V_mI_m}{2}\Bigl(\cos(2\omega t + \theta_I+\theta_V)+\cos(\theta_I - \theta_V)\Bigr)
 	\label{eq:ip}
-\end{eqnarray}
+\end{align}
+
 
 
 \subsection{有効電力と力率}
