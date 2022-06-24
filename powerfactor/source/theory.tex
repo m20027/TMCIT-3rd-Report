@@ -1,15 +1,7 @@
-\documentclass[11pt,dvipdfmx]{ujarticle}
-\usepackage{eee}
-\usepackage{subfig}
+\clearpage
 
-\bibliography{3rd_power}
-\begin{document}
-
-\title{電力と力率　事前レポート}
-\author{3309 大山 主朗}
-\date{}
-\maketitle
-\section{瞬時電力(in-stantaneous power)\cite{11300007922816}\cite{1130282271973066112}}
+\section{原理}
+\subsection{瞬時電力(in-stantaneous power)\cite{11300007922816}\cite{1130282271973066112}}
 インピーダンス$\dot{Z}\,[\Omega]$へ印加された時刻$t\,[\rm{s}]$における交流電圧$v(t)\,[\rm{V}]$と，$\dot{Z}$に流れる交流電流$i(t)\,[\rm{A}]$がそれぞれ次式で表されるとする．
 \begin{align}
 	v(t) &= V_m\sin(\omega t+\theta_V)\\
@@ -24,7 +16,7 @@
 	\label{eq:ip}
 \end{align}
 
-\section{有効電力(effective power)\cite{11300007922816}\cite{113028223066112}}
+\subsection{有効電力(effective power)\cite{11300007922816}\cite{113028223066112}}
 \weq{ip}は$v(t)$や$i(t)$の2倍の角速度を持つ周期関数であることが確認できる．
 そのため，時間的な平均を算出することができ，この値を有効電力$P\,[\rm{W}]$と呼ぶ．
 \begin{align}
@@ -49,17 +41,33 @@
 \end{equation}
 の不等式が成立する．
 
-\section{皮相電力(apparent power)\cite{11300007922816}}
-電圧の実効値と電流の実効値の積$VI$は，インピーダンス$\dot{Z}$が純抵抗（リアクタンス$X=0$）の場合にのみ有効電力と等しくなり，それ以外の場合では$VI> P$となる．
-この，見かけ上の電力を皮相電力$S$とよび，単位には$\rm{VA}$（ボルトアンペア）を用いる．
-また，皮相電力と有効電力，無効電力には次の関係が成り立つ．
-\begin{align}
-	S &= VI\nonumber\\
-	&= \sqrt{P^2+Q^2}
-\end{align}
+\subsection{力率(power factor)\cite{11300007922816}}
+\weq{angle}の関係より，$\cos \theta$と有効電力および皮相電力の間には
+\begin{equation}
+	\cos \theta =\frac{P}{S}
+\end{equation}
+の関係がある．したがって，$\cos \theta$は皮相電力のどれだけの割合が抵抗で熱となって消費されているのかを表す量で力率と呼ばれる．また，$\theta$を力率角という．
 
+この上式が得られたとき，交流回路における実効値表現に置き換えると
+\begin{equation}
+	P = VI\cos\theta
+	\label{eq:power}
+\end{equation}
+を得ることができる．ここで，$V$，$I$はそれぞれの実効値，$\theta=\theta_I-\theta_V$である．
+\weq{power}の右辺は電圧と電流の実効値の積と，$\cos\theta$から構成されている．$\theta$は$\dot{Z}$の実部（抵抗）と虚部（リアクタンス）の比によって決定される値であり，
+\begin{equation}
+	-\frac{\pi}{2}\leq\theta\leq\frac{\pi}{2}
+\end{equation}
+であるので，
+\begin{equation}
+	0\leq\cos\theta\leq 1
+\end{equation}
+の不等式が成立する．
 
-\section{無効電力(reactive power)\cite{11300007922816}}
+以上の関係から，インピーダンス$\dot{Z}$の端子電圧と流れる電流値の積とは必ずしも等しくなく，有効に消費される電力の比が$\cos\theta$に相当することが分かる．
+この比として見なせる$\cos\theta$を力率，$\theta$を力率角と呼ぶ．
+
+\subsection{無効電力(reactive power)\cite{11300007922816}}
 コンデンサあるいはコンデンサに蓄えられている電力は\weq{mukoh}で与えられ，
 この値$Q$を無効電力という．単位は$\rm{var}$(バール)である．$\rm{var}$はvolt, ampere, reactive powerの頭文字をとったもので，人名ではないため，vは大文字にしない．
 
@@ -72,15 +80,16 @@
 	\label{eq:mukoh}
 \end{equation}
 
+\subsection{皮相電力(apparent power)\cite{11300007922816}}
+電圧の実効値と電流の実効値の積$VI$は，インピーダンス$\dot{Z}$が純抵抗（リアクタンス$X=0$）の場合にのみ有効電力と等しくなり，それ以外の場合では$VI> P$となる．
+この，見かけ上の電力を皮相電力$S$とよび，単位には$\rm{VA}$（ボルトアンペア）を用いる．
+また，皮相電力と有効電力，無効電力には次の関係が成り立つ．
+\begin{align}
+	S &= VI\nonumber\\
+	&= \sqrt{P^2+Q^2}
+\end{align}
 
-\section{力率(power factor)\cite{11300007922816}}
-\weq{angle}の関係より，$\cos \theta$と有効電力および皮相電力の間には
-\begin{equation}
-	\cos \theta =\frac{P}{S}
-\end{equation}
-の関係がある．したがって，$\cos \theta$は皮相電力のどれだけの割合が抵抗で熱となって消費されているのかを表す量で力率と呼ばれる．また，$\theta$を力率角という．
-
-\section{式(4.7)の途中式}
+\subsection{式(4.7)の途中式}
 \begin{align*}
 	p&=ei=\sqrt{2}|Z|I\sin (\omega t+ \angle Z)  \cdot \sqrt{2}I\sin \omega t\\
 	ここで&\sin \alpha \sin \beta=-\frac{1}{2}\left(\cos (\alpha +\beta)-\cos (\alpha -\beta)\right)より\\
@@ -88,7 +97,7 @@
 	&=-|Z|I^{2}\cos (2\omega t+\angle Z)+|Z|I^{2}\cos \angle Z
 \end{align*}
 
-\section{式(4.8)の途中式}
+\subsection{式(4.8)の途中式}
 \begin{align*}
 	p_{a}&=2RI^{2}\sin ^{2} \omega t\\
 	ここで&\cos \angle Z=\frac{R}{|Z|}より\\
@@ -97,7 +106,7 @@
 	&=|Z|I^{2}\cos \angle Z(1-\cos 2\omega t)
 \end{align*}
 
-\section{式(4.12)の途中式}
+\subsection{式(4.12)の途中式}
 \begin{align*}
 	p_{r}&=ei\\
 	&=(\sqrt{2}XI\cos \omega t) \cdot (\sqrt{2}I\sin \omega t)\\
@@ -109,13 +118,9 @@
 	&=|Z|I^{2}\sin \angle Z \sin 2\omega t
 \end{align*}
 
-\section{式(4.15)の途中式}
+\subsection{式(4.15)の途中式}
 \begin{align*}
 	e&=\sqrt{2}|Z|I\sin (\omega t +\angle Z)\\
 	|E|&=|I||Z|, E\neq 0, I\neq 0より\\
 	&=\sqrt{2}E\sin (\omega t +\angle Z)
 \end{align*}
-
-\section{回路図は指導書に直接記入した}
-\printbibliography[title=参考文献]
-\end{document}
