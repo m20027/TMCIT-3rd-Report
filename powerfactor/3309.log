@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.0.0-u1.28-220214-2.6 (utf8.uptex) (TeX Live 2022) (preloaded format=uplatex 2022.5.13)  25 JUN 2022 20:53
+This is e-upTeX, Version 3.141592653-p4.0.0-u1.28-220214-2.6 (utf8.uptex) (TeX Live 2022) (preloaded format=uplatex 2022.5.13)  25 JUN 2022 21:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1229,6 +1229,9 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 
 LaTeX Warning: Label `eq:power' multiply defined.
 
+
+LaTeX Warning: Label `tab:0.4data' multiply defined.
+
 )
 \openout1 = `3309.aux'.
 
@@ -1455,13 +1458,23 @@ Overfull \hbox (48.29062pt too wide) in paragraph at lines 30--31
 [5
 
 ]) (/Users/ohyamasan/Downloads/TMCIT-3rd-Report/powerfactor/source/result.tex [
-6])
+6]
+
+LaTeX Warning: Reference `tab:' on page 7 undefined on input line 4.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
 (/Users/ohyamasan/Downloads/TMCIT-3rd-Report/powerfactor/source/consideration.t
 ex [7
 
-]) [8
+] [8]) [9
 
-] [9] (./3309.aux)
+] [10] (./3309.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1472,12 +1485,12 @@ Package logreq Info: Writing requests to '3309.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37051 strings out of 478751
- 731793 string characters out of 5857035
- 1454427 words of memory out of 5000000
- 54872 multiletter control sequences out of 15000+600000
+ 37058 strings out of 478751
+ 731871 string characters out of 5857035
+ 1465603 words of memory out of 5000000
+ 54879 multiletter control sequences out of 15000+600000
  516403 words of font info for 108 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  98i,12n,94p,1133b,1323s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 3309.dvi (10 pages, 32852 bytes).
+Output written on 3309.dvi (11 pages, 37472 bytes).
