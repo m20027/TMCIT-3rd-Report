@@ -1,15 +1,15 @@
 # Fdb version 3
-["biber 3309"] 1656041110 "3309.bcf" "3309.bbl" "3309" 1656151935
+["biber 3309"] 1656041110 "3309.bcf" "3309.bbl" "3309" 1656157963
   "/usr/local/texlive/texmf-local/bibtex/bib/3rd_power.bib" 1655727157 2562 a31c83c4f9762daa183cb05d5bd988d3 ""
-  "3309.bcf" 1656151934 106894 f6254cb5ac8a39608505e3db7bc3452f ""
+  "3309.bcf" 1656157961 106894 f6254cb5ac8a39608505e3db7bc3452f ""
   (generated)
   "3309.bbl"
   "3309.blg"
-["dvipdf"] 1656151934 "3309.dvi" "3309.pdf" "3309" 1656151935
-  "3309.dvi" 1656151934 31696 88f47a2929b19789233f4ad904e39d95 "latex"
+["dvipdf"] 1656157961 "3309.dvi" "3309.pdf" "3309" 1656157963
+  "3309.dvi" 1656157961 32852 725dc5a60a19e3d185ae5e98470d9d5a "latex"
   (generated)
   "3309.pdf"
-["latex"] 1656151930 "/Users/ohyamasan/Downloads/TMCIT-3rd-Report/powerfactor/source/3309.tex" "3309.dvi" "3309" 1656151935
+["latex"] 1656157958 "/Users/ohyamasan/Downloads/TMCIT-3rd-Report/powerfactor/source/3309.tex" "3309.dvi" "3309" 1656157963
   "/Users/ohyamasan/Downloads/TMCIT-3rd-Report/powerfactor/source/3309.tex" 1656026426 1465 6956c976b528c69877de6450d936d2c6 ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty" 1576016050 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
@@ -180,13 +180,13 @@
   "/usr/local/texlive/2022/texmf-dist/tex/uplatex/base/ujsize11.clo" 1601501193 8671 38ae6650cc4f672ed2eb94ee1d40ee3d ""
   "/usr/local/texlive/texmf-local/tex/platex/eee.sty" 1655860503 5892 3149be2b1adc8ad9d5b33973b2e84d8d ""
   "/usr/local/texlive/texmf-local/tex/platex/jlisting.sty" 1649911532 6311 39acaca7319a5dae73524888cbf7591f ""
-  "3309.aux" 1656151934 4809 cf3211ab1ef1170d5411554c809743bb "latex"
+  "3309.aux" 1656157961 5013 e43bf8795ed15cd439b95bcd4b21a35c "latex"
   "3309.bbl" 1656041112 4347 72711bcea116b17f40d06200e3e25d0b "biber 3309"
-  "3309.out" 1656151934 2535 9da5de197ec8f6a131272155245c58a1 "latex"
+  "3309.out" 1656157961 2535 9da5de197ec8f6a131272155245c58a1 "latex"
   "fig/circ.pdf" 1656150281 54787 f12d7b43af6c7673c2a5a133348c8af0 ""
   "source/3309.tex" 1656026426 1465 6956c976b528c69877de6450d936d2c6 ""
   "source/consideration.tex" 1655939870 375 0fecaa4f247e1755c8b9d939256915d9 ""
-  "source/how-to.tex" 1656151930 2074 f5760f0215fde0a7f5966cdc8db76c1f ""
+  "source/how-to.tex" 1656157957 2975 190bba3da67c1b907530394287e5f97b ""
   "source/result.tex" 1655939927 65 022103f70df7e1e4cfaba46079e794a8 ""
   "source/theory.tex" 1656041480 6721 56689e0699007c9567f1a1bd0fe36276 ""
   (generated)
