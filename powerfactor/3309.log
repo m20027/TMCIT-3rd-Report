@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.0.0-u1.28-220214-2.6 (utf8.uptex) (TeX Live 2022) (preloaded format=uplatex 2022.5.13)  25 JUN 2022 23:27
+This is e-upTeX, Version 3.141592653-p4.0.0-u1.28-220214-2.6 (utf8.uptex) (TeX Live 2022) (preloaded format=uplatex 2022.5.13)  30 JUN 2022 14:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1456,78 +1456,25 @@ Overfull \hbox (48.29062pt too wide) in paragraph at lines 30--31
 
 ]) (/Users/ohyamasan/Downloads/TMCIT-3rd-Report/powerfactor/source/result.tex [
 6]
-Overfull \hbox (21.40092pt too wide) in paragraph at lines 15--24
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (28.70091pt too wide) in paragraph at lines 192--200
  [][][][] 
  []
 
 
-Overfull \hbox (28.70091pt too wide) in paragraph at lines 26--35
+Overfull \hbox (28.70091pt too wide) in paragraph at lines 202--210
  [][][][] 
  []
 
 
-Overfull \hbox (28.70091pt too wide) in paragraph at lines 37--46
- [][][][] 
- []
-
-
-Overfull \hbox (28.70091pt too wide) in paragraph at lines 50--59
-[][][][] 
- []
-
-
-Overfull \hbox (28.70091pt too wide) in paragraph at lines 61--70
-[][][][] 
- []
-
-
-Overfull \hbox (28.70091pt too wide) in paragraph at lines 72--81
-[][][][] 
- []
-
-
-Overfull \hbox (28.70091pt too wide) in paragraph at lines 83--92
-[][][][] 
- []
-
-
-Overfull \hbox (28.70091pt too wide) in paragraph at lines 94--103
-[][][][] 
- []
-
-
-Overfull \hbox (28.70091pt too wide) in paragraph at lines 107--116
-[][][][] 
- []
-
-
-Overfull \hbox (28.70091pt too wide) in paragraph at lines 118--127
-[][][][] 
- []
-
-
-Overfull \hbox (28.70091pt too wide) in paragraph at lines 132--140
- [][][][] 
- []
-
-
-Overfull \hbox (28.70091pt too wide) in paragraph at lines 142--150
- [][][][] 
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 )
 (/Users/ohyamasan/Downloads/TMCIT-3rd-Report/powerfactor/source/consideration.t
-ex
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7
+ex [7
 
 ] [8] [9]
 File: ./data/L/L.pdf Graphic file (type pdf)
@@ -1551,12 +1498,12 @@ Package logreq Info: Writing requests to '3309.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37083 strings out of 478751
- 732271 string characters out of 5857035
- 1484225 words of memory out of 5000000
- 54898 multiletter control sequences out of 15000+600000
+ 37081 strings out of 478751
+ 732249 string characters out of 5857035
+ 1525265 words of memory out of 5000000
+ 54896 multiletter control sequences out of 15000+600000
  516403 words of font info for 108 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 98i,12n,94p,1133b,1323s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,18n,94p,1133b,1323s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 3309.dvi (12 pages, 48388 bytes).
+Output written on 3309.dvi (12 pages, 60812 bytes).
