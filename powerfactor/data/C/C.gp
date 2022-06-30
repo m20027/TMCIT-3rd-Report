@@ -132,7 +132,7 @@ set x2label ""
 set x2label  font "" textcolor lt -1 norotate
 set xrange [ * : * ] noreverse writeback
 set x2range [ * : * ] noreverse writeback
-set ylabel "Power P_a[W]" 
+set ylabel "Power P_a [W]" 
 set ylabel  font "" textcolor lt -1 rotate
 set y2label "" 
 set y2label  font "" textcolor lt -1 rotate
@@ -199,6 +199,12 @@ j = 20.4883852410686
 i_err = 0.186808572718288
 j_err = 0.623317253356006
 ## Last datafile plotted: "data02-C.txt"
-plot "data1-C.txt" u 1:3 title "factor=1.0" , "data08-C.txt" u 1:3 title "factor=0.8" , "data06-C.txt" u 1:3 title "factor=0.6", "data04-C.txt" u 1:3 title "factor=0.4" , "data02-C.txt" u 1:3 title "factor=0.2" , a*x+b notitle,c*x+d notitle, e*x+f notitle,g*x+h notitle,i*x+j notitle
+
+set key font"Arial,16"
+set tics font "Arial,11"
+set xlabel font "Arial,16"
+set ylabel font "Arial,16"
+
+plot "data1-C.txt" u 1:3 title "factor=1.0" lc "green", "data08-C.txt" u 1:3 title "factor=0.8" lc "red", "data06-C.txt" u 1:3 title "factor=0.6" lc "blue", "data04-C.txt" u 1:3 title "factor=0.4" lc "black", "data02-C.txt" u 1:3 title "factor=0.2" lc "purple", a*x+b notitle lc "green" ,c*x+d notitle lc "red", e*x+f notitle lc "blue",g*x+h notitle lc "black",i*x+j notitle lc "purple"
 ## fit i*x+j "data02-C.txt" u 1:3 via i,j
 #    EOF

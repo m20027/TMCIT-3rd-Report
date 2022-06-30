@@ -639,6 +639,58 @@
       \verb https://sanuki-tech.net/make-electronics/parts/diode/
       \endverb
     \endentry
+    \entry{gvkjen}{webpage}{}
+      \name{author}{1}{}{%
+        {{hash=54a9784f608c0c5f0d62c237f8a00b4c}{%
+           family={太田裕道},
+           familyi={太\bibinitperiod}}}%
+      }
+      \strng{namehash}{54a9784f608c0c5f0d62c237f8a00b4c}
+      \strng{fullhash}{54a9784f608c0c5f0d62c237f8a00b4c}
+      \strng{bibnamehash}{54a9784f608c0c5f0d62c237f8a00b4c}
+      \strng{authorbibnamehash}{54a9784f608c0c5f0d62c237f8a00b4c}
+      \strng{authornamehash}{54a9784f608c0c5f0d62c237f8a00b4c}
+      \strng{authorfullhash}{54a9784f608c0c5f0d62c237f8a00b4c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{06}
+      \field{title}{電子デバイス工学(3)}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb http://functfilm.es.hokudai.ac.jp/wp-content/uploads/ 2017/02/device3.pdf
+      \endverb
+      \verb{url}
+      \verb http://functfilm.es.hokudai.ac.jp/wp-content/uploads/%202017/02/device3.pdf
+      \endverb
+    \endentry
+    \entry{vmsd}{webpage}{}
+      \name{author}{1}{}{%
+        {{hash=3b270f69ebf71cfe3c5b977a3be0240a}{%
+           family={勝本信吾},
+           familyi={勝\bibinitperiod}}}%
+      }
+      \strng{namehash}{3b270f69ebf71cfe3c5b977a3be0240a}
+      \strng{fullhash}{3b270f69ebf71cfe3c5b977a3be0240a}
+      \strng{bibnamehash}{3b270f69ebf71cfe3c5b977a3be0240a}
+      \strng{authorbibnamehash}{3b270f69ebf71cfe3c5b977a3be0240a}
+      \strng{authornamehash}{3b270f69ebf71cfe3c5b977a3be0240a}
+      \strng{authorfullhash}{3b270f69ebf71cfe3c5b977a3be0240a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{06}
+      \field{title}{半導体太陽電池}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb http://mercury.yukawa.kyoto-u.ac.jp/~bussei.kenkyu/pdf/03/3/9999-033209.pdf
+      \endverb
+      \verb{url}
+      \verb http://mercury.yukawa.kyoto-u.ac.jp/~bussei.kenkyu/pdf/03/3/9999-033209.pdf
+      \endverb
+    \endentry
     \entry{esfvjsp}{webpage}{}
       \name{author}{1}{}{%
         {{hash=0cfa94eb8130bd99e502e9b46b66b8a9}{%
