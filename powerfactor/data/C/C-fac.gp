@@ -46,7 +46,7 @@ unset raxis
 set theta counterclockwise right
 set style parallel front  lt black linewidth 2.000 dashtype solid
 set key notitle
-set key fixed left top vertical Right noreverse enhanced autotitle nobox
+set key fixed left top vertical Right noreverse enhanced autotitle nobox font "Arial,16"
 set key noinvert samplen 4 spacing 1 width 0 height 0 
 set key maxcolumns 0 maxrows 0
 set key noopaque
@@ -106,17 +106,17 @@ set mcbtics default
 set mrtics default
 set nomttics
 set xtics border in scale 1,0.5 mirror norotate  autojustify
-set xtics  norangelimit autofreq 
+set xtics  norangelimit autofreq  font "Arial,11"
 set ytics border in scale 1,0.5 mirror norotate  autojustify
-set ytics  norangelimit autofreq 
+set ytics  norangelimit autofreq  font "Arial,11"
 set ztics border in scale 1,0.5 nomirror norotate  autojustify
-set ztics  norangelimit autofreq 
+set ztics  norangelimit autofreq  font "Arial,11"
 unset x2tics
 unset y2tics
 set cbtics border in scale 1,0.5 mirror norotate  autojustify
-set cbtics  norangelimit autofreq 
+set cbtics  norangelimit autofreq  font "Arial,11"
 set rtics axis in scale 1,0.5 nomirror norotate  autojustify
-set rtics  norangelimit autofreq 
+set rtics  norangelimit autofreq  font "Arial,11"
 unset ttics
 set title "" 
 set title  font "" textcolor lt -1 norotate
@@ -126,17 +126,17 @@ set timestamp  font "" textcolor lt -1 norotate
 set trange [ * : * ] noreverse nowriteback
 set urange [ * : * ] noreverse nowriteback
 set vrange [ * : * ] noreverse nowriteback
-set xlabel "Current I[A]" 
-set xlabel  font "" textcolor lt -1 norotate
+set xlabel "Factor[-]" 
+set xlabel  font "Arial,16" textcolor lt -1 norotate
 set x2label "" 
 set x2label  font "" textcolor lt -1 norotate
-set xrange [ * : * ] noreverse writeback
-set x2range [ * : * ] noreverse writeback
+set xrange [ 0.200000 : 1.00000 ] noreverse writeback
+set x2range [ 0.240000 : 0.998000 ] noreverse writeback
 set ylabel "Power P_a [W]" 
-set ylabel  font "" textcolor lt -1 rotate
+set ylabel  font "Arial,16" textcolor lt -1 rotate
 set y2label "" 
 set y2label  font "" textcolor lt -1 rotate
-set yrange [ * : * ] noreverse writeback
+set yrange [ 60.0000 : 660.000 ] noreverse writeback
 set y2range [ * : * ] noreverse writeback
 set zlabel "" 
 set zlabel  font "" textcolor lt -1 norotate
@@ -172,38 +172,33 @@ set fit brief errorvariables nocovariancevariables errorscaling prescale nowrap 
 GNUTERM = "qt"
 I = {0.0, 1.0}
 VoxelDistance = 0.0
-a = 99.5468080379028
-b = 4.05957588741612
+a = 126.983235653039
+b = -14.8834490371814
 FIT_CONVERGED = 1
 FIT_NDF = 3
-FIT_STDFIT = 1.42460929822633
-FIT_WSSR = 6.08853495777876
-FIT_P = 0.107381363836635
+FIT_STDFIT = 24.5483148087517
+FIT_WSSR = 1807.85927984873
+FIT_P = 0.0
 FIT_NITER = 4
-a_err = 1.31103857463491
-b_err = 4.34587436299814
-c = 82.4915788665857
-d = -11.8397197559078
-c_err = 3.3072672003204
-d_err = 10.9972776306844
-e = 59.9856145923365
-f = 2.34315622370821
-e_err = 5.78467760168438
-f_err = 19.1509700200414
-g = 40.5913989269806
-h = 14.6387064318063
-g_err = 0.354222731472279
-h_err = 1.1784687367569
-i = 21.7901698400165
-l = 17.1551691207454
-i_err = 0.449126992508517
-l_err = 1.49366430684358
-## Last datafile plotted: "data02-L.txt"
-
-set key font "Arial,16"
-set tics font "Arial,11"
-set xlabel font "Arial,16"
-set ylabel font "Arial,16"
-
-plot "data1-L.txt" u 1:3 title "factor=1.0" lc "green", "data08-L.txt" u 1:3 title "factor=0.8" lc "red", "data06-L.txt" u 1:3 title "factor=0.6" lc "blue", "data04-L.txt" u 1:3 title "factor=0.4" lc "black", "data02-L.txt" u 1:3 title "factor=0.2" lc "purple", a*x+b notitle lc "green",c*x+d notitle lc "red", e*x+f notitle lc "blue" ,g*x+h notitle lc "black",i*x+l notitle lc "purple"
+a_err = 5.45906887779029
+b_err = 4.27062857125414
+c = 214.547988084254
+d = 3.7513792504616
+c_err = 6.2847523521827
+d_err = 4.50032154212879
+e = 310.830468289888
+f = 9.15203639419697
+e_err = 4.4960107995589
+f_err = 3.14636283858444
+g = 413.245743984352
+h = 14.4788815110474
+g_err = 5.91488027865407
+h_err = 4.09264667400898
+i = 472.065911836723
+j = 52.2990382604413
+i_err = 41.3257706847874
+j_err = 28.3923624052809
+## Last datafile plotted: "C-fac.txt"
+plot "C-fac.txt" u 1:2 title "I=1" lc "red", "C-fac.txt" u 3:4 title "I=2" lc "blue" , "C-fac.txt" u 5:6 title "I=3" lc "purple" ,"C-fac.txt" u 7:8 title "I=4" lc "green" ,"C-fac.txt" u 9:10 title "I=5" lc "black", a*x+b lc "red" notitle,c*x+d lc "blue" notitle , e*x+f lc "purple" notitle ,g*x+h lc "green" notitle , i*x+j lc "black" notitle
+## fit i*x+j "C-fac.txt" u 9:10 via i,j
 #    EOF

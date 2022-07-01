@@ -46,7 +46,7 @@ unset raxis
 set theta counterclockwise right
 set style parallel front  lt black linewidth 2.000 dashtype solid
 set key notitle
-set key fixed left top vertical Right noreverse enhanced autotitle nobox
+set key fixed left top vertical Right noreverse enhanced autotitle nobox font "Arial,16"
 set key noinvert samplen 4 spacing 1 width 0 height 0 
 set key maxcolumns 0 maxrows 0
 set key noopaque
@@ -106,17 +106,17 @@ set mcbtics default
 set mrtics default
 set nomttics
 set xtics border in scale 1,0.5 mirror norotate  autojustify
-set xtics  norangelimit autofreq 
+set xtics  norangelimit autofreq  font "Arial,15"
 set ytics border in scale 1,0.5 mirror norotate  autojustify
-set ytics  norangelimit autofreq 
+set ytics  norangelimit autofreq  font "Arial,15"
 set ztics border in scale 1,0.5 nomirror norotate  autojustify
-set ztics  norangelimit autofreq 
+set ztics  norangelimit autofreq  font "Arial,15"
 unset x2tics
 unset y2tics
 set cbtics border in scale 1,0.5 mirror norotate  autojustify
-set cbtics  norangelimit autofreq 
+set cbtics  norangelimit autofreq  font "Arial,15"
 set rtics axis in scale 1,0.5 nomirror norotate  autojustify
-set rtics  norangelimit autofreq 
+set rtics  norangelimit autofreq  font "Arial,15"
 unset ttics
 set title "" 
 set title  font "" textcolor lt -1 norotate
@@ -126,14 +126,14 @@ set timestamp  font "" textcolor lt -1 norotate
 set trange [ * : * ] noreverse nowriteback
 set urange [ * : * ] noreverse nowriteback
 set vrange [ * : * ] noreverse nowriteback
-set xlabel "Current I[A]" 
-set xlabel  font "" textcolor lt -1 norotate
+set xlabel "Factor[-]" 
+set xlabel  font "Arial,16" textcolor lt -1 norotate
 set x2label "" 
 set x2label  font "" textcolor lt -1 norotate
 set xrange [ * : * ] noreverse writeback
 set x2range [ * : * ] noreverse writeback
 set ylabel "Power P_a [W]" 
-set ylabel  font "" textcolor lt -1 rotate
+set ylabel  font "Arial,16" textcolor lt -1 rotate
 set y2label "" 
 set y2label  font "" textcolor lt -1 rotate
 set yrange [ * : * ] noreverse writeback
@@ -172,38 +172,32 @@ set fit brief errorvariables nocovariancevariables errorscaling prescale nowrap 
 GNUTERM = "qt"
 I = {0.0, 1.0}
 VoxelDistance = 0.0
-a = 99.5468080379028
-b = 4.05957588741612
+a = 102.753385497977
+b = -8.41655573457708
 FIT_CONVERGED = 1
 FIT_NDF = 3
-FIT_STDFIT = 1.42460929822633
-FIT_WSSR = 6.08853495777876
-FIT_P = 0.107381363836635
+FIT_STDFIT = 1.97457065923195
+FIT_WSSR = 11.6967878648991
+FIT_P = 0.008497411473539
 FIT_NITER = 4
-a_err = 1.31103857463491
-b_err = 4.34587436299814
-c = 82.4915788665857
-d = -11.8397197559078
-c_err = 3.3072672003204
-d_err = 10.9972776306844
-e = 59.9856145923365
-f = 2.34315622370821
-e_err = 5.78467760168438
-f_err = 19.1509700200414
-g = 40.5913989269806
-h = 14.6387064318063
-g_err = 0.354222731472279
-h_err = 1.1784687367569
-i = 21.7901698400165
-l = 17.1551691207454
-i_err = 0.449126992508517
-l_err = 1.49366430684358
-## Last datafile plotted: "data02-L.txt"
-
-set key font "Arial,16"
-set tics font "Arial,11"
-set xlabel font "Arial,16"
-set ylabel font "Arial,16"
-
-plot "data1-L.txt" u 1:3 title "factor=1.0" lc "green", "data08-L.txt" u 1:3 title "factor=0.8" lc "red", "data06-L.txt" u 1:3 title "factor=0.6" lc "blue", "data04-L.txt" u 1:3 title "factor=0.4" lc "black", "data02-L.txt" u 1:3 title "factor=0.2" lc "purple", a*x+b notitle lc "green",c*x+d notitle lc "red", e*x+f notitle lc "blue" ,g*x+h notitle lc "black",i*x+l notitle lc "purple"
+a_err = 29.3261013437953
+b_err = 21.5536470768204
+c = 220.101806661435
+d = -15.2557421522801
+c_err = 7.89011328986821
+d_err = 5.53798165671696
+e = 323.591270952304
+f = -25.839961034943
+e_err = 33.2810820432373
+f_err = 22.9130328168314
+g = 433.446990915033
+h = -24.1661423798834
+g_err = 1.14736010896113
+h_err = 0.786382405343038
+i = 526.02108249635
+j = -25.7025705188744
+i_err = 3.55743966752301
+j_err = 2.42278774969971
+## Last datafile plotted: "L-fac.txt"
+plot "L-fac.txt" u 1:2 title "I=1" lc "red", "L-fac.txt" u 3:4 title "I=2" lc "blue", "L-fac.txt" u 5:6 title "I=3" lc "purple", "L-fac.txt" u 7:8 title "I=4" lc "green", "L-fac.txt" u 9:10 title "I=5" lc "black" ,a*x+b lc "red" notitle ,c*x+d lc "blue" notitle ,e*x+f lc "purple" notitle , g*x+h lc "green" notitle ,i*x+j lc "black" notitle
 #    EOF
