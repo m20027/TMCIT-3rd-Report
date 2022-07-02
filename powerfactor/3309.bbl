@@ -123,6 +123,32 @@
       \verb https://cir.nii.ac.jp/crid/1130282271973066112
       \endverb
     \endentry
+    \entry{hsdap}{webpage}{}
+      \name{author}{1}{}{%
+        {{hash=d6d615ba497650e320e0d4110e9b7278}{%
+           family={東芝デバイス＆ストレージ株式会社},
+           familyi={東\bibinitperiod}}}%
+      }
+      \strng{namehash}{d6d615ba497650e320e0d4110e9b7278}
+      \strng{fullhash}{d6d615ba497650e320e0d4110e9b7278}
+      \strng{bibnamehash}{d6d615ba497650e320e0d4110e9b7278}
+      \strng{authorbibnamehash}{d6d615ba497650e320e0d4110e9b7278}
+      \strng{authornamehash}{d6d615ba497650e320e0d4110e9b7278}
+      \strng{authorfullhash}{d6d615ba497650e320e0d4110e9b7278}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{07}
+      \field{title}{PWMとは}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://toshiba.semicon-storage.com/jp/semiconductor/knowledge/e-learning/brushless-motor/chapter3/what-pwm.html
+      \endverb
+      \verb{url}
+      \verb https://toshiba.semicon-storage.com/jp/semiconductor/knowledge/e-learning/brushless-motor/chapter3/what-pwm.html
+      \endverb
+    \endentry
     \entry{2021}{article}{}
       \name{author}{3}{}{%
         {{hash=78d3b2724c889fe9ba8bdbfc2c69f9e9}{%
@@ -147,8 +173,8 @@
       \strng{authorbibnamehash}{683459b6daa027bed83798aaa6937a19}
       \strng{authornamehash}{683459b6daa027bed83798aaa6937a19}
       \strng{authorfullhash}{683459b6daa027bed83798aaa6937a19}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{電気関係学会九州支部連合大会講演論文集}
@@ -175,8 +201,8 @@
       \strng{authorbibnamehash}{43645c61a0ea4ffafdec6f2ff64e08bb}
       \strng{authornamehash}{43645c61a0ea4ffafdec6f2ff64e08bb}
       \strng{authorfullhash}{43645c61a0ea4ffafdec6f2ff64e08bb}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{07}
@@ -189,30 +215,42 @@
       \verb https://www.hitachienergy.com/jp/ja/offering/product-and-system/facts/static-var-compensation-svc
       \endverb
     \endentry
-    \entry{hsdap}{webpage}{}
-      \name{author}{1}{}{%
-        {{hash=d6d615ba497650e320e0d4110e9b7278}{%
-           family={東芝デバイス＆ストレージ株式会社},
-           familyi={東\bibinitperiod}}}%
+    \entry{1130000798278276}{book}{}
+      \name{author}{2}{}{%
+        {{hash=b0ead2e281ab239f0407ea948649d1e8}{%
+           family={大浦},
+           familyi={大\bibinitperiod},
+           given={宣徳},
+           giveni={宣\bibinitperiod}}}%
+        {{hash=4db3bafa2eacc977ea11745893e08a31}{%
+           family={関根},
+           familyi={関\bibinitperiod},
+           given={松夫},
+           giveni={松\bibinitperiod}}}%
       }
-      \strng{namehash}{d6d615ba497650e320e0d4110e9b7278}
-      \strng{fullhash}{d6d615ba497650e320e0d4110e9b7278}
-      \strng{bibnamehash}{d6d615ba497650e320e0d4110e9b7278}
-      \strng{authorbibnamehash}{d6d615ba497650e320e0d4110e9b7278}
-      \strng{authornamehash}{d6d615ba497650e320e0d4110e9b7278}
-      \strng{authorfullhash}{d6d615ba497650e320e0d4110e9b7278}
+      \list{publisher}{1}{%
+        {オーム社}%
+      }
+      \strng{namehash}{2a089aab7a1e93268cd1cf028c8bfab3}
+      \strng{fullhash}{2a089aab7a1e93268cd1cf028c8bfab3}
+      \strng{bibnamehash}{2a089aab7a1e93268cd1cf028c8bfab3}
+      \strng{authorbibnamehash}{2a089aab7a1e93268cd1cf028c8bfab3}
+      \strng{authornamehash}{2a089aab7a1e93268cd1cf028c8bfab3}
+      \strng{authorfullhash}{2a089aab7a1e93268cd1cf028c8bfab3}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{month}{07}
-      \field{title}{PWMとは}
-      \field{year}{2022}
+      \field{series}{大学課程基礎コース}
+      \field{title}{電気・電子計測}
+      \field{year}{2014}
+      \field{pages}{136\bibrangedash 137}
+      \range{pages}{2}
       \verb{urlraw}
-      \verb https://toshiba.semicon-storage.com/jp/semiconductor/knowledge/e-learning/brushless-motor/chapter3/what-pwm.html
+      \verb https://cir.nii.ac.jp/crid/1130000798278235776
       \endverb
       \verb{url}
-      \verb https://toshiba.semicon-storage.com/jp/semiconductor/knowledge/e-learning/brushless-motor/chapter3/what-pwm.html
+      \verb https://cir.nii.ac.jp/crid/1130000798278235776
       \endverb
     \endentry
     \entry{ffvds}{webpage}{}
