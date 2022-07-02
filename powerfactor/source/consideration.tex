@@ -7,28 +7,23 @@
 	どちらの場合においても，力率が$1.0$に近づくほど全体的に多くの電力が得られていることがわかる．また，力率による電力への影響は電流が大きい場合であるほど大きくなっている．
 	\begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.6]{./data/L/L.pdf}
+	\includegraphics[scale=0.51]{./data/L/L.pdf}
 	\caption{$X_L$の電流-電力特性}
 	\label{fig:L}
-	\end{figure}
-	\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.6]{./data/C/C.pdf}
+	\includegraphics[scale=0.51]{./data/C/C.pdf}
 	\caption{$X_C$の電流-電力特性}
 	\label{fig:C}
 	\end{figure}
+	\newpage
 	\item 各電流計の指示に対して，横軸が力率，縦軸が電力のグラフ(一つにまとめる)を描け．
 	
 	\wfig{L-fac}，\wfig{C-fac}それぞれ近似直線と共に力率-電力特性を示す．
 	\begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.6]{./data/L/L-fac.pdf}
+	\includegraphics[scale=0.51]{./data/L/L-fac.pdf}
 	\caption{$X_L$の力率-電力特性}
 	\label{fig:L-fac}
-	\end{figure}
-	\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.6]{./data/C/C-fac.pdf}
+	\includegraphics[scale=0.51]{./data/C/C-fac.pdf}
 	\caption{$X_C$の力率-電力特性}
 	\label{fig:C-fac}
 	\end{figure}
@@ -37,7 +32,60 @@
 	電力と電圧，電流は\weq{calpo}より比例関係にある．
 	また，電力と力率も\weq{power}より比例関係にある．
 	\item 普通電力計による測定結果と低力率用電力計による測定結果について比較検討せよ．
+	
+	2種類の計測器の精度を\weq{gosa}に示すように，相対誤差を利用した．
+	また，その表を\wtab{seido1}，\wtab{seido2}に示す．
+	リアクタンスの種類によらず，低力率用電圧計を用いると精度向上が確認できた．
+	\begin{align}
+	\varepsilon&=\left|\frac{推定値-測定値}{推定値}\right|\times 100\nonumber\\
+	&=\left|\frac{\cos \theta 測定値 -\cos \theta 計算値}{\cos \theta 測定値 }\right|\times 100\,[\rm{-}]\label{eq:gosa}
+	\end{align}
+	\begin{table}[h]
+	\centering
+	\caption{電力計による相対誤差の差異($X_{L}$)}
+	\label{tab:seido1}
+	\begin{tabular}{ccc}
+	\hline
+	電流$[\rm{A}]$  & 電力計での相対$\varepsilon$[-]    & 低力率用電力計での相対誤差$\varepsilon$[-]       \\
+	\hline
+	1   & 21.50125 & 20.95919 \\
+	2   & 19.04878 & 17.03079 \\
+	3   & 16.12260 & 16.03871 \\
+	4   & 15.40533 & 16.32684 \\
+	\hline\hline
+	平均値 & 18.01949 & 17.58888\\
+	\hline
+	\end{tabular}
+	\centering
+	\caption{電力計による相対誤差の差異($X_{C}$)}
+	\label{tab:seido2}
+	\begin{tabular}{ccc}
+	\hline
+	電流$[\rm{A}]$  & 電力計での相対誤差$\varepsilon$[-]    & 低力率用電力計での相対誤差$\varepsilon$[-]       \\
+	\hline
+	1   & 12.39873 & 10.12687 \\
+	2   & 0.86269  & 1.57673  \\
+	3   & 3.80776  & 0.75514  \\
+	4   & 5.03451  & 0.50081  \\
+	\hline\hline
+	平均値 & 5.52592  & 3.23988\\
+	\hline
+	\end{tabular}
+	\end{table}
 	\item グループで議論した考察を述べよ．
-	\item この実験について独自の考察も加えよ．
+	\item この実験について独自の考察も加えよ\cite{hsdap}．
+	
+	近年では，単純にリアクタンスの値を調節して力率調整を行うだけでなく，制御方法を工夫することもある．ここではその一例である，無効電力補償制御について述べる．
+	この制御方法はPWMパターンの位相制御を行うフィードバックを付加したものなどがある\cite{2021}．
+	
+	RWM(Pulse Width Modulation)とは，半導体を使った電力を制御する制御方法の1つ．
+	オンとオフの繰り返しスイッチングを行い，出力される電力を制御する．
+	一定電圧の入力から，パルス列のオンとオフの一定周期を作り，オンの時間幅を変化させる電力制御方法である．そのため，早い周期でスイッチングを行うことで，オンのパルス幅に比例した任意の電圧が得られる．これは半導体がオンとオフ状態が最も損失が少ない(中間状態は損失が多い)ことを利用した電力制御方法．
+	PWMは，優れた制御性と，高効率が特徴で，インバーター回路(直流電流を交流電流に変換する回路)で広く回路で広く使われている技術である．ブラシ付きDCモータの回転制御にも使われている．
+	インバーター回路にて，RWM制御のオンの時間幅(デューティー)を周期的に変化させることにより，モータ駆動に最適な正弦波の交流電圧を作ることもできる．
+	
+	また無効電力を減少させるだけでなく，静止型無効電力補償装置(SVC)と呼ばれるシステム偶発事象(ネットワーク短絡，ラインおよび発電機の断線など)に応じて動的かつ高速な応答無効電圧を提供する装置もある．これにより，線間電圧を迅速かつ確実に制御できる\cite{padsfuvg}．
 	\item 報告書の提出〆切までに理解できなかった疑問点を挙げよ．
+	
+	特にない．
 \end{enumerate}

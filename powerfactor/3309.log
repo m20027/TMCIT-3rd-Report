@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.0.0-u1.28-220214-2.6 (utf8.uptex) (TeX Live 2022) (preloaded format=uplatex 2022.5.13)  2 JUL 2022 01:25
+This is e-upTeX, Version 3.141592653-p4.0.0-u1.28-220214-2.6 (utf8.uptex) (TeX Live 2022) (preloaded format=uplatex 2022.5.13)  2 JUL 2022 10:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1468,23 +1468,33 @@ File: ./data/L/L.pdf Graphic file (type pdf)
 <./data/L/L.pdf>
 File: ./data/C/C.pdf Graphic file (type pdf)
 <./data/C/C.pdf>
+ [11
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+]
 File: ./data/L/L-fac.pdf Graphic file (type pdf)
 <./data/L/L-fac.pdf>
 File: ./data/C/C-fac.pdf Graphic file (type pdf)
 <./data/C/C-fac.pdf>
+ [12]) [13] [14
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+]
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 50.
+
+LaTeX Font Info:    Kanji font shape `JY2/mc/m/sc' undefined
+(Font)              No change on input line 50.
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 50.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Overfull \hbox (28.13007pt too wide) in paragraph at lines 50--50
+[]\OT1/cmr/m/n/10.95 H. En-ergy, |   [], Jul. 2022. [On-line]. Avail-able: []$\
+OT1/cmtt/m/n/10.95 https : / / www . hitachienergy .
+ []
 
-) [11
-
-] [12] [13] [14] (./3309.aux)
+[15] (./3309.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1495,12 +1505,12 @@ Package logreq Info: Writing requests to '3309.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37093 strings out of 478751
- 732483 string characters out of 5857035
- 1531364 words of memory out of 5000000
- 54906 multiletter control sequences out of 15000+600000
- 516403 words of font info for 108 fonts, out of 8000000 for 9000
+ 37110 strings out of 478751
+ 732932 string characters out of 5857035
+ 1531627 words of memory out of 5000000
+ 54922 multiletter control sequences out of 15000+600000
+ 516704 words of font info for 109 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 98i,18n,94p,1133b,1323s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,18n,94p,1133b,1345s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 3309.dvi (15 pages, 65992 bytes).
+Output written on 3309.dvi (16 pages, 73308 bytes).
