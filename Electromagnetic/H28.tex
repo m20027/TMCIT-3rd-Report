@@ -1,0 +1,110 @@
+\documentclass[dvipdfmx]{ujarticle}
+\usepackage{eee}
+
+\begin{document}
+\title{平成28年　電磁気学II　第1回小テスト}
+\date{}
+\author{大山主朗}
+
+\maketitle
+
+\section{以下の(a)及び(c)に示す物理定数は電磁気学を修めた者であれば常識的に覚えていなければならない数値である．それぞれの値を示せ．}
+\begin{enumerate}[(a)]
+	\item 真空の誘電率$\varepsilon_{0}:8.854 \times 10^{-12}\,\rm{F/m}$
+	\item 真空の透磁率$\mu_{0}:1.257 \times 10^{-6}\,\rm{H/m}$
+	\item 電子の電荷$e:-1.602 \times 10^{-19}\,\rm{C}$
+\end{enumerate}
+
+\section{$xyz$直交座標系における$x, y, z$方向の基本ベクトルを$\boldsymbol{i}, \boldsymbol{j}, \boldsymbol{k}$とする。$\boldsymbol{a}=a_{x}\boldsymbol{i}+a_{y}\boldsymbol{j}+a_{z}\boldsymbol{k}, \boldsymbol{b}=b_{x}\boldsymbol{i}+ b_{y}\boldsymbol{j}+ b_{z}\boldsymbol{k}$なる二つのベクトルがある．このとき以下の各式を計算せよ．}
+\begin{enumerate}[(a)]
+	\item $\boldsymbol{a}+\boldsymbol{a}=(a_{x}+b_{x})\boldsymbol{i}+(a_{y}+b_{y})\boldsymbol{j}+(a_{z}+b_{z})\boldsymbol{k}$
+	\item $\boldsymbol{a}-\boldsymbol{b}=(a_{x}-b_{x})\boldsymbol{i}+(a_{y}-b_{y})\boldsymbol{j}+(a_{z}-b_{z})\boldsymbol{k}$
+	\item $a=|\boldsymbol{a}|=\sqrt{a_{x}^{2}+a_{y}^{2}+a_{z}^{2}}$
+	\item $\boldsymbol{a}$方向の単位ベクトル$a_{e}=\frac{a}{|\boldsymbol{a}|}=\frac{a}{\sqrt{a_{x}^{2}+a_{y}^{2}+a_{z}^{2}}}$
+	\item $\boldsymbol{a}\cdot \boldsymbol{b}=a_{x}b_{x}+a_{y}b_{y}+a_{z}b_{z}$
+	\item $\boldsymbol{a}\cdot \boldsymbol{a}=a_{x}^{2}+a_{y}^{2}+a_{z}^{2}$
+	\item $\frac{1}{\boldsymbol{a}}=\frac{\boldsymbol{a}}{a^{2}}=\frac{\boldsymbol{a}}{a_{x}^{2}+a_{y}^{2}+a_{z}^{2}}=\frac{1}{a_{x}^{2}+a_{y}^{2}+a_{z}^{2}}(a_{x}\boldsymbol{i}+a_{y}\boldsymbol{j}+a_{z}\boldsymbol{k})$
+	\item $\boldsymbol{a}\times \boldsymbol{b}=(a_{y}b_{z}-a_{z}b_{y})\boldsymbol{i}+(a_{z}b_{x}-a_{x}b_{z})\boldsymbol{j}+(a_{x}b_{y}-a_{y}b_{x})\boldsymbol{k}$
+	\item $|\boldsymbol{a}\times \boldsymbol{b}|=\sqrt{(a_{y}b_{z}-a_{z}b_{y})^{2}+(a_{z}b_{x}-a_{x}b_{z})^{2}+(a_{x}b_{y}-a_{y}b_{x})^{2}}$
+	\item $\boldsymbol{b}\times \boldsymbol{a}=(a_{z}b_{y}-a_{y}b_{z})\boldsymbol{i}+(a_{x}b_{z}-a_{z}b_{x})\boldsymbol{j}+(a_{y}b_{x}-a_{x}b_{y})\boldsymbol{k}$
+	\item $\boldsymbol{a}, \boldsymbol{b}$の間の角を$\theta$としたときの$\sin \theta=\frac{|\boldsymbol{a}\times \boldsymbol{b}|}{|\boldsymbol{a}||\boldsymbol{b}|}=\sqrt{\frac{(a_{y}b_{z}-a_{z}b_{y})^{2}+(a_{z}b_{x}-a_{x}b_{z})^{2}+(a_{x}b_{y}-a_{y}b_{x})^{2}}{(a_{x}^{2}+a_{y}^{2}+a_{z}^{2})(b_{x}^{2}+b_{y}^{2}+b_{z}^{2})}}$
+	\item $\boldsymbol{a}, \boldsymbol{b}$の間の角を$\theta$としたときの$\cos \theta=1-\sin^{2}\theta=1-\left(\frac{(a_{y}b_{z}-a_{z}b_{y})^{2}+(a_{z}b_{x}-a_{x}b_{z})^{2}+(a_{x}b_{y}-a_{y}b_{x})^{2}}{(a_{x}^{2}+a_{y}^{2}+a_{z}^{2})(b_{x}^{2}+b_{y}^{2}+b_{z}^{2})}\right)$
+\end{enumerate}
+
+\section{直線状電流$I$が流れている．このとき，電流の周囲に発生する磁束密度$\boldsymbol{B}$を求めよ。特に$\boldsymbol{B}$の大きさと方向を明示せよ．}
+\begin{align*}
+水平&方向をx軸，鉛直上向きをy軸，手前側にz軸をとる\\
+今，&直線状電流(上端のy座標:y_{b},下端のy座標:y_{a})からx=a離れた地点の磁界Hを考える\\
+ここで&x軸とy_{b}を通る\boldsymbol{r}がなす角を\beta -\frac{\pi}{2},x軸とy_{a}を通る\boldsymbol{r}がなす角を-\left(\frac{\pi}{2}-\alpha \right)とする\\
+\boldsymbol{i}&,\boldsymbol{j},\boldsymbol{k}をx,y,z方向の基底ベクトルとする\\
+d\boldsymbol{l}&=dy\boldsymbol{j}, \quad \boldsymbol{r}=a\boldsymbol{i}-y\boldsymbol{j}, \quad r=\sqrt{a^{2}+y^{2}}\\
+d\boldsymbol{l}\times \boldsymbol{r}&=
+\begin{vmatrix}
+\boldsymbol{i} & \boldsymbol{j} & \boldsymbol{k}\\
+0 & dy & 0\\
+a & -y & 0 
+\end{vmatrix}
+=dy
+\begin{vmatrix}
+\boldsymbol{i} & \boldsymbol{k} \\
+a & 0
+\end{vmatrix}
+=-a dy \boldsymbol{k}\\
+d\boldsymbol{H}&=\frac{Id\boldsymbol{l}\times \boldsymbol{r}}{4 \pi r^{3}}\\
+\boldsymbol{H}&=\int _{C} d\boldsymbol{H}\\
+&=-\frac{a\boldsymbol{k}I}{4\pi}\int_{y_{a}}^{y_{b}} (a^{2}+y^{2})^{-\frac{3}{2}}\,dy\\
+y&=a\tan \theta と置換する．\therefore dy=\frac{a}{\cos \theta }d \theta, \quad 積分範囲は\alpha -\frac{\pi}{2} \to \beta -\frac{\pi}{2}に変化する\\ 
+\boldsymbol{H}&=-\frac{a\boldsymbol{k}I}{4\pi}\frac{1}{a^{3}}\int_{\alpha-\frac{\pi}{2}}^{\beta -\frac{\pi}{2}} (1+\tan^{2} \theta )^{-\frac{3}{2}} \frac{a}{\cos ^{2} \theta}\,d \theta\\
+&=-\frac{\boldsymbol{k}I}{4\pi a} \int_{\alpha -\frac{\pi}{2}}^{\beta -\frac{\pi}{2}} \cos \theta d\theta\\
+&=-\frac{\boldsymbol{k}I}{4\pi a}\left\{ \sin \left(\beta -\frac{\pi}{2}\right) - \sin \left(\alpha -\frac{\pi}{2}\right) \right\}\\
+&=-\frac{\boldsymbol{k}I}{4 \pi a} \left(-\cos \beta +\cos \alpha \right)\\
+&=\frac{\boldsymbol{k}I}{4\pi a} (\cos \alpha -\cos \beta)\\
+ここで&線電流の長さが無限より，\alpha =0,\beta =\infty であるため\\
+H&=\frac{I}{2\pi a}\,[\rm{A/m}]，z軸逆向き．
+\end{align*}
+
+\section{一様な磁束密度$\boldsymbol{B}$の中に長さ$s$の直線電流$I$が流れている．磁束密度$\boldsymbol{B}$と電流$I$のなす角が$\frac{\pi}{2}$のとき，電流$I$にはたらく力$\boldsymbol{F}$を求めよ．}
+\begin{align*}
+	|d\boldsymbol{F}|&=|Id\boldsymbol{l}\times \boldsymbol{B}|\\
+	&=IB\sin \frac{\pi}{2}\\
+	&=IB\\
+	|\boldsymbol{F}|&=\int_{0}^{s} |d\boldsymbol{F}|\\
+	&=sIB\,[\rm{N}]
+\end{align*}
+\section{一様な磁束密度$\boldsymbol{B}$の中に長さ$s$の直線電流$I$が流れている．磁束密度$\boldsymbol{B}$と電流$I$のなす角が$\frac{\pi}{6}$のとき，電流$I$にはたらく力$\boldsymbol{F}$を求めよ．}
+\begin{align*}
+	|d\boldsymbol{F}|&=|Id\boldsymbol{l}\times \boldsymbol{B}|\\
+	&=IB\sin \frac{\pi}{6}\\
+	&=\frac{IB}{2}\\
+	|\boldsymbol{F}|&=\int_{0}^{s} |d\boldsymbol{F}|\\
+	&=\frac{sIB}{2}\,[\rm{N}]
+\end{align*}
+
+\section{一様な磁束密度$\boldsymbol{B}$の中に質量$m$，電荷$q$の電荷粒子が$\boldsymbol{B}$に垂直に初速度$v_{0}$で飛び込んで円運動をする．このとき以下の角値を求めよ．}
+\begin{enumerate}[(a)]
+	\item 電荷粒子にはたらくローレンツ力$F$
+	\begin{align*}
+		F&=qv_{0}B\sin \theta \\
+		&=qv_{0}B\,[\rm{N}]
+	\end{align*}
+	\item 電荷粒子にはたらく遠心力$F$
+	\begin{align*}
+		F&=\frac{mv_{0}^{2}}{r}\,[\rm{N}]
+	\end{align*}
+	\item 円運動の回転半径$r$
+	\begin{align*}
+		qv_{0}B&=\frac{mv_{0}^{2}}{r}\\
+		r&=\frac{mv_{0}}{qB}\,[\rm{m}]
+	\end{align*}
+	\item 円運動の周期$T$
+	\begin{align*}
+		T&=\frac{2\pi r}{v_{0}}\,[\rm{s}]
+	\end{align*}
+	\item 円運動の角速度$\omega$
+	\begin{align*}
+		\omega &=\frac{2\pi}{T}\\
+		&=\frac{v_{0}}{r}\,[\rm{rad/s}]
+	\end{align*}
+\end{enumerate}
+
+\end{document}
