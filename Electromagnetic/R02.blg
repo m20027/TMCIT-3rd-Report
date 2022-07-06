@@ -1,4 +1,4 @@
-[1] Config.pm:307> INFO - This is Biber 2.17
-[2] Config.pm:310> INFO - Logfile is 'R02.blg'
-[825] biber-darwin:340> INFO - === 火  7  5, 2022, 22:32:32
-[1045] Biber.pm:418> INFO - Reading 'R02.bcf'
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'R02.blg'
+[93] biber-darwin:340> INFO - === 水  7  6, 2022, 07:53:43
+[117] Biber.pm:418> INFO - Reading 'R02.bcf'
