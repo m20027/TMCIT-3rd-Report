@@ -31,14 +31,20 @@
 
 \section{一辺の長さ$a$の正方形がある．点Bに$+m[\rm{Wb}]$，点Cに$−3m[\rm{Wb}]$，点D に $+2m [\rm{Wb}]$，点Oに $−m[\rm{Wb}]$の点磁荷が存在するとき，点Aにできる磁界$H$の大きさを求めよ．ただし，$m >0$とする．}
 \begin{align*}
-	\boldsymbol{H}_{O}&=\frac{-m}{4\pi \varepsilon_{0} \left(\frac{a^{2}}{2^{2}}+\frac{a^{2}}{2^{2}}\right)^{3/2}}\left(\frac{a}{2}\boldsymbol{i}-\frac{a}{2}\boldsymbol{j}\right)\\
-	%|\boldsymbol{H}_{B}|&=\frac{m}{4\pi \mu_{0} a^{2}}\\
-	%|\boldsymbol{H}_{C}|&=\frac{-3m}{4\pi \mu_{0} (a\sqrt{2})^{2}}=\frac{-3m}{8\pi \mu_{0} a^{2}}\\
-	%|\boldsymbol{H}_{D}|&=\frac{2m}{4\pi \mu_{0} a^{2}}=\frac{m}{2\pi \mu_{0} a^{2}}\\
+	\boldsymbol{H}_{O}&=\frac{1}{4\pi \mu_{0}}\frac{-m}{\left(\left(-\frac{a}{2}\right)^{2}+\left(\frac{a}{2}\right)^{2}\right)^{3/2}} \left\{-\frac{a}{2}\boldsymbol{i}+\frac{a}{2}\boldsymbol{j}\right\}\\
+	&=\frac{1}{4\pi \mu_{0}}\frac{-m}{\frac{a^{2}}{2\sqrt{2}}} \left\{-\frac{a}{2}\boldsymbol{i}+\frac{a}{2}\boldsymbol{j}\right\}\\
+	&=\frac{-m\sqrt{2}}{4\pi \mu_{0}a^{2}}(-\boldsymbol{i}+\boldsymbol{j})\,[\rm{A/m}]\\
+	\boldsymbol{H}_{B}&=\frac{1}{4\pi \mu_{0}}\frac{m}{\left(a^{2} \right)^{3/2}}a\boldsymbol{j}\\
+	&=\frac{m}{4\pi \mu_{0}a^{2}}\boldsymbol{j}\,[\rm{A/m}]\\
+	\boldsymbol{H}_{C}&=\frac{1}{4\pi \mu_{0}}\frac{-3m}{\left((-a)^{2}+a^{2} \right)^{3/2}}\left\{ -a \boldsymbol{i}+a\boldsymbol{j}\right\}\\
+	&=\frac{-3m}{8\sqrt{2} \pi \mu_{0} a^{2}}\left( -\boldsymbol{i}+\boldsymbol{j}\right)\,[\rm{A/m}]\\
+	\boldsymbol{H}_{D}&=\frac{1}{4\pi \mu_{0}}\frac{2m}{\left((-a)^{2} \right)^{3/2}}\left(-a\boldsymbol{i}\right)\\
+	&=-\frac{m}{2\pi \mu_{0}a^{2}}\boldsymbol{i}\,[\rm{A/m}]\\
 	\boldsymbol{H}_{A}&=\boldsymbol{H}_{O}+\boldsymbol{H}_{B}+\boldsymbol{H}_{C}+\boldsymbol{H}_{D}\\
-	%&=\frac{m}{2\pi \mu_{0} a^{2}}\left(-1+\frac{1}{2}-\frac{3}{4}\right)\\
-	%&=\frac{m}{2\pi \mu_{0} a^{2}}\left(-\frac{5}{4}\right)\\
-	%&=-\frac{5m}{8\pi \mu_{0} a^{2}}\,[\rm{A/m}]
+	&=\frac{m}{2\pi \mu_{0}a^{2}}\left\{\left(\frac{\sqrt{2}}{2}+\frac{3}{4\sqrt{2}}-1\right)\boldsymbol{i}+\left(-\frac{\sqrt{2}}{2}+\frac{1}{2}-\frac{3}{4\sqrt{2}}\right)\boldsymbol{j} \right\}\\
+	&=\frac{m}{16\pi \mu_{0}a^{2}}\left\{\left(7\sqrt{2}-8\right)\boldsymbol{i}+\left(4-7\sqrt{2}\right)\boldsymbol{j} \right\}\\
+	&=\frac{m}{16\pi \mu_{0}a^{2}}\sqrt{(7\sqrt{2}-8)^{2}+(4-7\sqrt{2})^{2}}\\
+	&=\frac{m}{16\pi \mu_{0}a^{2}}\sqrt{(7\sqrt{2}-8)^{2}+(4-7\sqrt{2})^{2}}
 \end{align*}
 
 \section{真空中に単磁荷$m$が存在する．ただし$m<0$とする．このとき以下の問いに答えよ．}
@@ -82,9 +88,10 @@
 		\boldsymbol{M}&=m\boldsymbol{l}\\
 		&=ml\boldsymbol{i}\,[\rm{Wb\cdot m}]
 	\end{align*}
-	\item 点Pが原点Oより十分遠方にあると仮定すると，$\sqrt{(x_{0}-l/2)^{2}+y_{0}^{2}}\simeq \sqrt{x_{0}^{2}-y_{0}^{2}}$及び$\sqrt{(x_{0}+l/2)^{2}+y_{0}^{2}} \simeq \sqrt{x_{0}^{2}+y_{0}^{2}}$と近似できる．このことを用いて(c)にて得た磁界$\boldsymbol{H}$を簡略化せよ．
+	\item 点Pが原点Oより十分遠方にあると仮定すると，$\sqrt{(x_{0}-l/2)^{2}+y_{0}^{2}}\simeq \sqrt{x_{0}^{2}+y_{0}^{2}}$及び$\sqrt{(x_{0}+l/2)^{2}+y_{0}^{2}} \simeq \sqrt{x_{0}^{2}+y_{0}^{2}}$と近似できる．このことを用いて(c)にて得た磁界$\boldsymbol{H}$を簡略化せよ．
 	\begin{align*}
-		\boldsymbol{H}&\simeq -\frac{1}{4\pi \mu_{0}}\frac{m}{\left(x_{0}^{2}+y_{0}^{2}\right)^{3/2}} \boldsymbol{i}\,[\rm{A/m}]
+		\boldsymbol{H}&\simeq -\frac{1}{4\pi \mu_{0}}\frac{ml}{\left(x_{0}^{2}+y_{0}^{2}\right)^{3/2}} \boldsymbol{i}\,[\rm{A/m}]\\
+		&\left(=-\frac{\boldsymbol{M}}{4\pi \mu_{0}r^{3}}\,[\rm{A/m}]\right)
 	\end{align*}
 	\item $y$方向に一様な磁界$\boldsymbol{H}_{0}$が存在するとき，磁気双極子にはたらくトルク$T$を求めよ．
 	\begin{align*}
