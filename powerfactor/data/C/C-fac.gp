@@ -106,9 +106,9 @@ set mcbtics default
 set mrtics default
 set nomttics
 set xtics border in scale 1,0.5 mirror norotate  autojustify
-set xtics  norangelimit autofreq  font "Arial,11"
+set xtics  norangelimit autofreq  font "Times New Roman,15"
 set ytics border in scale 1,0.5 mirror norotate  autojustify
-set ytics  norangelimit autofreq  font "Arial,11"
+set ytics  norangelimit autofreq  font "Times New Roman,15"
 set ztics border in scale 1,0.5 nomirror norotate  autojustify
 set ztics  norangelimit autofreq  font "Arial,11"
 unset x2tics
@@ -126,17 +126,17 @@ set timestamp  font "" textcolor lt -1 norotate
 set trange [ * : * ] noreverse nowriteback
 set urange [ * : * ] noreverse nowriteback
 set vrange [ * : * ] noreverse nowriteback
-set xlabel "Factor[-]" 
-set xlabel  font "Arial,16" textcolor lt -1 norotate
+set xlabel "Power Factor [-]" 
+set xlabel  font "Times New Roman,20" textcolor lt -1 norotate
 set x2label "" 
 set x2label  font "" textcolor lt -1 norotate
-set xrange [ 0.200000 : 1.00000 ] noreverse writeback
-set x2range [ 0.240000 : 0.998000 ] noreverse writeback
-set ylabel "Power P_a [W]" 
-set ylabel  font "Arial,16" textcolor lt -1 rotate
+set xrange [ 0.00000 : 1.00000 ] noreverse writeback
+set x2range [ * : * ] noreverse writeback
+set ylabel "{/Roman-Italic {Power P_a [W]}}" 
+set ylabel  font "Times New Roman,20" textcolor lt -1 rotate
 set y2label "" 
 set y2label  font "" textcolor lt -1 rotate
-set yrange [ 60.0000 : 660.000 ] noreverse writeback
+set yrange [ 0.00000 : 600.000 ] noreverse writeback
 set y2range [ * : * ] noreverse writeback
 set zlabel "" 
 set zlabel  font "" textcolor lt -1 norotate
@@ -200,5 +200,4 @@ i_err = 41.3257706847874
 j_err = 28.3923624052809
 ## Last datafile plotted: "C-fac.txt"
 plot "C-fac.txt" u 1:2 title "I=1" lc "red", "C-fac.txt" u 3:4 title "I=2" lc "blue" , "C-fac.txt" u 5:6 title "I=3" lc "purple" ,"C-fac.txt" u 7:8 title "I=4" lc "green" ,"C-fac.txt" u 9:10 title "I=5" lc "black", a*x+b lc "red" notitle,c*x+d lc "blue" notitle , e*x+f lc "purple" notitle ,g*x+h lc "green" notitle , i*x+j lc "black" notitle
-## fit i*x+j "C-fac.txt" u 9:10 via i,j
 #    EOF

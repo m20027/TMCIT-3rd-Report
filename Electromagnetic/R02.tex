@@ -39,15 +39,26 @@
 	&=\frac{m^{2}}{16\pi \mu_{0}a^{2}}\left\{-\sqrt{2}\boldsymbol{i}+\left(4+\sqrt{2}\right)\boldsymbol{j} \right\}\,[\rm{N}]\\
 	|\boldsymbol{F}_{A}|&=\frac{m^{2}}{16\pi \mu_{0}a^{2}}\sqrt{2+16+8\sqrt{2}+2}\\
 	&=\frac{m^{2}}{16\pi \mu_{0}a^{2}}\sqrt{20+8\sqrt{2}}\\
-	&=\frac{m^{2}}{8\pi \mu_{0}a^{2}}\sqrt{5+2\sqrt{2}}\,[\rm{A/m}]\quad 左斜め上向き
+	&=\frac{m^{2}}{8\pi \mu_{0}a^{2}}\sqrt{5+2\sqrt{2}}\,[\rm{N}]\quad 左斜め上向き
 	\end{align*}
 	\item 直角三角形ABCの内接円の半径$r$を求めよ．
 	\begin{align*}
 		r&=\frac{2S}{|AB|+|BC|+|AC|}\\
-		&=\frac{2\cdot \frac{1}{2}a^{2}}{a+a+a\sqrt{2}}
+		&=\frac{2\cdot \frac{1}{2}a^{2}}{a+a+a\sqrt{2}}\\
+		&=\frac{a^{2}}{2a+a\sqrt{2}}\\
+		&=\frac{a}{4-2}(2-\sqrt{2})\\
+		&=\frac{2-\sqrt{2}}{2}a
 	\end{align*}
 	\item 頂点Aに存在する点磁荷が直角三角形ABCの内心につくる磁界$H_{A}$を求めよ．
 	\begin{align*}
+		\boldsymbol{H}_{A}&=\frac{1}{4\pi \mu_{0}}\frac{m}{\left(\left(\frac{2-\sqrt{2}}{2}a\right)^{2}+\left(\frac{2-\sqrt{2}}{2}a-a\right)^{2}\right)^{3/2}} \left\{\frac{2-\sqrt{2}}{2}a\boldsymbol{i}+\left(\frac{2-\sqrt{2}}{2}a-a\right)\boldsymbol{j}\right\}\\
+		&=\frac{1}{4\pi \mu_{0}a^{2}}\frac{m}{\left(\left(\frac{2-\sqrt{2}}{2}\right)^{2}+\left(\frac{2-\sqrt{2}}{2}-1\right)^{2}\right)^{3/2}} \left\{\frac{2-\sqrt{2}}{2}\boldsymbol{i}+\left(\frac{2-\sqrt{2}}{2}-1\right)\boldsymbol{j}\right\}\,[\rm{A/m}]\\
+		|\boldsymbol{H}_{A}|&=\frac{1}{4\pi \mu_{0}a^{2}}\frac{m}{\left(\left(\frac{2-\sqrt{2}}{2}\right)^{2}+\left(\frac{2-\sqrt{2}}{2}-1\right)^{2}\right)^{3/2}}\sqrt{\left(\frac{2-\sqrt{2}}{2}\right)^{2}+\left(\frac{2-\sqrt{2}}{2}-1\right)^{2}}\\
+		&=\frac{1}{4\pi \mu_{0}a^{2}}\frac{m}{\left(\left(\frac{2-\sqrt{2}}{2}\right)^{2}+\left(\frac{2-\sqrt{2}}{2}-1\right)^{2}\right)^{3/2}}\sqrt{2\left(\frac{4-4\sqrt{2}+2}{4}\right)-(2-\sqrt{2})+1}\\
+		&=\frac{1}{4\pi \mu_{0}a^{2}}\frac{m}{\left(\left(\frac{2-\sqrt{2}}{2}\right)^{2}+\left(\frac{2-\sqrt{2}}{2}-1\right)^{2}\right)^{3/2}}\sqrt{2\left(\frac{2-2\sqrt{2}+1}{2}\right)-(2-\sqrt{2})+1}\\
+		&=\frac{1}{4\pi \mu_{0}a^{2}}\frac{m}{\left(\left(\frac{2-\sqrt{2}}{2}\right)^{2}+\left(\frac{2-\sqrt{2}}{2}-1\right)^{2}\right)^{3/2}}\sqrt{2-2\sqrt{2}+1-(2-\sqrt{2})+1}\\
+		&=\frac{1}{4\pi \mu_{0}a^{2}}\frac{m}{\left(\left(\frac{2-\sqrt{2}}{2}\right)^{2}+\left(\frac{2-\sqrt{2}}{2}-1\right)^{2}\right)^{3/2}}\sqrt{2-\sqrt{2}}\\
+		&=\frac{1}{4\pi \mu_{0}a^{2}}\frac{m}{2-\sqrt{2}}\,[\rm{A/m}]
 	\end{align*}
 \end{enumerate}
 
@@ -55,36 +66,54 @@
 \begin{enumerate}[(a)]
 	\item 点Aに存在する磁荷$-m$が点P$(x_0,y_0)$に作る磁界$H_{1}$を求めよ．また，$H_{1}$を$x$方向成分$H_{x1}$と$y$方向成分$H_{y1}$に分解せよ．
 	\begin{align*}
-		%\boldsymbol{H}_{1}&=\frac{1}{4\pi \mu_{0}}\frac{-m}{\left(\left(x_{0}+\frac{l}{2}\right)^{2}+y_{0}^{2}\right)^{3/2}} \left\{ \left(x_{0}+\frac{l}{2}\right)\boldsymbol{i}+y_{0}\boldsymbol{j}\right\}\,[\rm{A/m}]
+		\boldsymbol{H}_{1}&=\frac{1}{4\pi \mu_{0}}\frac{-m}{\left(\left(x_{0}+\frac{l}{2}\right)^{2}+y_{0}^{2}\right)^{3/2}} \left\{ \left(x_{0}+\frac{l}{2}\right)\boldsymbol{i}+y_{0}\boldsymbol{j}\right\}\,[\rm{A/m}]\\
+		|\boldsymbol{H}_{1}|&=\frac{1}{4\pi \mu_{0}}\frac{m}{\left(x_{0}+\frac{l}{2}\right)^{2}+y_{0}^{2}}\,[\rm{A/m}] \\
+		|\boldsymbol{H}_{x1}|&=\frac{1}{4\pi \mu_{0}}\frac{m}{\left(\left(x_{0}+\frac{l}{2}\right)^{2}+y_{0}^{2}\right)^{3/2}}\left(x_{0}+\frac{l}{2}\right) \,[\rm{A/m}] \quad x軸上方向\\
+		|\boldsymbol{H}_{y1}|&=\frac{1}{4\pi \mu_{0}}\frac{m}{\left(\left(x_{0}+\frac{l}{2}\right)^{2}+y_{0}^{2}\right)^{3/2}}\,y_{0}\,[\rm{A/m}] \quad y軸下方向
 	\end{align*}
 	\item 点Bに存在する磁荷$+m$が点P$(x_0,y_0)$に作る磁界$H_{2}$を求めよ．また，$H_{2}$を$x$方向成分$H_{x2}$と$y$方向成分$H_{y2}$に分解せよ．
 	\begin{align*}
-		%\boldsymbol{H}_{2}&=\frac{1}{4\pi \mu_{0}}\frac{m}{\left(\left(x_{0}-\frac{l}{2}\right)^{2}+y_{0}^{2}\right)^{3/2}} \left\{ \left(x_{0}-\frac{l}{2}\right)\boldsymbol{i}+y_{0}\boldsymbol{j}\right\}\,[\rm{A/m}]
+		\boldsymbol{H}_{2}&=\frac{1}{4\pi \mu_{0}}\frac{m}{\left(\left(x_{0}-\frac{l}{2}\right)^{2}+y_{0}^{2}\right)^{3/2}} \left\{ \left(x_{0}-\frac{l}{2}\right)\boldsymbol{i}+y_{0}\boldsymbol{j}\right\}\,[\rm{A/m}]\\
+		|\boldsymbol{H}_{2}|&=\frac{1}{4\pi \mu_{0}}\frac{m}{\left(x_{0}-\frac{l}{2}\right)^{2}+y_{0}^{2}}\,[\rm{A/m}] \\
+		|\boldsymbol{H}_{x2}|&=\frac{1}{4\pi \mu_{0}}\frac{m}{\left(\left(x_{0}-\frac{l}{2}\right)^{2}+y_{0}^{2}\right)^{3/2}}\left(x_{0}-\frac{l}{2}\right) \,[\rm{A/m}] \quad x軸正方向\\
+		|\boldsymbol{H}_{y2}|&=\frac{1}{4\pi \mu_{0}}\frac{m}{\left(\left(x_{0}-\frac{l}{2}\right)^{2}+y_{0}^{2}\right)^{3/2}}\,y_{0}\,[\rm{A/m}] \quad y軸正方向
 	\end{align*}
 	\item 点Pでの磁界$H$の$x$方向成分$H_{x}$と$y$方向成分$H_{y}$をそれぞれ求めよ．
 	\begin{align*}
-		%\boldsymbol{H}&=\boldsymbol{H}_{1}+\boldsymbol{H}_{2}\\
-		%&=\frac{m}{4\pi \mu_{0}}\left[\frac{-1}{\left(\left(x_{0}+\frac{l}{2}\right)^{2}+y_{0}^{2}\right)^{3/2}} \left\{ \left(x_{0}+\frac{l}{2}\right)\boldsymbol{i}+y_{0}\boldsymbol{j}\right\}+\frac{1}{\left(\left(x_{0}-\frac{l}{2}\right)^{2}+y_{0}^{2}\right)^{3/2}} \left\{ \left(x_{0}-\frac{l}{2}\right)\boldsymbol{i}+y_{0}\boldsymbol{j}\right\}\right]\,[\rm{A/m}]
+		|\boldsymbol{H}_{x}|&=|\boldsymbol{H}_{x1}|+|\boldsymbol{H}_{x2}|\\
+		&=\frac{m}{4\pi \mu_{0}}\left\{\frac{1}{\left(\left(x_{0}-\frac{l}{2}\right)^{2}+y_{0}^{2}\right)^{3/2}}\left(x_{0}-\frac{l}{2}\right)-\frac{1}{\left(\left(x_{0}+\frac{l}{2}\right)^{2}+y_{0}^{2}\right)^{3/2}}\left(x_{0}+\frac{l}{2}\right)\right\}\,[\rm{A/m}]\\
+		|\boldsymbol{H}_{y}|&=|\boldsymbol{H}_{y1}|+|\boldsymbol{H}_{y2}|\\
+		&=\frac{m}{4\pi \mu_{0}}y_{0}\left\{\frac{1}{\left(\left(x_{0}-\frac{l}{2}\right)^{2}+y_{0}^{2}\right)^{3/2}}-\frac{1}{\left(\left(x_{0}+\frac{l}{2}\right)^{2}+y_{0}^{2}\right)^{3/2}}\right\}\,[\rm{A/m}]
 	\end{align*}
 	\item 磁気双極子モーメント$\boldsymbol{M}$の大きさと方向を求めよ．
 	\begin{align*}
-		%\boldsymbol{M}&=m\boldsymbol{l}\\
-		%&=ml\boldsymbol{i}\,[\rm{Wb\cdot m}]
+		\boldsymbol{M}&=m\boldsymbol{l}\\
+		&=ml\boldsymbol{i}\,[\rm{Wb\cdot m}]\\
+		|\boldsymbol{M}|&=ml\,[\rm{Wb\cdot m}]\quad x軸正方向
 	\end{align*}
 	\item 点Pが原点Oより十分遠方にあると仮定すると，$\sqrt{(x_{0}-l/2)^{2}+y_{0}^{2}}\simeq \sqrt{x_{0}^{2}+y_{0}^{2}}$及び$\sqrt{(x_{0}+l/2)^{2}+y_{0}^{2}} \simeq \sqrt{x_{0}^{2}+y_{0}^{2}}$と近似できる．このことを用いて(c)にて得た磁界$H_{x}$及び$H_{y}$を簡略化せよ．
 	\begin{align*}
-		%\boldsymbol{H}&\simeq -\frac{1}{4\pi \mu_{0}}\frac{m}{\left(x_{0}^{2}+y_{0}^{2}\right)^{3/2}} \boldsymbol{i}\,[\rm{A/m}]
+		|\boldsymbol{H}_{x}|&\simeq \frac{ml}{4\pi \mu_{0}\left(x_{0}^{2}+y_{0}^{2}\right)^{3/2}}\,[\rm{A/m}] \quad x軸左方向\\
+		|\boldsymbol{H}_{y}|&\simeq 0\,[\rm{A/m}]
 	\end{align*}
 	\item $y$方向に一様な磁界$\boldsymbol{H}_{0}$が存在するとき，磁気双極子にはたらくトルク$T$を求めよ．
 	\begin{align*}
 		\boldsymbol{T}&=\boldsymbol{M}H_{0}\sin \theta \\
-		&=ml\boldsymbol{i}\sin \frac{\pi}{2}\\
-		&=ml\boldsymbol{i}\\
-		|\boldsymbol{T}|&=ml\,[\rm{Wb\cdot m}]
+		&=ml\boldsymbol{i}H_0\sin \frac{\pi}{2}\\
+		&=mlH_{0}\boldsymbol{i}\\
+		|\boldsymbol{T}|&=mlH_{0}\,[\rm{Wb\cdot m}]
 	\end{align*}
 \end{enumerate}
 
 \section{磁化されていない強磁性体に磁界$H$を外部から印加し，強磁性体内部での磁束密度$B$を観測すると，図3に示すような結果が得られた．このとき，図中の行程1:点$\rm{O}\to$点$\rm{P_{1}}$，行程 2:点$\rm{P_{1}}\to$点$\rm{P_{2}}$，行程3:点$\rm{P_{2}}\to$点$\rm{P_{3}}$，行程4:点$\rm{P_{3}}\to$点P4，行程5:点P4 $\to$点$\rm{P_{5}}$， 行程6:点$\rm{P_{5}}\to$点P6，行程7:点$\rm{P_{6}}\to$点P1の7つの行程に着目して，測定結果を説明せよ．}
 
 \section{強磁性体，弱磁性体，常磁性体，反磁性体の4つの磁性体の性質を，「比透磁率$\mu_{s}$」と「磁化率$\chi$」という2つの語句を両方用いて説明せよ．}
+強磁性体は磁化率$\chi$が0よりかなり大きく，透磁率$\mu_{s}$が1よりかなり大きい磁化されやすい磁性体を指す．そのため，印加した磁界と同じ方向に磁化され，その大きさも大きい．
+
+弱磁性体は磁化率$\chi$が0より大きく，透磁率$\mu_{s}$より小さい磁性体である．
+
+常磁性体は磁化率$\chi$が0より大きく，透磁率$\mu_{s}$は1未満の磁性体を指す．そのため，印加した磁界と同じ方向に磁化され，その大きさは大きくない．
+
+反磁性体は磁化率$\chi$が0より小さく，透磁率$\mu_{s}$が1より小さい磁性体を指す．そのため，印加した磁界と逆方向に磁化され，その大きさは小さい．
+
 \end{document}

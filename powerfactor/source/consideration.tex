@@ -7,10 +7,10 @@
 	どちらの場合においても，力率が$1.0$に近づくほど全体的に多くの電力が得られていることがわかる．また，力率による電力への影響は電流が大きい場合であるほど大きくなっている．
 	\begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.51]{./data/L/L.pdf}
+	\includegraphics[scale=0.7]{./data/L/L.pdf}
 	\caption{$X_L$の電流-電力特性}
 	\label{fig:L}
-	\includegraphics[scale=0.51]{./data/C/C.pdf}
+	\includegraphics[scale=0.7]{./data/C/C.pdf}
 	\caption{$X_C$の電流-電力特性}
 	\label{fig:C}
 	\end{figure}
@@ -20,10 +20,10 @@
 	\wfig{L-fac}，\wfig{C-fac}それぞれ近似直線と共に力率-電力特性を示す．
 	\begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.51]{./data/L/L-fac.pdf}
+	\includegraphics[scale=0.7]{./data/L/L-fac.pdf}
 	\caption{$X_L$の力率-電力特性}
 	\label{fig:L-fac}
-	\includegraphics[scale=0.51]{./data/C/C-fac.pdf}
+	\includegraphics[scale=0.7]{./data/C/C-fac.pdf}
 	\caption{$X_C$の力率-電力特性}
 	\label{fig:C-fac}
 	\end{figure}
@@ -46,14 +46,14 @@
 	\label{tab:seido1}
 	\begin{tabular}{ccc}
 	\hline
-	電流$[\rm{A}]$  & 電力計での相対$\varepsilon$[-]    & 低力率用電力計での相対誤差$\varepsilon$[-]       \\
+	電流$[\rm{A}]$  & 電力計での相対誤差$\varepsilon$[-]    & 低力率用電力計での相対誤差$\varepsilon$[-]       \\
 	\hline
-	1   & 21.50125 & 20.95919 \\
-	2   & 19.04878 & 17.03079 \\
-	3   & 16.12260 & 16.03871 \\
-	4   & 15.40533 & 16.32684 \\
+	1   & 21.501 & 20.960 \\
+	2   & 19.049 & 17.031 \\
+	3   & 16.123 & 16.039 \\
+	4   & 15.405 & 16.327 \\
 	\hline\hline
-	平均値 & 18.01949 & 17.58888\\
+	平均値 & 18.020 & 17.589\\
 	\hline
 	\end{tabular}
 	\centering
@@ -63,12 +63,12 @@
 	\hline
 	電流$[\rm{A}]$  & 電力計での相対誤差$\varepsilon$[-]    & 低力率用電力計での相対誤差$\varepsilon$[-]       \\
 	\hline
-	1   & 12.39873 & 10.12687 \\
-	2   & 0.86269  & 1.57673  \\
-	3   & 3.80776  & 0.75514  \\
-	4   & 5.03451  & 0.50081  \\
+	1   & 12.399 & 10.127 \\
+	2   & 0.863  & 1.577  \\
+	3   & 3.808  & 0.755  \\
+	4   & 5.035  & 0.501  \\
 	\hline\hline
-	平均値 & 5.52592  & 3.23988\\
+	平均値 & 5.526  & 3.240\\
 	\hline
 	\end{tabular}
 	\end{table}
@@ -77,7 +77,7 @@
 	近年では，単純にリアクタンスの値を調節して力率調整を行うだけでなく，制御方法を工夫することもある．ここではその一例である，無効電力補償制御について述べる．
 	この制御方法はPWMパターンの位相制御を行うフィードバックを付加したものなどがある\cite{2021}．
 	
-	RWM(Pulse Width Modulation)とは，半導体を使った電力を制御する制御方法の1つ．
+	PWM(Pulse Width Modulation)とは，半導体を使った電力を制御する制御方法の1つ．
 	オンとオフの繰り返しスイッチングを行い，出力される電力を制御する．
 	一定電圧の入力から，パルス列のオンとオフの一定周期を作り，オンの時間幅を変化させる電力制御方法である．そのため，早い周期でスイッチングを行うことで，オンのパルス幅に比例した任意の電圧が得られる．これは半導体がオンとオフ状態が最も損失が少ない(中間状態は損失が多い)ことを利用した電力制御方法．
 	PWMは，優れた制御性と，高効率が特徴で，インバーター回路(直流電流を交流電流に変換する回路)で広く回路で広く使われている技術である．ブラシ付きDCモータの回転制御にも使われている．

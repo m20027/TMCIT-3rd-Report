@@ -126,14 +126,14 @@ set timestamp  font "" textcolor lt -1 norotate
 set trange [ * : * ] noreverse nowriteback
 set urange [ * : * ] noreverse nowriteback
 set vrange [ * : * ] noreverse nowriteback
-set xlabel "Factor[-]" 
-set xlabel  font "Arial,16" textcolor lt -1 norotate
+set xlabel "Power Factor [-]" 
+set xlabel  font "Times New Roman,20" textcolor lt -1 norotate
 set x2label "" 
 set x2label  font "" textcolor lt -1 norotate
 set xrange [ * : * ] noreverse writeback
 set x2range [ * : * ] noreverse writeback
 set ylabel "Power P_a [W]" 
-set ylabel  font "Arial,16" textcolor lt -1 rotate
+set ylabel  font "Times New Roman,20" textcolor lt -1 rotate
 set y2label "" 
 set y2label  font "" textcolor lt -1 rotate
 set yrange [ * : * ] noreverse writeback
@@ -195,8 +195,10 @@ h = -24.1661423798834
 g_err = 1.14736010896113
 h_err = 0.786382405343038
 i = 526.02108249635
-j = -25.7025705188744
+l = 17.1551691207454
 i_err = 3.55743966752301
+l_err = 1.49366430684358
+j = -25.7025705188744
 j_err = 2.42278774969971
 ## Last datafile plotted: "L-fac.txt"
 plot "L-fac.txt" u 1:2 title "I=1" lc "red", "L-fac.txt" u 3:4 title "I=2" lc "blue", "L-fac.txt" u 5:6 title "I=3" lc "purple", "L-fac.txt" u 7:8 title "I=4" lc "green", "L-fac.txt" u 9:10 title "I=5" lc "black" ,a*x+b lc "red" notitle ,c*x+d lc "blue" notitle ,e*x+f lc "purple" notitle , g*x+h lc "green" notitle ,i*x+j lc "black" notitle

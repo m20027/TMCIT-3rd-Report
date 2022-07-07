@@ -46,7 +46,7 @@ unset raxis
 set theta counterclockwise right
 set style parallel front  lt black linewidth 2.000 dashtype solid
 set key notitle
-set key fixed left top vertical Right noreverse enhanced autotitle nobox
+set key fixed left top vertical Right noreverse enhanced autotitle nobox font "Arial,16"
 set key noinvert samplen 4 spacing 1 width 0 height 0 
 set key maxcolumns 0 maxrows 0
 set key noopaque
@@ -106,17 +106,17 @@ set mcbtics default
 set mrtics default
 set nomttics
 set xtics border in scale 1,0.5 mirror norotate  autojustify
-set xtics  norangelimit autofreq 
+set xtics  norangelimit 0.500000,1,5.00000 font "Arial,11"
 set ytics border in scale 1,0.5 mirror norotate  autojustify
-set ytics  norangelimit autofreq 
+set ytics  norangelimit 50.0000,100,500.000 font "Arial,11"
 set ztics border in scale 1,0.5 nomirror norotate  autojustify
-set ztics  norangelimit autofreq 
+set ztics  norangelimit autofreq  font "Arial,11"
 unset x2tics
 unset y2tics
 set cbtics border in scale 1,0.5 mirror norotate  autojustify
-set cbtics  norangelimit autofreq 
+set cbtics  norangelimit autofreq  font "Arial,11"
 set rtics axis in scale 1,0.5 nomirror norotate  autojustify
-set rtics  norangelimit autofreq 
+set rtics  norangelimit autofreq  font "Arial,11"
 unset ttics
 set title "" 
 set title  font "" textcolor lt -1 norotate
@@ -126,17 +126,17 @@ set timestamp  font "" textcolor lt -1 norotate
 set trange [ * : * ] noreverse nowriteback
 set urange [ * : * ] noreverse nowriteback
 set vrange [ * : * ] noreverse nowriteback
-set xlabel "Current I[A]" 
-set xlabel  font "" textcolor lt -1 norotate
+set xlabel "{/Roman-Italic {Current I [A]}}" 
+set xlabel  font "Times New Roman,20" textcolor lt -1 norotate
 set x2label "" 
 set x2label  font "" textcolor lt -1 norotate
-set xrange [ * : * ] noreverse writeback
+set xrange [ 0.00000 : 5.00000 ] noreverse writeback
 set x2range [ * : * ] noreverse writeback
-set ylabel "Power P_a [W]" 
-set ylabel  font "" textcolor lt -1 rotate
+set ylabel "{/Roman-Italic {Power P_a [W]}}" 
+set ylabel  font "Times New Roman,20" textcolor lt -1 rotate
 set y2label "" 
 set y2label  font "" textcolor lt -1 rotate
-set yrange [ * : * ] noreverse writeback
+set yrange [ 0.00000 : 500.000 ] noreverse writeback
 set y2range [ * : * ] noreverse writeback
 set zlabel "" 
 set zlabel  font "" textcolor lt -1 norotate
@@ -199,11 +199,5 @@ l = 17.1551691207454
 i_err = 0.449126992508517
 l_err = 1.49366430684358
 ## Last datafile plotted: "data02-L.txt"
-
-set key font "Arial,16"
-set tics font "Arial,11"
-set xlabel font "Arial,16"
-set ylabel font "Arial,16"
-
 plot "data1-L.txt" u 1:3 title "factor=1.0" lc "green", "data08-L.txt" u 1:3 title "factor=0.8" lc "red", "data06-L.txt" u 1:3 title "factor=0.6" lc "blue", "data04-L.txt" u 1:3 title "factor=0.4" lc "black", "data02-L.txt" u 1:3 title "factor=0.2" lc "purple", a*x+b notitle lc "green",c*x+d notitle lc "red", e*x+f notitle lc "blue" ,g*x+h notitle lc "black",i*x+l notitle lc "purple"
 #    EOF
