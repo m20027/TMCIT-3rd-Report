@@ -132,8 +132,8 @@ set x2label ""
 set x2label  font "" textcolor lt -1 norotate
 set xrange [ 0.00000 : 5.00000 ] noreverse writeback
 set x2range [ * : * ] noreverse writeback
-set ylabel "{/Roman-Italic {Power P_a [W]}}" 
-set ylabel  font "Times New Roman,20" textcolor lt -1 rotate
+set ylabel "Power P_a [W]" 
+set ylabel  offset character -3, 0, 0 font "Times New Roman,20" textcolor lt -1 rotate
 set y2label "" 
 set y2label  font "" textcolor lt -1 rotate
 set yrange [ 0.00000 : 500.000 ] noreverse writeback
@@ -150,10 +150,10 @@ set rrange [ * : * ] noreverse writeback
 unset logscale
 unset jitter
 set zero 1e-08
-set lmargin  -1
-set bmargin  -1
-set rmargin  -1
-set tmargin  -1
+set lmargin at screen 0.1
+set bmargin at screen 0.1
+set rmargin at screen 0.97
+set tmargin at screen 0.95
 set locale "ja_JP.UTF-8"
 set pm3d explicit at s
 set pm3d scansautomatic
