@@ -2,11 +2,13 @@
 \usepackage{eee}
 
 \begin{document}
-\title{平成29年　電磁気学II　第1回小テスト}
+\title{平成29年　電磁気学II}
 \date{}
 \author{大山主朗}
 
 \maketitle
+
+\section*{平成29年　電磁気学II　第1回小テスト}
 
 \section{以下の(a)及び(d)に示す物理定数は電磁気学を修めた者であれば常識的に覚えていなければならない数値である．それぞれの値を示せ．}
 \begin{enumerate}[(a)]
@@ -18,15 +20,15 @@
 
 \section{一辺の長さ$a$の正方形がある．点Aに$+q[\rm{C}]$，点Bに$+2q[\rm{C}]$，点Cに$−3q[\rm{C}]$，点Dに$−4q[\rm{C}]$，が点Oに$5q[\rm{C}]$の点電荷が存在するとき，点Oにある電荷にはたらく力$F$の大きさを求めよ．ただし，$q>0$とする．}
 \begin{align*}
-	\boldsymbol{F}_{A}&=\frac{5q^{2}}{4\pi \varepsilon_{0} \left(\frac{a^{2}}{2^{2}}+\frac{a^{2}}{2^{2}}\right)^{3/2}}\left(\frac{a}{2}\boldsymbol{i}-\frac{a}{2}\boldsymbol{j}\right)\\
-	\boldsymbol{F}_{B}&=\frac{2q^{2}}{4\pi \varepsilon_{0} \left(\frac{a^{2}}{2^{2}}+\frac{a^{2}}{2^{2}}\right)^{3/2}}\left(\frac{a}{2}\boldsymbol{i}+\frac{a}{2}\boldsymbol{j}\right)\\
-	\boldsymbol{F}_{C}&=\frac{-3q^{2}}{4\pi \varepsilon_{0} \left(\frac{a^{2}}{2^{2}}+\frac{a^{2}}{2^{2}}\right)^{3/2}}\left(-\frac{a}{2}\boldsymbol{i}-\frac{a}{2}\boldsymbol{j}\right)\\
-	\boldsymbol{F}_{D}&=\frac{-4q^{2}}{4\pi \varepsilon_{0} \left(\frac{a^{2}}{2^{2}}+\frac{a^{2}}{2^{2}}\right)^{3/2}}\left(-\frac{a}{2}\boldsymbol{i}+\frac{a}{2}\boldsymbol{j}\right)\\
+	\boldsymbol{F}_{A}&=\frac{1}{4\pi \varepsilon_{0}}\frac{5q^2}{\left(\left(\frac{a}{2}\right)^{2}+\left(-\frac{a}{2}\right)^{2}\right)^{3/2}} \left\{\frac{a}{2}\boldsymbol{i}-\frac{a}{2}\boldsymbol{j}\right\}\\
+	\boldsymbol{F}_{B}&=\frac{1}{4\pi \varepsilon_{0}}\frac{10q^2}{\left(\left(\frac{a}{2}\right)^{2}+\left(\frac{a}{2}\right)^{2}\right)^{3/2}} \left\{\frac{a}{2}\boldsymbol{i}+\frac{a}{2}\boldsymbol{j}\right\}\\
+	\boldsymbol{F}_{C}&=\frac{1}{4\pi \varepsilon_{0}}\frac{-15q^2}{\left(\left(-\frac{a}{2}\right)^{2}+\left(\frac{a}{2}\right)^{2}\right)^{3/2}} \left\{-\frac{a}{2}\boldsymbol{i}+\frac{a}{2}\boldsymbol{j}\right\}\\
+	\boldsymbol{F}_{D}&=\frac{1}{4\pi \varepsilon_{0}}\frac{-20q^2}{\left(\left(-\frac{a}{2}\right)^{2}+\left(-\frac{a}{2}\right)^{2}\right)^{3/2}} \left\{-\frac{a}{2}\boldsymbol{i}-\frac{a}{2}\boldsymbol{j}\right\}\\
 	\boldsymbol{F}&=\boldsymbol{F}_{A}+\boldsymbol{F}_{B}+\boldsymbol{F}_{C}+\boldsymbol{F}_{D}\\
-	&=\frac{q^{2}}{4\pi\varepsilon_{0}{ \left(\frac{a^{2}}{2^{2}}+\frac{a^{2}}{2^{2}}\right)^{3/2}}}\left\{\left(\frac{5}{2}a+a+\frac{3}{2}a+2a\right)\boldsymbol{i}+\left(-\frac{5}{2}a+a+\frac{3}{2}a-2a\right)\boldsymbol{j}\right\}\\
-	&=\frac{\sqrt{2}q^{2}}{2\pi\varepsilon_{0}a^{2}}\left(7\boldsymbol{i}-2\boldsymbol{j}\right)\\
-	|\boldsymbol{F}|&=\frac{\sqrt{2}q^{2}}{2\pi\varepsilon_{0}a^{2}}\sqrt{7^{2}+(-2)^{2}}\\
-	&=\frac{q^{2}}{2\pi\varepsilon_{0}a^{2}}\sqrt{106}\,[\rm{N}]
+	&=\frac{5q^{2}}{4\pi\varepsilon_{0}{ \left(\frac{a^{2}}{2^{2}}+\frac{a^{2}}{2^{2}}\right)^{3/2}}}\left\{\left(\frac{1}{2}a+a+\frac{3}{2}a+2a\right)\boldsymbol{i}+\left(-\frac{1}{2}a+a-\frac{3}{2}a+2a\right)\boldsymbol{j}\right\}\\
+	&=\frac{5\sqrt{2}q^{2}}{2\pi\varepsilon_{0}a^{2}}\left(5\boldsymbol{i}+\boldsymbol{j}\right)\\
+	|\boldsymbol{F}|&=\frac{\sqrt{2}q^{2}}{2\pi\varepsilon_{0}a^{2}}\sqrt{5^{2}+1}\\
+	&=\frac{5\sqrt{52}}{2\pi\varepsilon_{0}a^{2}}q^{2}\,[\rm{N}]
 \end{align*}
 
 \section{一辺の長さ$a$の正方形がある．点Bに$+m[\rm{Wb}]$，点Cに$−3m[\rm{Wb}]$，点D に $+2m [\rm{Wb}]$，点Oに $−m[\rm{Wb}]$の点磁荷が存在するとき，点Aにできる磁界$H$の大きさを求めよ．ただし，$m >0$とする．}
@@ -110,4 +112,87 @@
 常磁性体は磁化率が0より大きく，透磁率は1未満の磁性体を指す．そのため，磁界と同じ方向に磁化され，その大きさは大きくない．
 
 反磁性体は磁化率が0よりかなり小さく，透磁率が1よりかなり小さい磁性体を指す．そのため，磁界と逆方向に磁化され，その大きさは小さい．
+
+\clearpage
+\setcounter{section}{0}
+\section*{平成29年　電磁気学II　第2回小テスト}
+\section{以下の(a)及び(d)に示す物理定数は電磁気学を修めた者であれば常識的に覚えていなければならない数値である．それぞれの値を示せ．}
+\begin{enumerate}[(a)]
+	\item 真空の誘電率$\varepsilon_{0}:8.854 \times 10^{-12}\,\rm{F/m}$
+	\item 真空の透磁率$\mu_{0}:1.257 \times 10^{-6}\,\rm{H/m}$
+	\item 電子の電荷$e:-1.602 \times 10^{-19}\,\rm{C}$
+	\item 電子の静止質量$m:9.109\times 10^{-31}\,\rm{kg}$
+\end{enumerate}
+
+\section{$xyz$直角座標空間において，原点Oを含む$xy$平面に半径$a$の円形ループ電流$I$が流れている．このとき，原点Oに発生する磁界$\boldsymbol{H}$を求めよ．}
+\begin{align*}
+	ビオ・サバール&の法則を適用する．\\
+	\boldsymbol{H}&=\oint d\boldsymbol{H}\\
+	円周上に&線素ベクトルd\boldsymbol{l}をとる．\\
+	ここで円周上のどの点&でもd\boldsymbol{H}の向きが同じなので，\\
+	H&=\oint dH\\
+	&=\oint \frac{I\sin \theta }{4\pi r^{2}}dl\\
+	&=\frac{I\sin \frac{\pi}{2} }{4\pi r^{2}}\cdot 2\pi r\\
+	&=\frac{I}{2r}\\
+	&=\frac{I}{2a}\,[\rm{A/m}]\quad　上向き\\
+	\boldsymbol{H}&=\frac{I}{2a}\boldsymbol{k}\,[\rm{A/m}]
+\end{align*}
+
+\section{$xyz$直角座標空間において，原点Oを含む$xy$平面に半径$a$の円形ループ電流$I$が流れている．このとき，$z$軸上の点$\rm{P}(0, 0, h)$に発生する磁界$\boldsymbol{H}$を求めよ．}
+\begin{align*}
+	ビオ・サバール&の法則を適用する．\\
+	y>0に円周上の&微小磁界d\boldsymbol{H}_{1}を\\
+	y<0に円周上の&微小磁界d\boldsymbol{H}_{2}を考える．\\
+	またそれぞれの&線素ベクトルをd\boldsymbol{l}ととる．\\
+	ここで，d\boldsymbol{H}_{1}とd\boldsymbol{H}_{2}の外積より，&2つの磁界は打ち消される方向となっているため，\\
+	d\boldsymbol{H}_{1}とd\boldsymbol{H}_{2}を合成した&磁界をd\boldsymbol{H}とする．(\phi:d\boldsymbol{H}_{2}とd\boldsymbol{H}のなす角)\\
+	|d\boldsymbol{H}_{1}|=|d\boldsymbol{H}_{2}|&=\frac{Idl}{4\pi r^{2}}\sin \theta\\
+	&=\frac{Idl}{4\pi (a^{2}+h^{2})}\\
+	d\boldsymbol{H}&=2d\boldsymbol{H}_{1}\cos \phi\\
+	&=2d\boldsymbol{H}_{1}\frac{a}{r}\\
+	&=2d\boldsymbol{H}_{1}\frac{a}{\sqrt{a^{2}+h^{2}}}\\
+	|d\boldsymbol{H}|&=2|d\boldsymbol{H}_{1}|\frac{a}{\sqrt{a^{2}+h^{2}}}\\
+	&=\frac{aIdl}{2\pi (a^{2}+h^{2})^{3/2}}\\
+	\boldsymbol{H}&=\oint d\boldsymbol{H}_{1}\\
+	|\boldsymbol{H}|&=\frac{1}{2}\oint|d\boldsymbol{H}|\\
+	&=\frac{1}{2}\oint \frac{aIdl}{2\pi (a^{2}+h^{2})^{3/2}}\\
+	&=\frac{1}{2}\cdot \frac{aI}{2\pi (a^{2}+h^{2})^{3/2}} \cdot 2\pi a\\
+	&=\frac{a^{2}I}{2\pi (a^{2}+h^{2})^{3/2}}\,[\rm{A/m}]\quad 上向き\\
+	\boldsymbol{H}&=\frac{a^{2}I}{2\pi (a^{2}+h^{2})^{3/2}}\boldsymbol{k}\,[\rm{A/m}]
+\end{align*}
+
+\section{$xyz$直角座標空間において，$y$軸上の点$\rm{A}(0, c_{1}, 0)$から点$\rm{B}(0, c_{2}, 0)$まで$y$軸に沿って直線状に流れる電流$I$がある．このとき，$x$軸上の点$\rm{P}(a, 0, 0)$に発生する磁界$\boldsymbol{H}$を求めよ．また，電流$I$の始点 Aと終点Bの座標がそれぞれ$(0, -\infty, 0), (0, \infty, 0)$となった場合の点$\rm{P}$に発生する磁界$\boldsymbol{H}$を求めよ．}
+\begin{align*}
+	x方向，y方向，z方向の&基底ベクトルをそれぞれ\boldsymbol{i},\boldsymbol{j},\boldsymbol{k}とする\\
+	d\boldsymbol{l}\times \boldsymbol{l}&=
+\end{align*}
+
+\section{$xyz$直角座標空間において，原点Oに発生する磁界$\boldsymbol{H}$を求めよ．ただし，$a$を正の実定数とし，電流$I$が流れる経路は3つの経路$C_{1}\sim C_{3}$を通っており，それぞれの経路は以下のように定義されるものとする．}
+\begin{itemize}
+	\item $C_{1}:$$y$軸に沿って$(0, -\infty, 0)$から$(0, -a, 0)$へ進む経路
+	\item $C_{2}$:$x=\sqrt{a^{2}-y^{2}}, z=0$に沿って$(0, -a, 0)$から$(a, 0, 0)$を通り$(0, a, 0)$へ進む経路．
+	\item $C_{3}$:$y$軸に沿って$(0, a, 0)$から$(0, \infty, 0)$へ進む経路
+\end{itemize}
+\begin{align*}
+\end{align*}
+
+\section{$xyz$直角座標空間において，原点Oに発生する磁界$\boldsymbol{H}$を求めよ．ただし，$a$を正の実定数とし，電流$I$が流れる経路は5つの経路$C_{1}\sim C_{5}$を通っており，それぞれの経路は以下のように定義されるものとする．}
+\begin{itemize}
+	\item $C_{1}$:$y=-x,z=-a(x<0, y>0)$に沿って$(-\infty, \infty, -a)$から$(0, 0, -a)$へ進む経路
+	\item $C_{2}$:$x^{2}+z^{2}=a^{2},y=0(x>0, z<0)$に沿って$(0, 0, -a)$から$(a, 0, 0)$へ進む経路
+	\item $C_{3}$:$x^{2}+y^{2}=a^{2},z=0(x>0, y>0)$に沿って$(a, 0, 0)$から$(0, a, 0)$へ進む距離
+	\item $C_{4}$:$y^{2}+z^{2}=a^{2},x=0(y>0, z>0)$に沿って$(0, a, 0)$から$(0, 0, a)$へ進む距離
+	\item $C_{5}$:$y=-x, z=a(x>0. y<0)$に沿って$(0, 0, a)$から$(\infty, -\infty, a)$へ進む経路
+\end{itemize}
+\begin{align*}
+\end{align*}
+
+\section{無限長直線電流$I$が流れているとき，電流$I$から距離$a$の位置に発生する磁界$H$をアン
+ペールの法則を用いて求めよ．}
+\begin{align*}
+\end{align*}
+
+\clearpage
+\setcounter{section}{0}
+\section*{平成29年　電磁気学II　前期期末試験}
 \end{document} 

@@ -1,0 +1,11 @@
+# Fdb version 3
+["dvipdf"] 0 "R03.dvi" "R03.pdf" "R03" 0
+  "R03.dvi" 0 -1 0 "latex"
+  (generated)
+  "R03.pdf"
+["latex"] 0 "/Users/ohyamasan/Downloads/TMCIT-3rd-Report/Electromagnetic/R03.tex" "R03.dvi" "R03" 0
+  "/Users/ohyamasan/Downloads/TMCIT-3rd-Report/Electromagnetic/R03.tex" 0 -1 0 ""
+  "R03.aux" 1657287379 32 3985256e7290058c681f74d7a3565a19 ""
+  (generated)
+  "R03.dvi"
+  "R03.log"

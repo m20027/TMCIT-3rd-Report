@@ -2,65 +2,19 @@
 \usepackage{eee}
 
 \begin{document}
-\title{令和2年　電磁気学II}
+\title{令和3年　電磁気学II}
 \date{}
 \author{大山主朗}
 
 \maketitle
 
-\section*{令和2年　電磁気学II　第1回小テスト}
+\section*{令和3年　電磁気学II　前期中間試験}
 \section{以下の(a)及び(d)に示す物理定数は電磁気学を修めた者であれば常識的に覚えていなければならない数値である．それぞれの値を示せ．}
 \begin{enumerate}[(a)]
 	\item 真空の誘電率$\varepsilon_{0}:8.854 \times 10^{-12}\,\rm{F/m}$
 	\item 真空の透磁率$\mu_{0}:1.257 \times 10^{-6}\,\rm{H/m}$
 	\item 電子の電荷$e:-1.602 \times 10^{-19}\,\rm{C}$
 	\item 電子の静止質量$m:9.109\times 10^{-31}\,\rm{kg}$
-\end{enumerate}
-
-\section{$AB=BC=a$， $\angle B=90^{\circ}$の直角二等辺三角形 ABC がある．いま各頂点に点磁荷$m$が存在するとき，以下の各問いに答えよ．}
-\begin{enumerate}[(a)]
-	\item 頂点Bに存在する点磁荷にはたらく力$F_{B}$を求めよ．
-	\begin{align*}
-		\boldsymbol{F}_{BA}&=\frac{1}{4\pi \mu_{0}}\frac{m^{2}}{\left((-a)^{2} \right)^{3/2}}\left(-a\boldsymbol{j}\right)\\
-	&=-\frac{m^{2}}{4\pi \mu_{0}a^{2}}\boldsymbol{j}\,[\rm{N}]\\
-	\boldsymbol{F}_{BC}&=\frac{1}{4\pi \mu_{0}}\frac{m^{2}}{\left(a^{2} \right)^{3/2}}\left(-a\boldsymbol{i}\right)\\
-	&=-\frac{m^{2}}{4\pi \mu_{0}a^{2}}\boldsymbol{i}\,[\rm{N}]\\
-	\boldsymbol{F}_{B}&=\boldsymbol{F}_{BA}+\boldsymbol{F}_{BC}\\
-	&=-\frac{m^{2}}{4\pi \mu_{0}a^{2}}\left(\boldsymbol{i}+\boldsymbol{j}\right)\,[\rm{A/m}]\\
-	|\boldsymbol{F}_{B}|&=\frac{m^{2}}{4\pi \mu_{0}a^{2}}\sqrt{2}\,[\rm{N}]\quad 頂点Bから辺ABの反対側向き
-	\end{align*}
-	\item 頂点Aに存在する点磁荷にはたらく力$F_{A}$を求めよ．
-	\begin{align*}
-	\boldsymbol{F}_{AB}&=\frac{1}{4\pi \mu_{0}}\frac{m^{2}}{\left(a^{2} \right)^{3/2}}\left(a\boldsymbol{j}\right)\\
-	&=\frac{m^{2}}{4\pi \mu_{0}a^{2}}\boldsymbol{j}\,[\rm{A/m}]\\
-	\boldsymbol{F}_{AC}&=\frac{1}{4\pi \mu_{0}}\frac{m^{2}}{\left((-a)^{2}+a^{2} \right)^{3/2}}\left(-a\boldsymbol{i}+a\boldsymbol{j}\right)\\
-	&=\frac{m^{2}}{8\sqrt{2} \pi \mu_{0} a^{2}}\left( -\boldsymbol{i}+\boldsymbol{j}\right)\,[\rm{A/m}]\\
-	\boldsymbol{F}_{A}&=\boldsymbol{F}_{AB}+\boldsymbol{F}_{AC}\\
-	&=\frac{m^{2}}{4\pi \mu_{0}a^{2}}\left\{-\frac{1}{2\sqrt{2}}\boldsymbol{i}+\left(1+\frac{1}{2\sqrt{2}}\right)\boldsymbol{j}\right\}\\
-	&=\frac{m^{2}}{16\pi \mu_{0}a^{2}}\left\{-\sqrt{2}\boldsymbol{i}+\left(4+\sqrt{2}\right)\boldsymbol{j} \right\}\,[\rm{N}]\\
-	|\boldsymbol{F}_{A}|&=\frac{m^{2}}{16\pi \mu_{0}a^{2}}\sqrt{2+16+8\sqrt{2}+2}\\
-	&=\frac{m^{2}}{16\pi \mu_{0}a^{2}}\sqrt{20+8\sqrt{2}}\\
-	&=\frac{m^{2}}{8\pi \mu_{0}a^{2}}\sqrt{5+2\sqrt{2}}\,[\rm{N}]\quad 左斜め上向き
-	\end{align*}
-	\item 直角三角形ABCの内接円の半径$r$を求めよ．
-	\begin{align*}
-		r&=\frac{2S}{|AB|+|BC|+|AC|}\\
-		&=\frac{2\cdot \frac{1}{2}a^{2}}{a+a+a\sqrt{2}}\\
-		&=\frac{a^{2}}{2a+a\sqrt{2}}\\
-		&=\frac{a}{4-2}(2-\sqrt{2})\\
-		&=\frac{2-\sqrt{2}}{2}a
-	\end{align*}
-	\item 頂点Aに存在する点磁荷が直角三角形ABCの内心につくる磁界$H_{A}$を求めよ．
-	\begin{align*}
-		\boldsymbol{H}_{A}&=\frac{1}{4\pi \mu_{0}}\frac{m}{\left(\left(\frac{2-\sqrt{2}}{2}a\right)^{2}+\left(\frac{2-\sqrt{2}}{2}a-a\right)^{2}\right)^{3/2}} \left\{\frac{2-\sqrt{2}}{2}a\boldsymbol{i}+\left(\frac{2-\sqrt{2}}{2}a-a\right)\boldsymbol{j}\right\}\\
-		&=\frac{1}{4\pi \mu_{0}a^{2}}\frac{m}{\left(\left(\frac{2-\sqrt{2}}{2}\right)^{2}+\left(\frac{2-\sqrt{2}}{2}-1\right)^{2}\right)^{3/2}} \left\{\frac{2-\sqrt{2}}{2}\boldsymbol{i}+\left(\frac{2-\sqrt{2}}{2}-1\right)\boldsymbol{j}\right\}\,[\rm{A/m}]\\
-		|\boldsymbol{H}_{A}|&=\frac{1}{4\pi \mu_{0}a^{2}}\frac{m}{\left(\left(\frac{2-\sqrt{2}}{2}\right)^{2}+\left(\frac{2-\sqrt{2}}{2}-1\right)^{2}\right)^{3/2}}\sqrt{\left(\frac{2-\sqrt{2}}{2}\right)^{2}+\left(\frac{2-\sqrt{2}}{2}-1\right)^{2}}\\
-		&=\frac{1}{4\pi \mu_{0}a^{2}}\frac{m}{\left(\left(\frac{2-\sqrt{2}}{2}\right)^{2}+\left(\frac{2-\sqrt{2}}{2}-1\right)^{2}\right)^{3/2}}\sqrt{2\left(\frac{4-4\sqrt{2}+2}{4}\right)-(2-\sqrt{2})+1}\\
-		&=\frac{1}{4\pi \mu_{0}a^{2}}\frac{m}{\left(\left(\frac{2-\sqrt{2}}{2}\right)^{2}+\left(\frac{2-\sqrt{2}}{2}-1\right)^{2}\right)^{3/2}}\sqrt{2\left(\frac{2-2\sqrt{2}+1}{2}\right)-(2-\sqrt{2})+1}\\
-		&=\frac{1}{4\pi \mu_{0}a^{2}}\frac{m}{\left(\left(\frac{2-\sqrt{2}}{2}\right)^{2}+\left(\frac{2-\sqrt{2}}{2}-1\right)^{2}\right)^{3/2}}\sqrt{2-2\sqrt{2}+1-(2-\sqrt{2})+1}\\
-		&=\frac{1}{4\pi \mu_{0}a^{2}}\frac{m}{\left(\left(\frac{2-\sqrt{2}}{2}\right)^{2}+\left(\frac{2-\sqrt{2}}{2}-1\right)^{2}\right)^{3/2}}\sqrt{2-\sqrt{2}}\\
-		&=\frac{1}{4\pi \mu_{0}a^{2}}\frac{m}{2-\sqrt{2}}\,[\rm{A/m}]
-	\end{align*}
 \end{enumerate}
 
 \section{$xy$直交座標系において，同量異符号の点磁荷$\pm m$が距離$l$に固定された磁気双極子が存在する．このとき以下の問いに答えよ．}
@@ -119,6 +73,6 @@
 
 \clearpage
 \setcounter{section}{0}
-\section*{令和2年　電磁気学II　第2回小テスト}
+\section*{令和3年　電磁気学II　第2回小テスト}
 
 \end{document}
