@@ -186,9 +186,9 @@
 	&=-\frac{I}{4\pi a} \boldsymbol{j} \int_{\alpha-\frac{\pi}{2}}^{\beta -\frac{\pi}{2}} \frac{1}{(\frac{1}{\cos^{2} \theta })^{3/2}} \frac{1}{\cos ^{2}\theta }d\theta\\
 	&=-\frac{I}{4\pi a} \boldsymbol{j} \int_{\alpha-\frac{\pi}{2}}^{\beta -\frac{\pi}{2}} \cos \theta d \theta \\\
 	&=-\frac{I}{4\pi a} \boldsymbol{j} \left[\sin \theta  \right]_{\alpha-\frac{\pi}{2}}^{\beta -\frac{\pi}{2}}\\
-	&=-\frac{I}{4\pi a} \boldsymbol{j} \left\{\sin \left(\beta -\frac{\pi}{2}\right) -\sin \left(\alpha-\frac{\pi}{2}\right) \right\}\\
-	&=-\frac{I}{4\pi a} \boldsymbol{j}\left(-\cos \beta +\cos \alpha \right)\\
-	&=-\frac{I}{4\pi a} \boldsymbol{j}\left(\cos \alpha -\cos \beta \right)\,[\rm{A/m}]\\
+	&=-\frac{I}{4\pi a} \left\{\sin \left(\beta -\frac{\pi}{2}\right) -\sin \left(\alpha-\frac{\pi}{2}\right) \right\}\boldsymbol{j}\\
+	&=-\frac{I}{4\pi a} \left(-\cos \beta +\cos \alpha \right)\boldsymbol{j}\\
+	&=-\frac{I}{4\pi a} \left(\cos \alpha -\cos \beta \right)\boldsymbol{j}\,[\rm{A/m}]\\
 	始点Aと終点B&の座標がそれぞれ(0, -\infty, 0), (0, \infty, 0)の場合は\\
 	\alpha=0,&\beta =\pi であるので\\
 	\boldsymbol{H}&=-\frac{I}{4\pi a}\cdot 2 \boldsymbol{j}\\
@@ -204,25 +204,35 @@
 \end{itemize}
 \begin{align*}
 	x方向，y方向，z方向の基底ベクトル&をそれぞれ\boldsymbol{i},\boldsymbol{j},\boldsymbol{k}とする\\
-	|\boldsymbol{H}}|&=\oint |d\boldsymbol{H}_{a}|\\
+	\theta=0となる&半直線部分は，\sin \theta =0となり，磁束は0\,[\rm{A/m}]\\
+	|\boldsymbol{H}|&=\oint | d\boldsymbol{H}|\\
 	&=\frac{I}{4\pi r^{2}}\sin \frac{\pi}{2} \oint dl\\
 	&=\frac{I}{4\pi r^{2}}\pi r\\
 	&=\frac{I}{4r}\,[\rm{A/m}]\\
 	d\boldsymbol{l}\times \boldsymbol{r}&より \\
-	\boldsymbol{H}&=-\frac{I}{4a}\boldsymbol{k}\,[\rm{A/m}]\\
-	また\theta=0となる&半直線部分は，\sin \theta =0となり，磁束は0\,[\rm{A/m}]\\
-	\end{align*}
+	\boldsymbol{H}&=\frac{I}{4a}\boldsymbol{k}\,[\rm{A/m}]\\
+\end{align*}
 
 
 \section{$xyz$直角座標空間において，原点Oに発生する磁界$\boldsymbol{H}$を求めよ．ただし，$a$を正の実定数とし，電流$I$が流れる経路は5つの経路$C_{1}\sim C_{5}$を通っており，それぞれの経路は以下のように定義されるものとする．}
 \begin{itemize}
 	\item $C_{1}$:$y=-x,z=-a(x<0, y>0)$に沿って$(-\infty, \infty, -a)$から$(0, 0, -a)$へ進む経路
 	\item $C_{2}$:$x^{2}+z^{2}=a^{2},y=0(x>0, z<0)$に沿って$(0, 0, -a)$から$(a, 0, 0)$へ進む経路
-	\item $C_{3}$:$x^{2}+y^{2}=a^{2},z=0(x>0, y>0)$に沿って$(a, 0, 0)$から$(0, a, 0)$へ進む距離
-	\item $C_{4}$:$y^{2}+z^{2}=a^{2},x=0(y>0, z>0)$に沿って$(0, a, 0)$から$(0, 0, a)$へ進む距離
+	\item $C_{3}$:$x^{2}+y^{2}=a^{2},z=0(x>0, y>0)$に沿って$(a, 0, 0)$から$(0, a, 0)$へ進む経路
+	\item $C_{4}$:$y^{2}+z^{2}=a^{2},x=0(y>0, z>0)$に沿って$(0, a, 0)$から$(0, 0, a)$へ進む経路
 	\item $C_{5}$:$y=-x, z=a(x>0. y<0)$に沿って$(0, 0, a)$から$(\infty, -\infty, a)$へ進む経路
 \end{itemize}
 \begin{align*}
+	C_{1}, C_{2}, C_{3}, C_{4}, C_{5}が作る磁束をそれぞれ&\boldsymbol{H}_{1}, \boldsymbol{H}_{2}, \boldsymbol{H}_{3}, \boldsymbol{H}_{4}, \boldsymbol{H}_{5}とする\\
+	ここで，\boldsymbol{H}_{1}と\boldsymbol{H}_{5}は同量の逆方向の&磁界であるので打ち消しあう．\\
+	|\boldsymbol{H}_{2}|&=\oint | d\boldsymbol{H}_{2}|\\
+	&=\frac{I}{4\pi a^{2}}\sin \frac{\pi}{2} \oint dl\\
+	&=\frac{I}{4\pi a^{2}}\frac{\pi}{2} a\\
+	\boldsymbol{H}_{2}&=-\frac{I}{8a}\boldsymbol{j}\,[\rm{A/m}]\\
+	\boldsymbol{H}_{3}&=\frac{I}{8a}\boldsymbol{k}\,[\rm{A/m}]\\
+	\boldsymbol{H}_{3}&=\frac{I}{8a}\boldsymbol{i}\,[\rm{A/m}]\\
+	\boldsymbol{H}&=\boldsymbol{H}_{1}+\boldsymbol{H}_{2}+\boldsymbol{H}_{3}+\boldsymbol{H}_{4}+\boldsymbol{H}_{5}\\
+	&=\frac{I}{8a}\left(\boldsymbol{i}-\boldsymbol{j}+\boldsymbol{k}\right)\,[\rm{A/m}]
 \end{align*}
 
 \section{無限長直線電流$I$が流れているとき，電流$I$から距離$a$の位置に発生する磁界$H$をアン
