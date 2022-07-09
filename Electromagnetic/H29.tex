@@ -126,10 +126,9 @@
 
 \section{$xyz$直角座標空間において，原点Oを含む$xy$平面に半径$a$の円形ループ電流$I$が流れている．このとき，原点Oに発生する磁界$\boldsymbol{H}$を求めよ．}
 \begin{align*}
-	ビオ・サバール&の法則を適用する．\\
 	\boldsymbol{H}&=\oint d\boldsymbol{H}\\
 	円周上に&線素ベクトルd\boldsymbol{l}をとる．\\
-	ここで円周上のどの点&でもd\boldsymbol{H}の向きが同じなので，\\
+	ここで，円周上のどの点&でもd\boldsymbol{H}の向きが同じなので，\\
 	H&=\oint dH\\
 	&=\oint \frac{I\sin \theta }{4\pi r^{2}}dl\\
 	&=\frac{I\sin \frac{\pi}{2} }{4\pi r^{2}}\cdot 2\pi r\\
@@ -140,7 +139,6 @@
 
 \section{$xyz$直角座標空間において，原点Oを含む$xy$平面に半径$a$の円形ループ電流$I$が流れている．このとき，$z$軸上の点$\rm{P}(0, 0, h)$に発生する磁界$\boldsymbol{H}$を求めよ．}
 \begin{align*}
-	ビオ・サバール&の法則を適用する．\\
 	y>0に円周上の&微小磁界d\boldsymbol{H}_{1}を\\
 	y<0に円周上の&微小磁界d\boldsymbol{H}_{2}を考える．\\
 	またそれぞれの&線素ベクトルをd\boldsymbol{l}ととる．\\
@@ -164,8 +162,39 @@
 \section{$xyz$直角座標空間において，$y$軸上の点$\rm{A}(0, c_{1}, 0)$から点$\rm{B}(0, c_{2}, 0)$まで$y$軸に沿って直線状に流れる電流$I$がある．このとき，$x$軸上の点$\rm{P}(a, 0, 0)$に発生する磁界$\boldsymbol{H}$を求めよ．また，電流$I$の始点 Aと終点Bの座標がそれぞれ$(0, -\infty, 0), (0, \infty, 0)$となった場合の点$\rm{P}$に発生する磁界$\boldsymbol{H}$を求めよ．}
 \begin{align*}
 	x方向，y方向，z方向の&基底ベクトルをそれぞれ\boldsymbol{i},\boldsymbol{j},\boldsymbol{k}とする\\
-	d\boldsymbol{l}\times \boldsymbol{l}&=
-\end{align*}
+	この時&d\boldsymbol{l}=dy\boldsymbol{i}, \boldsymbol{r}=a\boldsymbol{i}-y\boldsymbol{j}\\
+	d\boldsymbol{l}\times \boldsymbol{r}&=
+	\begin{vmatrix}
+	\boldsymbol{i} & \boldsymbol{j} & \boldsymbol{k}\\
+	0 &dy & 0\\
+	a & -y &0
+	\end{vmatrix}
+	=
+	\begin{vmatrix}
+	\boldsymbol{i}  & \boldsymbol{k}\\
+	a & 0
+	\end{vmatrix}
+	=-ady\boldsymbol{k}\\
+	\boldsymbol{H}&=\int_{C} d\boldsymbol{H}\\
+	&=-\int_{C} \frac{aI\boldsymbol{k}}{4\pi(a^{2}+y^{2})^{3/2}}dy\\
+	&=-\int_{c_{1}}^{c_{2}} \frac{aI\boldsymbol{k}}{4\pi(a^{2}+y^{2})^{3/2}}dy\\
+	h&=a\tan \theta と置換する．\\
+	\frac{dh}{d\theta}&=\frac{a}{\cos ^{2}\theta } \quad \therefore dh=\frac{a}{\cos ^{2}\theta }d\theta \\
+	また積分範囲は&c_{1}\to c_{2}から\alpha-\frac{\pi}{2} \to \beta -\frac{\pi}{2}に変更される．\\
+	&=-\int_{\alpha-\frac{\pi}{2}}^{\beta -\frac{\pi}{2}} \frac{a^{2}I}{4\pi a^{3}(1+\tan^{2}\theta)^{3/2}}\boldsymbol{j} \frac{a}{\cos ^{2}\theta }d\theta\\
+	&=-\frac{I}{4\pi} \boldsymbol{j} \int_{\alpha-\frac{\pi}{2}}^{\beta -\frac{\pi}{2}} \frac{1}{(1+\tan^{2}\theta)^{3/2}} \frac{1}{\cos ^{2}\theta }d\theta\\
+	&=-\frac{I}{4\pi a} \boldsymbol{j} \int_{\alpha-\frac{\pi}{2}}^{\beta -\frac{\pi}{2}} \frac{1}{(\frac{1}{\cos^{2} \theta })^{3/2}} \frac{1}{\cos ^{2}\theta }d\theta\\
+	&=-\frac{I}{4\pi a} \boldsymbol{j} \int_{\alpha-\frac{\pi}{2}}^{\beta -\frac{\pi}{2}} \cos \theta d \theta \\\
+	&=-\frac{I}{4\pi a} \boldsymbol{j} \left[\sin \theta  \right]_{\alpha-\frac{\pi}{2}}^{\beta -\frac{\pi}{2}}\\
+	&=-\frac{I}{4\pi a} \boldsymbol{j} \left\{\sin \left(\beta -\frac{\pi}{2}\right) -\sin \left(\alpha-\frac{\pi}{2}\right) \right\}\\
+	&=-\frac{I}{4\pi a} \boldsymbol{j}\left(-\cos \beta +\cos \alpha \right)\\
+	&=-\frac{I}{4\pi a} \boldsymbol{j}\left(\cos \alpha -\cos \beta \right)\,[\rm{A/m}]\\
+	始点Aと終点B&の座標がそれぞれ(0, -\infty, 0), (0, \infty, 0)の場合は\\
+	\alpha=0,&\beta =\pi であるので\\
+	\boldsymbol{H}&=-\frac{I}{4\pi a}\cdot 2 \boldsymbol{j}\\
+	&=-\frac{I}{2\pi a} \boldsymbol{j}\,[\rm{A/m}]
+	\end{align*}
+
 
 \section{$xyz$直角座標空間において，原点Oに発生する磁界$\boldsymbol{H}$を求めよ．ただし，$a$を正の実定数とし，電流$I$が流れる経路は3つの経路$C_{1}\sim C_{3}$を通っており，それぞれの経路は以下のように定義されるものとする．}
 \begin{itemize}
@@ -174,7 +203,16 @@
 	\item $C_{3}$:$y$軸に沿って$(0, a, 0)$から$(0, \infty, 0)$へ進む経路
 \end{itemize}
 \begin{align*}
-\end{align*}
+	x方向，y方向，z方向の基底ベクトル&をそれぞれ\boldsymbol{i},\boldsymbol{j},\boldsymbol{k}とする\\
+	|\boldsymbol{H}}|&=\oint |d\boldsymbol{H}_{a}|\\
+	&=\frac{I}{4\pi r^{2}}\sin \frac{\pi}{2} \oint dl\\
+	&=\frac{I}{4\pi r^{2}}\pi r\\
+	&=\frac{I}{4r}\,[\rm{A/m}]\\
+	d\boldsymbol{l}\times \boldsymbol{r}&より \\
+	\boldsymbol{H}&=-\frac{I}{4a}\boldsymbol{k}\,[\rm{A/m}]\\
+	また\theta=0となる&半直線部分は，\sin \theta =0となり，磁束は0\,[\rm{A/m}]\\
+	\end{align*}
+
 
 \section{$xyz$直角座標空間において，原点Oに発生する磁界$\boldsymbol{H}$を求めよ．ただし，$a$を正の実定数とし，電流$I$が流れる経路は5つの経路$C_{1}\sim C_{5}$を通っており，それぞれの経路は以下のように定義されるものとする．}
 \begin{itemize}
