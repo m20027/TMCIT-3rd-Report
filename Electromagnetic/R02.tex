@@ -220,18 +220,26 @@
 \section{半径$r$の半円と，半円に接続された半直線状に電流$I$が流れている．このとき，半円の中心Oに発生する磁界$\boldsymbol{H}$を求めよ．}
 \begin{align*}
 		x方向，y方向，z方向の&基底ベクトルをそれぞれ\boldsymbol{i},\boldsymbol{j},\boldsymbol{k}とする\\
-		半円部分の電流が&つくる微小磁界と磁界をそれぞれ，d\boldsymbol{H}_1，\boldsymbol{H}_1とする\\
+		半円部分の電流がつくる&微小磁界と磁界をそれぞれ，d\boldsymbol{H}_1，\boldsymbol{H}_1とする\\
 	d\boldsymbol{l}\times \boldsymbol{l}&の方向よりd\boldsymbol{H}は紙に突き刺さる\\
 	\boldsymbol{H}_{1}&=\oint d\boldsymbol{H}_{1}\\
-	&=\oint \frac{Id\boldsymbol{I}\times \boldsymbol{r}}{4\pi a^{3}}\\
-	&=\frac{I}{4\pi a^{3}} \oint \boldsymbol{r} \times d\boldsymbol{I}\\
-	|\boldsymbol{H}_{1}|&=\frac{I}{4\pi a^{3}} \oint r \sin \frac{\pi}{2}dl\\
-	&=\frac{I}{4\pi a^{2}}\pi a\\
+	&=\oint \frac{Id\boldsymbol{I}\times \boldsymbol{r}}{4\pi r^{3}}\\
+	&=\frac{I}{4\pi r^{3}} \oint \boldsymbol{r} \times d\boldsymbol{I}\\
+	|\boldsymbol{H}_{1}|&=\frac{I}{4\pi r^{3}} \oint r \sin \frac{\pi}{2}dl\\
+	&=\frac{I}{4\pi r^{2}}\pi a\\
 	&=\frac{I}{4r}\,[\rm{A/m}]\\
 	\boldsymbol{H}_{1}&=-\frac{I}{4r}\boldsymbol{k}\,[\rm{A/m}]\\
-	また，x=rの半直線が&つくるつくる微小磁界と磁界をそれぞれ，d\boldsymbol{H}_{2}_，\boldsymbol{H}_{2}とする\\
+	また，x=rの半直線がつくる&磁界を\boldsymbol{H}_{2}とする\\
+	問3より\\
+	\boldsymbol{H}_{2}&=-\frac{I}{4\pi r} \boldsymbol{j}\left(\cos \alpha -\cos \beta \right)\\
+	&=-\frac{I}{4\pi r} \boldsymbol{j}\left(\cos \frac{\pi}{2} -\cos \pi \right)\\
+	&=-\frac{I}{4\pi r} \boldsymbol{j}\,[\rm{A/m}]\\
+	また，x=-rの半直線がつくる&磁界を\boldsymbol{H}_{3}とする\\
+	\theta=0より，\sin \theta =0となり，\\
+	\boldsymbol{H}_{3}&=0\\
+	\boldsymbol{H}&=\boldsymbol{H}_{1}+\boldsymbol{H}_{2}+\boldsymbol{H}_{3}\\
+	&=-\frac{I}{4r}\left(\frac{1}{\pi}\boldsymbol{j}+\boldsymbol{k}\right)\,[\rm{A/m}]
 	\end{align*}
-
 
 \section{半径$a$の円Oに外接する正多角形の辺上に電流が流れているとき，以下の問に答えよ．}
 \begin{enumerate}[(a)]
