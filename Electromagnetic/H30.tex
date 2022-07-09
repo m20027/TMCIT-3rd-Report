@@ -258,22 +258,32 @@
 	\item 一般的な正$n$角形(ただし，$n$は3以上の自然数)の辺上を流れる電流$I$が内接円の中心 Oにつくる磁界$H$を求めよ．
 	\begin{align*}
 	上問より正n角形の内接円の中心につくる&磁界は各辺がつくる磁界のn倍であることがわかる\\
-	%また\alpha,\betaはそれぞれ& 
 	|\boldsymbol{H}|&=\frac{nI}{2\pi a}\left(\cos \alpha\right)\,[\rm{A/m}]\\
-	\alphaは正n角形の頂点&の半分であるため\\
+	\alpha は正n角形の頂点&の半分であるため\\
 	\alpha &=\frac{1}{2}\left(\pi-\frac{2\pi}{n}\right)\\
-	&=\frac{\pi}{2}-\frac{\pi}{n}
+	&=\frac{\pi}{2}-\frac{\pi}{n}\\
+	|\boldsymbol{H}|&=\frac{nI}{2\pi a}\left\{\cos \left(\frac{\pi}{2}-\frac{\pi}{n}\right)\right\}\\
+	\cos\left(\frac{\pi}{2}-\theta\right)&=\sin \theta\\
+	&=\frac{nI}{2\pi a} \left(\sin \frac{\pi}{n}\right)\,[\rm{A/m}]
 	\end{align*}
 	\item (b)で求めた正$n$角形が，その内接円の中心Oにつくる磁界$H$を用いて，$n \to \infty$の
 場合の極限値を求めよ．
 	\begin{align*}
+	|\boldsymbol{H}|&=\frac{nI}{2\pi a} \sin \frac{\pi}{n}\\
+	&=\frac{I}{2\pi a}n\sin \frac{\pi}{n}\\
+	&=\frac{I}{2\pi a}\frac{\sin \frac{\pi}{n}}{\frac{1}{n}}\\
+	&=\frac{I}{2\pi a}\frac{-\frac{\pi}{n^{2}}\cos \frac{\pi}{n}}{-\frac{1}{n^{2}}}\\
+	\lim_{n \to \infty} |\boldsymbol{H}|&=\frac{I}{2\pi a} \lim_{n \to \infty}\left(\frac{-\frac{\pi}{n^{2}}\cos \frac{\pi}{n}}{-\frac{1}{n^{2}}}\right)\\
+	&=\frac{I}{2 a} \lim_{n \to \infty}\left(\cos \frac{\pi}{n}\right)\\
+	&=\frac{I}{2a}\,[\rm{A/m}]
 	\end{align*}
 \end{enumerate}
 
-\section{縦$2a$，横$4a$の長さの辺を有した長方形の回路があり，交流電源$E_{1}, E_{2}$とコイル L およびコンデンサ$C$が接続されている．また，回路の長辺の中心間は抵抗$R$を介して接続されている．このとき，以下の問に答えよ．ただし，電源，抵抗，コイル， コンデンサなどの回路素子の寸法は無視できるものとする．}
+\section{縦$2a$，横$4a$の長さの辺を有した長方形の回路があり，交流電源$E_{1}, E_{2}$とコイル$L$およびコンデンサ$C$が接続されている．また，回路の長辺の中心間は抵抗$R$を介して接続されている．このとき，以下の問に答えよ．ただし，電源，抵抗，コイル， コンデンサなどの回路素子の寸法は無視できるものとする．}
 \begin{enumerate}[(a)]
 	\item この回路の各枝路に流れる電流を求めよ．
 	\begin{align*}
+		I_{All}&=
 	\end{align*}
 	\item 点Pに発生する磁界$H$を求めよ．
 	\begin{align*}

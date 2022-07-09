@@ -132,34 +132,139 @@
 \begin{enumerate}[(a)]
 	\item 点Pに発生する磁界$\boldsymbol{H}$を求めよ．
 	\begin{align*}
+		x方向，y方向，z方向の&基底ベクトルをそれぞれ\boldsymbol{i},\boldsymbol{j},\boldsymbol{k}とする\\
+	d\boldsymbol{l}\times \boldsymbol{l}&の方向よりd\boldsymbol{H}はy軸左向き\\
+	\boldsymbol{H}&=\oint d\boldsymbol{H}\\
+	&=\oint \frac{Id\boldsymbol{I}\times \boldsymbol{r}}{4\pi a^{3}}\\
+	&=\frac{I}{4\pi a^{3}} \oint \boldsymbol{r} \times d\boldsymbol{I}\\
+	|\boldsymbol{H}|&=\frac{I}{4\pi a^{3}} \oint r \sin \frac{\pi}{2}dl\\
+	&=\frac{I}{4\pi a^{2}}2\pi a\\
+	&=\frac{I}{2a}\,[\rm{A/m}]\\
+	\boldsymbol{H}&=\frac{I}{2a}\boldsymbol{j}\,[\rm{A/m}]
 	\end{align*}
 	\item 点Oに発生する磁界$\boldsymbol{H}$を求めよ．
 	\begin{align*}
+		x方向，y方向，z方向の&基底ベクトルをそれぞれ\boldsymbol{i},\boldsymbol{j},\boldsymbol{k}とする\\
+		z>0に円周上の&微小磁界d\boldsymbol{H}_{1}を\\
+	z<0に円周上の&微小磁界d\boldsymbol{H}_{2}を考える．\\
+	またそれぞれの&線素ベクトルをd\boldsymbol{l}ととる．\\
+	ここで，d\boldsymbol{H}_{1}とd\boldsymbol{H}_{2}の外積より，&2つの磁界は打ち消される方向となっているため，\\
+	d\boldsymbol{H}_{1}とd\boldsymbol{H}_{2}を合成した&磁界をd\boldsymbol{H}とする．(\phi:d\boldsymbol{H}_{2}とd\boldsymbol{H}のなす角)\\
+	またd\boldsymbol{H}の向きは&y軸左方向である\\
+	|d\boldsymbol{H}_{1}|=|d\boldsymbol{H}_{2}|&=\frac{Idl}{4\pi r^{2}}\sin \theta\\
+	&=\frac{Idl}{4\pi (a^{2}+h^{2})}\\
+	d\boldsymbol{H}&=2d\boldsymbol{H}_{1}\cos \phi\\
+	&=2d\boldsymbol{H}_{1}\frac{a}{r}\\
+	&=2d\boldsymbol{H}_{1}\frac{a}{\sqrt{a^{2}+h^{2}}}\\
+	|d\boldsymbol{H}|&=2|d\boldsymbol{H}_{1}|\frac{a}{\sqrt{a^{2}+h^{2}}}\\
+	&=\frac{aIdl}{2\pi (a^{2}+h^{2})^{3/2}}\\
+	\boldsymbol{H}&=\oint d\boldsymbol{H}_{1}\\
+	|\boldsymbol{H}|&=\frac{1}{2}\oint|d\boldsymbol{H}|\\
+	&=\frac{1}{2}\oint \frac{aIdl}{2\pi (a^{2}+h^{2})^{3/2}}\\
+	&=\frac{1}{2}\cdot \frac{aI}{2\pi (a^{2}+h^{2})^{3/2}} \cdot 2\pi a\\
+	&=\frac{a^{2}I}{2 (a^{2}+h^{2})^{3/2}}\,[\rm{A/m}]\\
+	\boldsymbol{H}&=\frac{a^{2}I}{2 (a^{2}+h^{2})^{3/2}}\boldsymbol{j}\,[\rm{A/m}]
 	\end{align*}
 	\item (b)で得られた解答$\boldsymbol{H}$を用いて$\int_{-\infty}^{\infty}\boldsymbol{H}dh$を計算せよ．
 	\begin{align*}
+	\int_{-\infty}^{\infty}\boldsymbol{H}dh&=\int_{-\infty}^{\infty} \frac{a^{2}I}{2(a^{2}+h^{2})^{3/2}}\boldsymbol{j} dh\\
+	h&=a\tan \theta と置換する．\\
+	\frac{dh}{d\theta}&=\frac{a}{\cos ^{2}\theta } \quad \therefore dh=\frac{a}{\cos ^{2}\theta }d\theta \\
+	また積分範囲は&-\infty \to \infty から-\frac{\pi}{2} \to \frac{\pi}{2}に変わる．\\
+	&=\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \frac{a^{2}I}{2a^{3}(1+\tan^{2}\theta)^{3/2}}\boldsymbol{j} \frac{a}{\cos ^{2}\theta }d\theta\\
+	&=\frac{I}{2} \boldsymbol{j} \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \frac{1}{(1+\tan^{2}\theta)^{3/2}} \frac{1}{\cos ^{2}\theta }d\theta\\
+	&=\frac{I}{2} \boldsymbol{j} \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \frac{1}{(\frac{1}{\cos^{2} \theta })^{3/2}} \frac{1}{\cos ^{2}\theta }d\theta\\
+	&=\frac{I}{2} \boldsymbol{j} \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \cos \theta d\theta\\
+	&=\frac{I}{2} \boldsymbol{j} \left\{1-(-1)\right\}\\
+	&=I\boldsymbol{j}\,[\rm{A/m}]
 	\end{align*}
 \end{enumerate}
 
-\section{$xyz$直角座標空間において，$y$軸上の点$\rm{A}(0, c_{1}, 0)$から点$\rm{B}(0, c_{2}, 0)$まで$y$軸に沿って直線状に流れる電流$I$がある．このとき，$x$軸上の点$\rm{P}(a, 0, 0)$に発生する磁界$\boldsymbol{H}$を求めよ．また，電流$I$の始点 Aと終点Bの座標がそれぞれ$(0, -\infty, 0), (0, \infty, 0)$となった場合の点$\rm{P}$に発生する磁界$\boldsymbol{H}$を求めよ．}
+
+\section{$xyz$直角座標空間において，$y$軸上の点$\rm{A}(0, c_{1}, 0)$から点$\rm{B}(0, c_{2}, 0)$まで$y$軸に沿って直線状に流れる電流$I$がある．このとき，$x$軸上の点$\rm{P}(a, 0, 0)$に発生する磁界$\boldsymbol{H}$を求めよ．また，電流$I$の始点Aと終点Bの座標がそれぞれ$(0, -\infty, 0), (0, \infty, 0)$となった場合の点$\rm{P}$に発生する磁界$\boldsymbol{H}$を求めよ．}
 	\begin{align*}
+	x方向，y方向，z方向の&基底ベクトルをそれぞれ\boldsymbol{i},\boldsymbol{j},\boldsymbol{k}とする\\
+	この時&d\boldsymbol{l}=dy\boldsymbol{i}, \boldsymbol{r}=a\boldsymbol{i}-y\boldsymbol{j}\\
+	d\boldsymbol{l}\times \boldsymbol{r}&=
+	\begin{vmatrix}
+	\boldsymbol{i} & \boldsymbol{j} & \boldsymbol{k}\\
+	0 &dy & 0\\
+	a & -y &0
+	\end{vmatrix}
+	=
+	\begin{vmatrix}
+	\boldsymbol{i}  & \boldsymbol{k}\\
+	a & 0
+	\end{vmatrix}
+	=-ady\boldsymbol{k}\\
+	\boldsymbol{H}&=\int_{C} d\boldsymbol{H}\\
+	&=-\int_{C} \frac{aI\boldsymbol{k}}{4\pi(a^{2}+y^{2})^{3/2}}dy\\
+	&=-\int_{c_{1}}^{c_{2}} \frac{aI\boldsymbol{k}}{4\pi(a^{2}+y^{2})^{3/2}}dy\\
+	h&=a\tan \theta と置換する．\\
+	\frac{dh}{d\theta}&=\frac{a}{\cos ^{2}\theta } \quad \therefore dh=\frac{a}{\cos ^{2}\theta }d\theta \\
+	また積分範囲は&c_{1}\to c_{2}から\alpha-\frac{\pi}{2} \to \beta -\frac{\pi}{2}に変更される．\\
+	&=-\int_{\alpha-\frac{\pi}{2}}^{\beta -\frac{\pi}{2}} \frac{a^{2}I}{4\pi a^{3}(1+\tan^{2}\theta)^{3/2}}\boldsymbol{j} \frac{a}{\cos ^{2}\theta }d\theta\\
+	&=-\frac{I}{4\pi} \boldsymbol{j} \int_{\alpha-\frac{\pi}{2}}^{\beta -\frac{\pi}{2}} \frac{1}{(1+\tan^{2}\theta)^{3/2}} \frac{1}{\cos ^{2}\theta }d\theta\\
+	&=-\frac{I}{4\pi a} \boldsymbol{j} \int_{\alpha-\frac{\pi}{2}}^{\beta -\frac{\pi}{2}} \frac{1}{(\frac{1}{\cos^{2} \theta })^{3/2}} \frac{1}{\cos ^{2}\theta }d\theta\\
+	&=-\frac{I}{4\pi a} \boldsymbol{j} \int_{\alpha-\frac{\pi}{2}}^{\beta -\frac{\pi}{2}} \cos \theta d \theta \\\
+	&=-\frac{I}{4\pi a} \boldsymbol{j} \left[\sin \theta  \right]_{\alpha-\frac{\pi}{2}}^{\beta -\frac{\pi}{2}}\\
+	&=-\frac{I}{4\pi a} \boldsymbol{j} \left\{\sin \left(\beta -\frac{\pi}{2}\right) -\sin \left(\alpha-\frac{\pi}{2}\right) \right\}\\
+	&=-\frac{I}{4\pi a} \boldsymbol{j}\left(-\cos \beta +\cos \alpha \right)\\
+	&=-\frac{I}{4\pi a} \boldsymbol{j}\left(\cos \alpha -\cos \beta \right)\,[\rm{A/m}]\\
+	始点Aと終点B&の座標がそれぞれ(0, -\infty, 0), (0, \infty, 0)の場合は\\
+	\alpha=0,&\beta =\pi であるので\\
+	\boldsymbol{H}&=-\frac{I}{4\pi a}\cdot 2 \boldsymbol{j}\\
+	&=-\frac{I}{2\pi a} \boldsymbol{j}\,[\rm{A/m}]
 	\end{align*}
 
 \section{半径$r$の半円と，半円に接続された半直線状に電流$I$が流れている．このとき，半円の中心Oに発生する磁界$\boldsymbol{H}$を求めよ．}
-	\begin{align*}
+\begin{align*}
+		x方向，y方向，z方向の&基底ベクトルをそれぞれ\boldsymbol{i},\boldsymbol{j},\boldsymbol{k}とする\\
+		半円部分の電流が&つくる微小磁界と磁界をそれぞれ，d\boldsymbol{H}_1，\boldsymbol{H}_1とする\\
+	d\boldsymbol{l}\times \boldsymbol{l}&の方向よりd\boldsymbol{H}は紙に突き刺さる\\
+	\boldsymbol{H}_{1}&=\oint d\boldsymbol{H}_{1}\\
+	&=\oint \frac{Id\boldsymbol{I}\times \boldsymbol{r}}{4\pi a^{3}}\\
+	&=\frac{I}{4\pi a^{3}} \oint \boldsymbol{r} \times d\boldsymbol{I}\\
+	|\boldsymbol{H}_{1}|&=\frac{I}{4\pi a^{3}} \oint r \sin \frac{\pi}{2}dl\\
+	&=\frac{I}{4\pi a^{2}}\pi a\\
+	&=\frac{I}{4r}\,[\rm{A/m}]\\
+	\boldsymbol{H}_{1}&=-\frac{I}{4r}\boldsymbol{k}\,[\rm{A/m}]\\
+	また，x=rの半直線が&つくるつくる微小磁界と磁界をそれぞれ，d\boldsymbol{H}_{2}_，\boldsymbol{H}_{2}とする\\
 	\end{align*}
+
 
 \section{半径$a$の円Oに外接する正多角形の辺上に電流が流れているとき，以下の問に答えよ．}
 \begin{enumerate}[(a)]
 	\item 正三角形の辺上を流れる電流$I$が内接円の中心Oにつくる磁界$H$を求めよ．
 	\begin{align*}
+		問4より&\\
+		\boldsymbol{H}&=-\frac{I}{4\pi a} \boldsymbol{i}\left(\cos \alpha -\cos \beta \right)\,[\rm{A/m}]\\
+		ここでそれぞれの作る磁界は&同一方向で，\alpha=\frac{\pi}{6}, \beta =\pi-\frac{\pi}{6}であるため\\
+		|\boldsymbol{H}|&=\frac{3I}{4\pi a} \left(\cos \frac{\pi}{6} -\cos \frac{5}{6}\pi \right)\\
+		&=\frac{3I}{4\pi a} \left(\frac{1}{2} +\frac{1}{2} \right)\\
+		&=\frac{3I}{2\pi a}\,[\rm{A/m}]
 	\end{align*}
 	\item 一般的な正$n$角形(ただし，$n$は3以上の自然数)の辺上を流れる電流$I$が内接円の中心 Oにつくる磁界$H$を求めよ．
 	\begin{align*}
+	上問より正n角形の内接円の中心につくる&磁界は各辺がつくる磁界のn倍であることがわかる\\
+	|\boldsymbol{H}|&=\frac{nI}{2\pi a}\left(\cos \alpha\right)\,[\rm{A/m}]\\
+	\alpha は正n角形の頂点&の半分であるため\\
+	\alpha &=\frac{1}{2}\left(\pi-\frac{2\pi}{n}\right)\\
+	&=\frac{\pi}{2}-\frac{\pi}{n}\\
+	|\boldsymbol{H}|&=\frac{nI}{2\pi a}\left\{\cos \left(\frac{\pi}{2}-\frac{\pi}{n}\right)\right\}\\
+	\cos\left(\frac{\pi}{2}-\theta\right)&=\sin \theta\\
+	&=\frac{nI}{2\pi a} \left(\sin \frac{\pi}{n}\right)\,[\rm{A/m}]
 	\end{align*}
 	\item (b)で求めた正$n$角形が，その内接円の中心Oにつくる磁界$H$を用いて，$n \to \infty$の
 場合の極限値を求めよ．
 	\begin{align*}
+	|\boldsymbol{H}|&=\frac{nI}{2\pi a} \sin \frac{\pi}{n}\\
+	&=\frac{I}{2\pi a}n\sin \frac{\pi}{n}\\
+	&=\frac{I}{2\pi a}\frac{\sin \frac{\pi}{n}}{\frac{1}{n}}\\
+	&=\frac{I}{2\pi a}\frac{-\frac{\pi}{n^{2}}\cos \frac{\pi}{n}}{-\frac{1}{n^{2}}}\\
+	\lim_{n \to \infty} |\boldsymbol{H}|&=\frac{I}{2\pi a} \lim_{n \to \infty}\left(\frac{-\frac{\pi}{n^{2}}\cos \frac{\pi}{n}}{-\frac{1}{n^{2}}}\right)\\
+	&=\frac{I}{2 a} \lim_{n \to \infty}\left(\cos \frac{\pi}{n}\right)\\
+	&=\frac{I}{2a}\,[\rm{A/m}]
 	\end{align*}
 \end{enumerate}
 
