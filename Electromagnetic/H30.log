@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.0.0-u1.28-220214-2.6 (utf8.uptex) (TeX Live 2022) (preloaded format=uplatex 2022.5.13)  11 JUL 2022 07:45
+This is e-upTeX, Version 3.141592653-p4.0.0-u1.28-220214-2.6 (utf8.uptex) (TeX Live 2022) (preloaded format=uplatex 2022.5.13)  11 JUL 2022 08:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2896,10 +2896,10 @@ Package logreq Info: Writing requests to 'H30.run.xml'.
 Here is how much of TeX's memory you used:
  36802 strings out of 478751
  725680 string characters out of 5857035
- 1481452 words of memory out of 5000000
+ 1481453 words of memory out of 5000000
  54624 multiletter control sequences out of 15000+600000
  519812 words of font info for 114 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  98i,18n,94p,1552b,805s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on H30.dvi (12 pages, 57876 bytes).
+Output written on H30.dvi (12 pages, 57880 bytes).
