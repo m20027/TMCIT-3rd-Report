@@ -2,7 +2,7 @@
 \usepackage{eee}
 
 \begin{document}
-\title{平成30年　電磁気学I}
+\title{平成30年　電磁気学II}
 \date{}
 \author{大山主朗}
 
@@ -231,17 +231,17 @@
 	\frac{dh}{d\theta}&=\frac{a}{\cos ^{2}\theta } \quad \therefore dh=\frac{a}{\cos ^{2}\theta }d\theta \\
 	また積分範囲は&c_{1}\to c_{2}から\alpha-\frac{\pi}{2} \to \beta -\frac{\pi}{2}に変更される．\\
 	&=-\int_{\alpha-\frac{\pi}{2}}^{\beta -\frac{\pi}{2}} \frac{a^{2}I}{4\pi a^{3}(1+\tan^{2}\theta)^{3/2}}\boldsymbol{j} \frac{a}{\cos ^{2}\theta }d\theta\\
-	&=-\frac{I}{4\pi} \boldsymbol{j} \int_{\alpha-\frac{\pi}{2}}^{\beta -\frac{\pi}{2}} \frac{1}{(1+\tan^{2}\theta)^{3/2}} \frac{1}{\cos ^{2}\theta }d\theta\\
-	&=-\frac{I}{4\pi a} \boldsymbol{j} \int_{\alpha-\frac{\pi}{2}}^{\beta -\frac{\pi}{2}} \frac{1}{(\frac{1}{\cos^{2} \theta })^{3/2}} \frac{1}{\cos ^{2}\theta }d\theta\\
-	&=-\frac{I}{4\pi a} \boldsymbol{j} \int_{\alpha-\frac{\pi}{2}}^{\beta -\frac{\pi}{2}} \cos \theta d \theta \\\
-	&=-\frac{I}{4\pi a} \boldsymbol{j} \left[\sin \theta  \right]_{\alpha-\frac{\pi}{2}}^{\beta -\frac{\pi}{2}}\\
-	&=-\frac{I}{4\pi a} \boldsymbol{j} \left\{\sin \left(\beta -\frac{\pi}{2}\right) -\sin \left(\alpha-\frac{\pi}{2}\right) \right\}\\
-	&=-\frac{I}{4\pi a} \boldsymbol{j}\left(-\cos \beta +\cos \alpha \right)\\
-	&=-\frac{I}{4\pi a} \boldsymbol{j}\left(\cos \alpha -\cos \beta \right)\,[\rm{A/m}]\\
+	&=-\frac{I}{4\pi} \boldsymbol{k}\int_{\alpha-\frac{\pi}{2}}^{\beta -\frac{\pi}{2}} \frac{1}{(1+\tan^{2}\theta)^{3/2}} \frac{1}{\cos ^{2}\theta }d\theta\\
+	&=-\frac{I}{4\pi a} \boldsymbol{k} \int_{\alpha-\frac{\pi}{2}}^{\beta -\frac{\pi}{2}} \frac{1}{(\frac{1}{\cos^{2} \theta })^{3/2}} \frac{1}{\cos ^{2}\theta }d\theta\\
+	&=-\frac{I}{4\pi a} \boldsymbol{k}\int_{\alpha-\frac{\pi}{2}}^{\beta -\frac{\pi}{2}} \cos \theta d \theta \\\
+	&=-\frac{I}{4\pi a} \left[\sin \theta  \right]_{\alpha-\frac{\pi}{2}}^{\beta -\frac{\pi}{2}}\boldsymbol{k}\\
+	&=-\frac{I}{4\pi a}\left\{\sin \left(\beta -\frac{\pi}{2}\right) -\sin \left(\alpha-\frac{\pi}{2}\right) \right\}\boldsymbol{k}\\
+	&=-\frac{I}{4\pi a} \left(-\cos \beta +\cos \alpha \right)\boldsymbol{k}\\
+	&=-\frac{I}{4\pi a} \left(\cos \alpha -\cos \beta \right)\boldsymbol{k}\,[\rm{A/m}]\\
 	始点Aと終点B&の座標がそれぞれ(0, -\infty, 0), (0, \infty, 0)の場合は\\
 	\alpha=0,&\beta =\pi であるので\\
-	\boldsymbol{H}&=-\frac{I}{4\pi a}\cdot 2 \boldsymbol{j}\\
-	&=-\frac{I}{2\pi a} \boldsymbol{j}\,[\rm{A/m}]
+	\boldsymbol{H}&=-\frac{I}{4\pi a}\cdot 2 \boldsymbol{k}\\
+	&=-\frac{I}{2\pi a} \boldsymbol{k}\,[\rm{A/m}]
 	\end{align*}
 	
 \section{半径$a$の円Oに外接する正多角形の辺上に電流が流れているとき，以下の問に答えよ．}
@@ -252,8 +252,8 @@
 		\boldsymbol{H}&=-\frac{I}{4\pi a} \boldsymbol{i}\left(\cos \alpha -\cos \beta \right)\,[\rm{A/m}]\\
 		ここでそれぞれの作る磁界は&同一方向で，\alpha=\frac{\pi}{6}, \beta =\pi-\frac{\pi}{6}であるため\\
 		|\boldsymbol{H}|&=\frac{3I}{4\pi a} \left(\cos \frac{\pi}{6} -\cos \frac{5}{6}\pi \right)\\
-		&=\frac{3I}{4\pi a} \left(\frac{1}{2} +\frac{1}{2} \right)\\
-		&=\frac{3I}{2\pi a}\,[\rm{A/m}]
+		&=\frac{3I}{4\pi a} \left(\frac{\sqrt{3}}{2} +\frac{\sqrt{3}}{2} \right)\\
+		&=\frac{3\sqrt{3}I}{4\pi a}\,[\rm{A/m}]
 	\end{align*}
 	\item 一般的な正$n$角形(ただし，$n$は3以上の自然数)の辺上を流れる電流$I$が内接円の中心 Oにつくる磁界$H$を求めよ．
 	\begin{align*}
