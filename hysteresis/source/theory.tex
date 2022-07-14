@@ -1,0 +1,86 @@
+\clearpage
+
+\section{原理}
+\subsection{磁気回路}
+\wfig{hys:jikikairo}に示すように断面積$S\,[\mathrm{m}^2]$，平均磁路長$L\,[\mathrm{m}]$の鉄心に巻数$N_1\,[\mathrm{Turn}]$のコイルを巻き，これに$I\,[\mathrm{A}]$の電流を流すと，起磁力$N_1\cdot I\,[\mathrm{A}\cdot\mathrm{Turn}]$を生じる．
+この起磁力により
+\begin{equation}
+	\phi = \frac{N_1\cdot I}{R_m}
+\end{equation}
+の磁束$\phi\,[\mathrm{Wb}]$を生じる．ここで$R_m$は以下に示す磁気抵抗である．
+\begin{equation}
+	R_m= \frac{L}{\mu_0 \mu_s S}
+\end{equation}
+ただし，$\mu_0 = 4\pi\times 10^{-7}\,\mathrm{F/m}$ は真空の透磁率であり，$\mu_s$は鉄心の比透磁率である．
+ここで，磁路1\,mあたりの起磁力を磁化力$H\,[\mathrm{A/m}]$という． 磁化力$H$は
+\begin{equation}
+	H=\frac{N_1\cdot I}{L}
+\end{equation}
+である．また磁路断面積 1\,m$^2$あたりの磁束を，磁束密度$B\,[\mathrm{Wb/m}^2]$という．
+\begin{equation}
+	B=\frac{\phi}{S}
+	\label{eq:hys:BphiS}
+\end{equation}
+ここで，$S\,[\mathrm{m}^2]$は磁路断面積を示す．
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=70mm]{fig/magnetism_circuit.pdf}
+	\caption{磁気回路}
+	\label{fig:hys:jikikairo}
+\end{figure}
+
+鉄心の磁化力$H$と磁束密度$B$との関係を示す曲線をB-H曲線といい，一般に\wfig{hys:bhcurve}(a)のような飽和特性になる．
+また磁化力$H$を正負の方向に増減すると，\wfig{hys:bhcurve}(b)の様なヒステリシス曲線になる．
+\begin{figure}[htbp]
+	\centering
+	\begin{tabular}{cc}
+		\includegraphics[width=70mm]{fig/bhcurve.pdf} &
+		\includegraphics[width=70mm]{fig/hysteresis.pdf} \\
+		(a) B-H 曲線 & (b) ヒステリシス曲線
+	\end{tabular}
+	\caption{B-H曲線とヒステリシス曲線}
+	\label{fig:hys:bhcurve}
+\end{figure}
+
+\subsection{交流磁化特性}
+\wfig{hys:transformer}の変圧器のように，鉄心に巻かれた巻数$N_1$のコイルに交流電圧$V_1$を加えると，鉄心中に交番磁束$\phi$を作るための電流（励磁電流）$i_0$が流れる．このとき磁束密度$B$と磁化力$H$との間にはヒステリシス特性があるため，励磁電流は\wfig{hys:hizumi}のようにひずみを生ずる．この現象を逆に利用して，励磁電流$i_0$と交番磁束$\phi$の波形をなんらかの方法で取り出し，オシロスコープのX軸に励磁電流$i_0$の波形，Y軸に交番磁束$\phi$の波形を入力すれば，オシロスコープの画面に鉄心のヒステリシス特性（B-H曲線）が描かれる．
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=140mm]{fig/transformer.pdf}
+	\caption{変圧器の交流磁化特性測定回路}
+	\label{fig:hys:transformer}
+\end{figure}
+
+励磁電流$i_0$の波形を直接取り出すのは難しいので，\wfig{hys:transformer}において励磁電流$i_0$が抵抗$R_h$を流れるときの電圧変化，すなわち
+\begin{equation}
+	V_h = i_0R_h
+\end{equation}
+として取り出す．また，交番磁束$\phi$は次の様にして取り出す．
+
+\wfig{hys:transformer}において二次巻線$N_2$と鎖交する磁束の時間に対する変化が二次誘起電圧$e_2$として現れるため
+\begin{equation}
+	e_2 = -N_2\frac{d \phi}{dt}
+	\label{eq:hys:e2}
+\end{equation}
+となり，\weq{hys:e2}を変形すると
+\begin{equation}
+	d \phi = \frac{1}{N_2}\times e_2\times dt
+	\label{eq:hys:dphi}
+\end{equation}
+となるから，交番磁束$\phi$は\weq{hys:dphi}を積分すれば求まることとなる．すなわち，二次巻線に発生する電圧$e_2$を時間で積分すればよい．そこで二次側にCR積分回路を接続しコンデンサCの両端から$e_2$を積分した，交番磁束に比例した電圧をとりだす．
+
+\begin{figure}[h]
+  \begin{minipage}[c]{0.5\hsize}
+    \centering
+    \includegraphics[scale=1.2]{fig/hizumi_a.pdf} 
+    \caption{ヒステリシス現象のない場合}
+  \end{minipage}\\
+  \begin{minipage}[c]{0.5\hsize}
+    \centering
+    \includegraphics[scale=1.2]{fig/hizumi_b.pdf}
+    \caption{ヒステリシス現象のある場合}
+  \end{minipage}
+  \centering
+  \caption{ヒステリシス現象}
+   \label{fig:hys:hizumi}
+\end{figure}
