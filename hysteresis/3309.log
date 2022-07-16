@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.0.0-u1.28-220214-2.6 (utf8.uptex) (TeX Live 2022) (preloaded format=uplatex 2022.5.13)  16 JUL 2022 15:45
+This is e-upTeX, Version 3.141592653-p4.0.0-u1.28-220214-2.6 (utf8.uptex) (TeX Live 2022) (preloaded format=uplatex 2022.5.13)  16 JUL 2022 17:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1401,11 +1401,27 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 5.77332pt on input line 6.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\cite' on input line 16.
+(hyperref)                removing `\cite' on input line 12.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\cite' on input line 19.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\cite' on input line 19.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\cite' on input line 25.
 
 [2
 
 ]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\cite' on input line 62.
+
 File: fig/magnetism_circuit.pdf Graphic file (type pdf)
 <fig/magnetism_circuit.pdf>
 File: fig/bhcurve.pdf Graphic file (type pdf)
@@ -1414,43 +1430,59 @@ File: fig/hysteresis.pdf Graphic file (type pdf)
 <fig/hysteresis.pdf>
 File: fig/transformer.pdf Graphic file (type pdf)
 <fig/transformer.pdf>
- [3] [4]
+[3] [4]
 File: fig/hizumi_a.pdf Graphic file (type pdf)
 <fig/hizumi_a.pdf>
 
-Overfull \hbox (84.5702pt too wide) in paragraph at lines 125--126
+Overfull \hbox (84.5702pt too wide) in paragraph at lines 136--137
  [][] 
  []
 
 File: fig/hizumi_b.pdf Graphic file (type pdf)
 <fig/hizumi_b.pdf>
 
-Overfull \hbox (115.88713pt too wide) in paragraph at lines 130--131
+Overfull \hbox (115.88713pt too wide) in paragraph at lines 141--142
  [][] 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\cite' on input line 138.
+(hyperref)                removing `\cite' on input line 149.
 
 File: fig/domain.png Graphic file (type bmp)
 <fig/domain.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\cite' on input line 163.
+
 [5]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\cite' on input line 156.
+(hyperref)                removing `\cite' on input line 171.
 
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\cite' on input line 176.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\cite' on input line 182.
+
+[6]
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 7.69775pt on input line 174.
+(Font)              scaled to size 7.69775pt on input line 200.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 8.65997pt on input line 174.
+(Font)              scaled to size 8.65997pt on input line 200.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 8.65997pt on input line 174.
+(Font)              scaled to size 8.65997pt on input line 200.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 4.8111pt on input line 174.
+(Font)              scaled to size 4.8111pt on input line 200.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 5.77332pt on input line 174.
-[6]) (/Users/ohyamasan/Downloads/TMCIT-3rd-Report/hysteresis/source/howto.tex
+(Font)              scaled to size 5.77332pt on input line 200.
+) (/Users/ohyamasan/Downloads/TMCIT-3rd-Report/hysteresis/source/howto.tex
 [7]
 File: ./fig/circ.pdf Graphic file (type pdf)
 <./fig/circ.pdf>
@@ -1474,20 +1506,24 @@ x [10
 Package biblatex Warning: No driver for entry type 'webpage'.
 (biblatex)                Using fallback driver on input line 44.
 
+
+Package biblatex Warning: No driver for entry type 'webpage'.
+(biblatex)                Using fallback driver on input line 44.
+
 [14] (./3309.aux)
 Package rerunfilecheck Info: File `3309.out' has not changed.
-(rerunfilecheck)             Checksum: AE52A2972BDF26B644D788161567F30F;2766.
+(rerunfilecheck)             Checksum: 1F8AC0AB1C2AA5EAD760FBBF726D3C8A;3473.
 Package logreq Info: Writing requests to '3309.run.xml'.
 \openout1 = `3309.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37162 strings out of 478751
- 734409 string characters out of 5857035
- 1452461 words of memory out of 5000000
- 54961 multiletter control sequences out of 15000+600000
+ 37184 strings out of 478751
+ 735187 string characters out of 5857035
+ 1457777 words of memory out of 5000000
+ 54983 multiletter control sequences out of 15000+600000
  520250 words of font info for 121 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  98i,12n,94p,1113b,1325s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 3309.dvi (15 pages, 55512 bytes).
+Output written on 3309.dvi (15 pages, 64364 bytes).

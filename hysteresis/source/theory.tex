@@ -9,16 +9,25 @@
 \end{equation}
 という関係がある．
 
-\subsection{磁気双極子(magnetic dipole)}
+\subsection{磁気双極子(magnetic dipole)\cite{7652}}
+正負の磁極の対．本質的には微小円電流で以下のように表される．
+\begin{equation}
+	\boldsymbol{m}=\mu_{0}IS\boldsymbol{n}
+\end{equation}
+ここで，$S$：ループ面の面積，$\boldsymbol{n}$：ループ面の単位法線ベクトルである．
 
-\subsection{磁気双極子モーメント(magnetic dipole moment)}
+\subsection{磁気モーメント(magnetic moment)\cite{7652}\cite{113028227162}}
+磁気モーメントは以下のように表すことができる．
+\begin{equation}
+	\boldsymbol{\mu}=IS\boldsymbol{n}
+\end{equation}
 
 \subsection{磁化(magnetization)\cite{11302042}}
 磁界に対して応答を示す物質を磁性体(magnetic material)という．
-通常の磁性体には多数の磁気双極子が含まれている．単位体積に含まれる磁気双極子モーメントの和を磁化と呼ぶ．
+通常の磁性体には多数の磁気双極子が含まれている．単位体積に含まれる磁気モーメントの和を磁化と呼ぶ．
 ここで薄い板状の磁性体を考える．板に垂直方向に一様な磁界がかかっており，外部における磁場を$H_{0}$とすると，磁性体の外部での磁束密度$B$は
 \begin{equation}	
-	B=\mu_{0}H_{0}
+	B=\mu_{0}H_{0}\,[\rm{T}]
 \end{equation}
 という関係を満たす．一方，この場合には磁性体は板の厚み方向に磁化されており，その値を$M$とすると，磁性体の両面には単位面積あたり$\pm \mu_{0}M$の磁極が発生する．このとき磁極は磁性体内部に
 $-M$という磁界を発生させる．これらより磁性体内部の磁束密度以下のようになる．
@@ -26,29 +35,36 @@ $-M$という磁界を発生させる．これらより磁性体内部の磁束�
 	H&=H_{0}-M\nonumber\\
 	\mu_{0}H&=\mu_{0}H_{0}-\mu_{0}M\nonumber\\
 	\mu_{0}H&=B-\mu_{0}M\nonumber\\
-	B&=\mu_{0}(H+M)
+	B&=\mu_{0}(H+M)\,[\rm{T}]
 \end{align}
 となる．向きも含めて考えると上式は\weq{mo}のようになる．
 \begin{equation}
-	\boldsymbol{B}=\mu_{0}(\boldsymbol{H}+\boldsymbol{M})
+	\boldsymbol{B}=\mu_{0}(\boldsymbol{H}+\boldsymbol{M})\,[\rm{T}]
 	\label{eq:mo}
 \end{equation}
 また，磁界と磁化の関係を\weq{mmo}のように表現する場合
 \begin{equation}
-	\boldsymbol{M}=\chi\boldsymbol{H}
+	\boldsymbol{M}=\chi\boldsymbol{H}\,[\rm{T}]
 	\label{eq:mmo}
 \end{equation}
 $\chi$を磁化率(単位は無次元)などと呼び，\weq{mo}に代入し，\weq{bh}の関係を用いると
 \begin{equation}
-	\boldsymbol{B}=\mu \boldsymbol{H}
+	\boldsymbol{B}=\mu \boldsymbol{H}\,[\rm{T}]
 	\label{eq:bh}
 \end{equation}
 \weq{mu}のような関係があることがわかる．
 \begin{align}
 	\boldsymbol{B}&=\mu_{0}(\boldsymbol{H}+\boldsymbol{M})\nonumber\\
 	\mu \boldsymbol{H}&=\mu_{0}(\boldsymbol{H}+\chi\boldsymbol{H})\nonumber\\
-	\mu &=\mu_{0}(1+\chi)\label{eq:mu}
+	\mu &=\mu_{0}(1+\chi)\,[\rm{F/m}]\label{eq:mu}
 \end{align}
+
+\subsection{キュリーの法則(Curie's law)\cite{76972}}
+常磁性物質において，磁化率と温度の関係(反比例)を示す法則で以下のように表すことができる．
+\begin{equation}
+	\chi=\frac{C}{T}\,[\rm{-}]
+\end{equation}
+ここで，$C$：キュリー定数$\,[\rm{K}]$，$T$：絶対温度$\,[\rm{K}]$
 
 \subsection{磁気回路(magnetic circuit)}
 \wfig{hys:jikikairo}に示すように断面積$S\,[\mathrm{m}^2]$，平均磁路長$L\,[\mathrm{m}]$の鉄心に巻数$N_1\,[\mathrm{Turn}]$のコイルを巻き，これに$I\,[\mathrm{A}]$の電流を流すと，起磁力$N_1\cdot I\,[\mathrm{A}\cdot\rm{Turn}]$を生じる．
@@ -65,12 +81,7 @@ $\chi$を磁化率(単位は無次元)などと呼び，\weq{mo}に代入し，\
 \begin{equation}
 	H=\frac{N_1\cdot I}{L}
 \end{equation}
-である．また磁路断面積 1\,m$^2$あたりの磁束を，磁束密度$B\,[\mathrm{Wb/m}^2]$という．
-\begin{equation}
-	B=\frac{\phi}{S}
-	\label{eq:hys:BphiS}
-\end{equation}
-ここで，$S\,[\mathrm{m}^2]$は磁路断面積を示す．
+である．
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=70mm]{fig/magnetism_circuit.pdf}
@@ -140,7 +151,7 @@ $\chi$を磁化率(単位は無次元)などと呼び，\weq{mo}に代入し，\
 ヒステリシスループにおいてループと縦軸が交わる場所での磁化値を残留磁化といい，ループと横軸が交わる場所での磁界の値を保磁力という．
 強磁性体は外部磁界がなくても自発磁化を持っているが，全体が一様に磁化されていると外部の空間に磁界を発生し，その磁界によるエネルギーが余分に余ってしまう．
 そのため，強磁性体は自らを磁化の向きが異なる区間を磁区といい，磁区どうしの境界面を磁壁という．
-強磁性は磁気双極子モーメントどうしにお互いに同じ向きを向うとする相互作用がはたらくことで出現する．磁壁の両側では異なる向きの磁気双極子モーメントが対峙することになるので，磁壁では余分なエネルギーが発生する．
+強磁性は磁気モーメントどうしにお互いに同じ向きを向うとする相互作用がはたらくことで出現する．磁壁の両側では異なる向きの磁気モーメントが対峙することになるので，磁壁では余分なエネルギーが発生する．
 このエネルギーの増加と，外部に磁場を発生させることによるエネルギーの増加の合計を最も小さくするように磁区構造が決まる．
 \begin{figure}[h]
 	\centering
@@ -149,9 +160,24 @@ $\chi$を磁化率(単位は無次元)などと呼び，\weq{mo}に代入し，\
 	\label{fig:domain}
 \end{figure}
 
-\subsection{磁気飽和現象}\label{hohwa}
-\subsection{びおさばーる}
-\subsection{あんぺーる}
+\subsection{磁気飽和現象\cite{xdrcfhgvjb}}\label{hohwa}
+界磁電流が大きくなると，エアギャップ磁束が界磁電流に比例せず，頭打ちになる現象．
+同期機の磁気回路(磁束の通路)は磁極，エアギャップ，電機子歯，電機子鉄心，界磁継鉄(円筒界磁機では回転子鉄心)からなっており，このうち，エアギャップ以外はケイ素鋼板や鋼材などの強磁性体である．強磁性体の磁気分極は磁界の強さに比例せず，ある値に漸近する磁気飽和現象を有する．\\
+それゆえ，同期機の磁気回路では界磁電流の増加に伴い，エアギャップの磁気抵抗は一定であるが強磁性材料部の磁気抵抗が増大するため，磁束は飽和現象を呈する．磁気飽和の程度を表すのに飽和係数を用い，無負荷飽和曲線上の定格電圧に対して，次式で表される．
+\begin{equation}	
+	飽和係数=\frac{鋼材部分に必要な界磁電流}{エアギャップに必要な界磁電流}
+\end{equation}
+
+\subsection{ビオ-サバールの法則(Biot-Savart's law)\cite{1130282271626280192}}
+\begin{equation}
+	d\boldsymbol{B}=\frac{\mu_{0}}{4\pi}\frac{Id\boldsymbol{l}\times \boldsymbol{R}}{R^{3}}
+\end{equation}
+
+\subsection{アンペールの法則(Ampère's circuital law) \cite{12}}
+積分形のアンペールの法則は以下で与えられる．
+\begin{equation}
+	\oint_{C} \boldsymbol{\boldsymbol{r}}\cdot d\boldsymbol{l}=\mu_{0}I
+\end{equation}
 
 \subsection{抵抗損と漂遊負荷損\cite{1130282271832577152}}
 ブリッジ法などで測定した巻線の抵抗(直線抵抗)を$r_{d}$とし，巻線に流れる交流電流を$I$とすると，抵抗損は$I^{2}r_{d}$である．しかし，実際の損失はこの値より大きくなる．その理由は次の2つである．
