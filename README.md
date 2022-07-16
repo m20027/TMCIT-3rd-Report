@@ -81,20 +81,18 @@ $ git remote add origin <url>
 $ echo "フォルダー名" >> .git/info/sparse-checkout
 ```
 VSCode でこのファイルを直接編集してもよい
-
-※ エンコーダーが `UTF-8` になっていることを確認
 ```
 $ code .git/info/sparse-checkout
 ```
-
-※ ! で除外もできる
-※ "/" がないと同じ名前のファイルを全て pull してしまう
+※ エンコーダーが `UTF-8` になっていることを確認
 
 例
 ```
 /HAHAHA
 !/HAHAHA/WTF2.txt
 ```
+※ ! で除外もできる
+※ "/" がないと同じ名前のファイルを全て pull してしまう
 
 ## pull する
 ```
