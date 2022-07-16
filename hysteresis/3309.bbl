@@ -19,6 +19,76 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{113028227042}{book}{}
+      \name{author}{1}{}{%
+        {{hash=5c288a4ed557134f5e8cbd410515c99c}{%
+           family={佐藤},
+           familyi={佐\bibinitperiod},
+           given={博彦},
+           giveni={博\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {数理工学社}%
+        {サイエンス社 (発売)}%
+      }
+      \strng{namehash}{5c288a4ed557134f5e8cbd410515c99c}
+      \strng{fullhash}{5c288a4ed557134f5e8cbd410515c99c}
+      \strng{bibnamehash}{5c288a4ed557134f5e8cbd410515c99c}
+      \strng{authorbibnamehash}{5c288a4ed557134f5e8cbd410515c99c}
+      \strng{authornamehash}{5c288a4ed557134f5e8cbd410515c99c}
+      \strng{authorfullhash}{5c288a4ed557134f5e8cbd410515c99c}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{新・工科系の物理学}
+      \field{title}{工学基礎電磁気学}
+      \field{year}{2019}
+      \field{pages}{44}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb https://cir.nii.ac.jp/crid/1130282270467697152
+      \endverb
+      \verb{url}
+      \verb https://cir.nii.ac.jp/crid/1130282270467697152
+      \endverb
+    \endentry
+    \entry{11302042}{book}{}
+      \name{author}{1}{}{%
+        {{hash=5c288a4ed557134f5e8cbd410515c99c}{%
+           family={佐藤},
+           familyi={佐\bibinitperiod},
+           given={博彦},
+           giveni={博\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {数理工学社}%
+        {サイエンス社 (発売)}%
+      }
+      \strng{namehash}{5c288a4ed557134f5e8cbd410515c99c}
+      \strng{fullhash}{5c288a4ed557134f5e8cbd410515c99c}
+      \strng{bibnamehash}{5c288a4ed557134f5e8cbd410515c99c}
+      \strng{authorbibnamehash}{5c288a4ed557134f5e8cbd410515c99c}
+      \strng{authornamehash}{5c288a4ed557134f5e8cbd410515c99c}
+      \strng{authorfullhash}{5c288a4ed557134f5e8cbd410515c99c}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{新・工科系の物理学}
+      \field{title}{工学基礎電磁気学}
+      \field{year}{2019}
+      \field{pages}{47\bibrangedash 48}
+      \range{pages}{2}
+      \verb{urlraw}
+      \verb https://cir.nii.ac.jp/crid/1130282270467697152
+      \endverb
+      \verb{url}
+      \verb https://cir.nii.ac.jp/crid/1130282270467697152
+      \endverb
+    \endentry
     \entry{1130282271832577152}{book}{}
       \name{author}{2}{}{%
         {{hash=05cc532f389990835c7878df6957b1d6}{%
@@ -42,8 +112,8 @@
       \strng{authornamehash}{161c0cf7b818640baebab265bc3a71cf}
       \strng{authorfullhash}{161c0cf7b818640baebab265bc3a71cf}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{図解変圧器 : 基礎から応用まで}
@@ -80,8 +150,8 @@
       \strng{authornamehash}{161c0cf7b818640baebab265bc3a71cf}
       \strng{authorfullhash}{161c0cf7b818640baebab265bc3a71cf}
       \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{図解変圧器 : 基礎から応用まで}
@@ -113,8 +183,9 @@
       \strng{authorbibnamehash}{5c288a4ed557134f5e8cbd410515c99c}
       \strng{authornamehash}{5c288a4ed557134f5e8cbd410515c99c}
       \strng{authorfullhash}{5c288a4ed557134f5e8cbd410515c99c}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{extraname}{3}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{series}{新・工科系の物理学}
@@ -152,8 +223,8 @@
       \strng{authornamehash}{ce625f1ada021bbedc8cda602c6eafb0}
       \strng{authorfullhash}{ce625f1ada021bbedc8cda602c6eafb0}
       \field{extraname}{1}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{series}{First stageシリーズ}
@@ -191,8 +262,8 @@
       \strng{authornamehash}{161c0cf7b818640baebab265bc3a71cf}
       \strng{authorfullhash}{161c0cf7b818640baebab265bc3a71cf}
       \field{extraname}{3}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{図解変圧器 : 基礎から応用まで}
@@ -229,8 +300,8 @@
       \strng{authornamehash}{ce625f1ada021bbedc8cda602c6eafb0}
       \strng{authorfullhash}{ce625f1ada021bbedc8cda602c6eafb0}
       \field{extraname}{2}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{series}{First stageシリーズ}

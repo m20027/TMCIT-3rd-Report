@@ -1,8 +1,57 @@
 \clearpage
 
 \section{原理}
-\subsection{磁気回路(Magnetic circuit)}
-\wfig{hys:jikikairo}に示すように断面積$S\,[\mathrm{m}^2]$，平均磁路長$L\,[\mathrm{m}]$の鉄心に巻数$N_1\,[\mathrm{Turn}]$のコイルを巻き，これに$I\,[\mathrm{A}]$の電流を流すと，起磁力$N_1\cdot I\,[\mathrm{A}\cdot\mathrm{Turn}]$を生じる．
+\subsection{磁束(magnetic flux)\cite{113028227042}}
+磁気量$q_{m}$の磁極からは$q_{m}$本の磁束が発生し，磁束は途切れたり枝分かれすることはない．
+磁束に垂直な単位面積の面を貫く磁束を磁束密度(magnetic flux density)といい，磁束密度$\boldsymbol{B}$と磁界$\boldsymbol{H}$には
+\begin{equation}
+	\boldsymbol{B}=\mu\boldsymbol{H}\,[\rm{Wb/m^{2}}] \,or\, [\rm{T}] 
+\end{equation}
+という関係がある．
+
+\subsection{磁気双極子(magnetic dipole)}
+
+\subsection{磁気双極子モーメント(magnetic dipole moment)}
+
+\subsection{磁化(magnetization)\cite{11302042}}
+磁界に対して応答を示す物質を磁性体(magnetic material)という．
+通常の磁性体には多数の磁気双極子が含まれている．単位体積に含まれる磁気双極子モーメントの和を磁化と呼ぶ．
+ここで薄い板状の磁性体を考える．板に垂直方向に一様な磁界がかかっており，外部における磁場を$H_{0}$とすると，磁性体の外部での磁束密度$B$は
+\begin{equation}	
+	B=\mu_{0}H_{0}
+\end{equation}
+という関係を満たす．一方，この場合には磁性体は板の厚み方向に磁化されており，その値を$M$とすると，磁性体の両面には単位面積あたり$\pm \mu_{0}M$の磁極が発生する．このとき磁極は磁性体内部に
+$-M$という磁界を発生させる．これらより磁性体内部の磁束密度以下のようになる．
+\begin{align}
+	H&=H_{0}-M\nonumber\\
+	\mu_{0}H&=\mu_{0}H_{0}-\mu_{0}M\nonumber\\
+	\mu_{0}H&=B-\mu_{0}M\nonumber\\
+	B&=\mu_{0}(H+M)
+\end{align}
+となる．向きも含めて考えると上式は\weq{mo}のようになる．
+\begin{equation}
+	\boldsymbol{B}=\mu_{0}(\boldsymbol{H}+\boldsymbol{M})
+	\label{eq:mo}
+\end{equation}
+また，磁界と磁化の関係を\weq{mmo}のように表現する場合
+\begin{equation}
+	\boldsymbol{M}=\chi\boldsymbol{H}
+	\label{eq:mmo}
+\end{equation}
+$\chi$を磁化率(単位は無次元)などと呼び，\weq{mo}に代入し，\weq{bh}の関係を用いると
+\begin{equation}
+	\boldsymbol{B}=\mu \boldsymbol{H}
+	\label{eq:bh}
+\end{equation}
+\weq{mu}のような関係があることがわかる．
+\begin{align}
+	\boldsymbol{B}&=\mu_{0}(\boldsymbol{H}+\boldsymbol{M})\nonumber\\
+	\mu \boldsymbol{H}&=\mu_{0}(\boldsymbol{H}+\chi\boldsymbol{H})\nonumber\\
+	\mu &=\mu_{0}(1+\chi)\label{eq:mu}
+\end{align}
+
+\subsection{磁気回路(magnetic circuit)}
+\wfig{hys:jikikairo}に示すように断面積$S\,[\mathrm{m}^2]$，平均磁路長$L\,[\mathrm{m}]$の鉄心に巻数$N_1\,[\mathrm{Turn}]$のコイルを巻き，これに$I\,[\mathrm{A}]$の電流を流すと，起磁力$N_1\cdot I\,[\mathrm{A}\cdot\rm{Turn}]$を生じる．
 この起磁力により
 \begin{equation}
 	\phi = \frac{N_1\cdot I}{R_m}
@@ -86,10 +135,20 @@
    \label{fig:hys:hizumi}
 \end{figure}
 
-\subsection{磁区}
+\subsection{磁区(magnetic domain)}
+\wfig{domain}にヒステリシスループと磁区の関係を示す．
+ヒステリシスループにおいてループと縦軸が交わる場所での磁化値を残留磁化といい，ループと横軸が交わる場所での磁界の値を保磁力という．
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.35]{fig/domain.png}
+	\caption{ヒステリシスループと磁区}
+	\label{fig:domain}
+\end{figure}
+
+\subsection{磁気飽和現象}\label{hohwa}
 \subsection{理想変圧器}
 \subsection{実際の変圧器}
-\subsection{磁気飽和現象}\label{hohwa}
+
 \subsection{抵抗損と漂遊負荷損\cite{1130282271832577152}}
 ブリッジ法などで測定した巻線の抵抗(直線抵抗)を$r_{d}$とし，巻線に流れる交流電流を$I$とすると，抵抗損は$I^{2}r_{d}$である．しかし，実際の損失はこの値より大きくなる．その理由は次の2つである．
 \begin{enumerate}[(1)]
@@ -105,4 +164,29 @@
 \end{enumerate}
 
 \subsection{積分回路}
+\wfig{ad}に示すようなCR回路を積分回路という．
+この回路で入力信号を積分した信号を取り出すことができる．
+同図で$S_{1}-S_{2}$に電源$e=E\sin \omega t$なる電圧が印加されている場合を考える．
+この時回路を流れる電流$I$は$R\gg 1/\omega C$ならば\footnote{この回路の合成インピーダンスが抵抗のみであると近似できる条件}キャパシタにかかる電圧を$E_{C}$とすると
+\begin{equation}
+	I=\frac{E_{C}}{R}\sin \omega t
+	\label{eq:I}
+\end{equation}
+となる．このとき$E_{C}$は，コンデンサの電荷を$q$とすれば
+\begin{equation}
+	E_{C}=\frac{q}{C}
+	\label{eq:qcv}
+\end{equation}
+と表せる．また，電荷$q$は電流を積分したものであることと，\weq{I}より
+\begin{align}
+	q&=\int I dt\nonumber \\
+	&=\int \frac{E}{R}\sin \omega tdt
+	\label{eq:int}
+\end{align}
+\weq{qcv}と\weq{int}より
+\begin{equation}
+	E_{C}=\int \frac{E}{RC} \sin \omega tdt
+	\label{eq:sekibun}
+\end{equation}
+\weq{sekibun}より，コンデンサ$C$の両端電圧$E_{C}$は入力信号$e$を積分した信号に比例した信号が得られる．
 \subsection{電流密度}
