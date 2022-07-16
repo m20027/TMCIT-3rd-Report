@@ -3,7 +3,10 @@ visual studio code プレビュー表示
 ctrl + K
 V
 -->
+
 # 実験実習のレポートと電磁気2の課題
+
+以下にgitに関するメモを示す．
 
 # git : pull から push まで
 初回
