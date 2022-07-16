@@ -1,8 +1,73 @@
 \clearpage
 
 \section{原理}
-\subsection{磁気回路}
-\wfig{hys:jikikairo}に示すように断面積$S\,[\mathrm{m}^2]$，平均磁路長$L\,[\mathrm{m}]$の鉄心に巻数$N_1\,[\mathrm{Turn}]$のコイルを巻き，これに$I\,[\mathrm{A}]$の電流を流すと，起磁力$N_1\cdot I\,[\mathrm{A}\cdot\mathrm{Turn}]$を生じる．
+\subsection{磁束(magnetic flux)\cite{113028227042}}
+磁気量$q_{m}$の磁極からは$q_{m}$本の磁束が発生し，磁束は途切れたり枝分かれすることはない．
+磁束に垂直な単位面積の面を貫く磁束を磁束密度(magnetic flux density)といい，磁束密度$\boldsymbol{B}$と磁界$\boldsymbol{H}$には
+\begin{equation}
+	\boldsymbol{B}=\mu\boldsymbol{H}\,[\rm{Wb/m^{2}}] \,or\, [\rm{T}] 
+\end{equation}
+という関係がある．
+
+\subsection{磁気双極子(magnetic dipole)\cite{7652}}
+正負の磁極の対．本質的には微小円電流で以下のように表される．
+\begin{equation}
+	\boldsymbol{m}=\mu_{0}IS\boldsymbol{n}
+\end{equation}
+ここで，$S$：ループ面の面積，$\boldsymbol{n}$：ループ面の単位法線ベクトルである．
+
+\subsection{磁気モーメント(magnetic moment)\cite{7652}\cite{113028227162}}
+磁気モーメントは以下のように表すことができる．
+\begin{equation}
+	\boldsymbol{\mu}=IS\boldsymbol{n}
+\end{equation}
+
+\subsection{磁化(magnetization)\cite{11302042}}
+磁界に対して応答を示す物質を磁性体(magnetic material)という．
+通常の磁性体には多数の磁気双極子が含まれている．単位体積に含まれる磁気モーメントの和を磁化と呼ぶ．
+ここで薄い板状の磁性体を考える．板に垂直方向に一様な磁界がかかっており，外部における磁場を$H_{0}$とすると，磁性体の外部での磁束密度$B$は
+\begin{equation}	
+	B=\mu_{0}H_{0}\,[\rm{T}]
+\end{equation}
+という関係を満たす．一方，この場合には磁性体は板の厚み方向に磁化されており，その値を$M$とすると，磁性体の両面には単位面積あたり$\pm \mu_{0}M$の磁極が発生する．このとき磁極は磁性体内部に
+$-M$という磁界を発生させる．これらより磁性体内部の磁束密度以下のようになる．
+\begin{align}
+	H&=H_{0}-M\nonumber\\
+	\mu_{0}H&=\mu_{0}H_{0}-\mu_{0}M\nonumber\\
+	\mu_{0}H&=B-\mu_{0}M\nonumber\\
+	B&=\mu_{0}(H+M)\,[\rm{T}]
+\end{align}
+となる．向きも含めて考えると上式は\weq{mo}のようになる．
+\begin{equation}
+	\boldsymbol{B}=\mu_{0}(\boldsymbol{H}+\boldsymbol{M})\,[\rm{T}]
+	\label{eq:mo}
+\end{equation}
+また，磁界と磁化の関係を\weq{mmo}のように表現する場合
+\begin{equation}
+	\boldsymbol{M}=\chi\boldsymbol{H}\,[\rm{T}]
+	\label{eq:mmo}
+\end{equation}
+$\chi$を磁化率(単位は無次元)などと呼び，\weq{mo}に代入し，\weq{bh}の関係を用いると
+\begin{equation}
+	\boldsymbol{B}=\mu \boldsymbol{H}\,[\rm{T}]
+	\label{eq:bh}
+\end{equation}
+\weq{mu}のような関係があることがわかる．
+\begin{align}
+	\boldsymbol{B}&=\mu_{0}(\boldsymbol{H}+\boldsymbol{M})\nonumber\\
+	\mu \boldsymbol{H}&=\mu_{0}(\boldsymbol{H}+\chi\boldsymbol{H})\nonumber\\
+	\mu &=\mu_{0}(1+\chi)\,[\rm{F/m}]\label{eq:mu}
+\end{align}
+
+\subsection{キュリーの法則(Curie's law)\cite{76972}}
+常磁性物質において，磁化率と温度の関係(反比例)を示す法則で以下のように表すことができる．
+\begin{equation}
+	\chi=\frac{C}{T}\,[\rm{-}]
+\end{equation}
+ここで，$C$：キュリー定数$\,[\rm{K}]$，$T$：絶対温度$\,[\rm{K}]$
+
+\subsection{磁気回路(magnetic circuit)}
+\wfig{hys:jikikairo}に示すように断面積$S\,[\mathrm{m}^2]$，平均磁路長$L\,[\mathrm{m}]$の鉄心に巻数$N_1\,[\mathrm{Turn}]$のコイルを巻き，これに$I\,[\mathrm{A}]$の電流を流すと，起磁力$N_1\cdot I\,[\mathrm{A}\cdot\rm{Turn}]$を生じる．
 この起磁力により
 \begin{equation}
 	\phi = \frac{N_1\cdot I}{R_m}
@@ -16,12 +81,7 @@
 \begin{equation}
 	H=\frac{N_1\cdot I}{L}
 \end{equation}
-である．また磁路断面積 1\,m$^2$あたりの磁束を，磁束密度$B\,[\mathrm{Wb/m}^2]$という．
-\begin{equation}
-	B=\frac{\phi}{S}
-	\label{eq:hys:BphiS}
-\end{equation}
-ここで，$S\,[\mathrm{m}^2]$は磁路断面積を示す．
+である．
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=70mm]{fig/magnetism_circuit.pdf}
@@ -30,7 +90,7 @@
 \end{figure}
 
 鉄心の磁化力$H$と磁束密度$B$との関係を示す曲線をB-H曲線といい，一般に\wfig{hys:bhcurve}(a)のような飽和特性になる．
-また磁化力$H$を正負の方向に増減すると，\wfig{hys:bhcurve}(b)の様なヒステリシス曲線になる．
+また磁化力$H$を正負の方向に増減すると，\wfig{hys:bhcurve}(b)の様なヒステリシス曲線(Hysteresis curve)になる．
 \begin{figure}[htbp]
 	\centering
 	\begin{tabular}{cc}
@@ -43,7 +103,8 @@
 \end{figure}
 
 \subsection{交流磁化特性}
-\wfig{hys:transformer}の変圧器のように，鉄心に巻かれた巻数$N_1$のコイルに交流電圧$V_1$を加えると，鉄心中に交番磁束$\phi$を作るための電流（励磁電流）$i_0$が流れる．このとき磁束密度$B$と磁化力$H$との間にはヒステリシス特性があるため，励磁電流は\wfig{hys:hizumi}のようにひずみを生ずる．この現象を逆に利用して，励磁電流$i_0$と交番磁束$\phi$の波形をなんらかの方法で取り出し，オシロスコープのX軸に励磁電流$i_0$の波形，Y軸に交番磁束$\phi$の波形を入力すれば，オシロスコープの画面に鉄心のヒステリシス特性（B-H曲線）が描かれる．
+\label{zika}
+\wfig{hys:transformer}の変圧器のように，鉄心に巻かれた巻数$N_1$のコイルに交流電圧$V_1$を加えると，鉄心中に交番磁束$\dot{\phi}$を作るための電流（励磁電流）$i_0$が流れる．このとき磁束密度$B$と磁化力$H$との間にはヒステリシス特性があるため，励磁電流は\wfig{hys:hizumi}のようにひずみを生ずる．この現象を逆に利用して，励磁電流$i_0$と交番磁束$\dot{\phi}$の波形をなんらかの方法で取り出し，オシロスコープのX軸に励磁電流$i_0$の波形，Y軸に交番磁束$\dot{\phi}$の波形を入力すれば，オシロスコープの画面に鉄心のヒステリシス特性（B-H曲線）が描かれる．
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=140mm]{fig/transformer.pdf}
@@ -55,7 +116,7 @@
 \begin{equation}
 	V_h = i_0R_h
 \end{equation}
-として取り出す．また，交番磁束$\phi$は次の様にして取り出す．
+として取り出す．また，交番磁束$\dot{\phi}$は次の様にして取り出す．
 
 \wfig{hys:transformer}において二次巻線$N_2$と鎖交する磁束の時間に対する変化が二次誘起電圧$e_2$として現れるため
 \begin{equation}
@@ -84,3 +145,77 @@
   \caption{ヒステリシス現象}
    \label{fig:hys:hizumi}
 \end{figure}
+
+\subsection{磁区(magnetic domain)\cite{7697152}}
+\wfig{domain}にヒステリシスループと磁区の関係を示す．
+ヒステリシスループにおいてループと縦軸が交わる場所での磁化値を残留磁化といい，ループと横軸が交わる場所での磁界の値を保磁力という．
+強磁性体は外部磁界がなくても自発磁化を持っているが，全体が一様に磁化されていると外部の空間に磁界を発生し，その磁界によるエネルギーが余分に余ってしまう．
+そのため，強磁性体は自らを磁化の向きが異なる区間を磁区といい，磁区どうしの境界面を磁壁という．
+強磁性は磁気モーメントどうしにお互いに同じ向きを向うとする相互作用がはたらくことで出現する．磁壁の両側では異なる向きの磁気モーメントが対峙することになるので，磁壁では余分なエネルギーが発生する．
+このエネルギーの増加と，外部に磁場を発生させることによるエネルギーの増加の合計を最も小さくするように磁区構造が決まる．
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.35]{fig/domain.png}
+	\caption{ヒステリシスループと磁区\cite{cite-keygsdfz}}
+	\label{fig:domain}
+\end{figure}
+
+\subsection{磁気飽和現象\cite{xdrcfhgvjb}}\label{hohwa}
+界磁電流が大きくなると，エアギャップ磁束が界磁電流に比例せず，頭打ちになる現象．
+同期機の磁気回路(磁束の通路)は磁極，エアギャップ，電機子歯，電機子鉄心，界磁継鉄(円筒界磁機では回転子鉄心)からなっており，このうち，エアギャップ以外はケイ素鋼板や鋼材などの強磁性体である．強磁性体の磁気分極は磁界の強さに比例せず，ある値に漸近する磁気飽和現象を有する．\\
+それゆえ，同期機の磁気回路では界磁電流の増加に伴い，エアギャップの磁気抵抗は一定であるが強磁性材料部の磁気抵抗が増大するため，磁束は飽和現象を呈する．磁気飽和の程度を表すのに飽和係数を用い，無負荷飽和曲線上の定格電圧に対して，次式で表される．
+\begin{equation}	
+	飽和係数=\frac{鋼材部分に必要な界磁電流}{エアギャップに必要な界磁電流}
+\end{equation}
+
+\subsection{ビオ-サバールの法則(Biot-Savart's law)\cite{1130282271626280192}}
+\begin{equation}
+	d\boldsymbol{B}=\frac{\mu_{0}}{4\pi}\frac{Id\boldsymbol{l}\times \boldsymbol{R}}{R^{3}}
+\end{equation}
+
+\subsection{アンペールの法則(Ampère's circuital law) \cite{12}}
+積分形のアンペールの法則は以下で与えられる．
+\begin{equation}
+	\oint_{C} \boldsymbol{\boldsymbol{r}}\cdot d\boldsymbol{l}=\mu_{0}I
+\end{equation}
+
+\subsection{抵抗損と漂遊負荷損\cite{1130282271832577152}}
+ブリッジ法などで測定した巻線の抵抗(直線抵抗)を$r_{d}$とし，巻線に流れる交流電流を$I$とすると，抵抗損は$I^{2}r_{d}$である．しかし，実際の損失はこの値より大きくなる．その理由は次の2つである．
+\begin{enumerate}[(1)]
+	\item \textbf{導体内のうず電流損}\\
+	電流による漏れ磁束が導体自身の断面に鎖交するため，導体内にうず電流が発生し，電流密度が不均一になり，導体断面積が減少したのと同じ結果となり抵抗が増加する．またその増加分は$5 \sim 20\,\%$である．また，うず電流は抵抗に反比例するため，巻線の断面積が大きい場合はうず電流を低減することができる\cite{11302822718325772}\cite{1130282270467697152}．
+	\item \textbf{構造材料内の損失}\\
+	漏れ磁束の一部は，タンクの側板，締め付けボルトなどを通るため，それらの部分にうず電流損失やヒステリシス損失が生じる．以上の2つを合わせて漂遊負荷損といい，抵抗損の$5 \sim 20\,\%$になる．
+	抵抗損と漂遊負荷損の和が負荷損であるが，その値はほとんど電流の2乗に比例する．すなわち，二次負荷電流を$I_{2}$とすれば負荷損$W_{l}$は
+	\begin{equation}
+		W_{l}=I_{2}^{2}r
+	\end{equation}
+	で表される．
+\end{enumerate}
+
+\subsection{積分回路}
+\wfig{ad}に示すようなCR回路を積分回路という．
+この回路で入力信号を積分した信号を取り出すことができる．
+同図で$S_{1}-S_{2}$に電源$e=E\sin \omega t$なる電圧が印加されている場合を考える．
+この時回路を流れる電流$I$は$R\gg 1/\omega C$ならば\footnote{この回路の合成インピーダンスが抵抗のみであると近似できる条件}キャパシタにかかる電圧を$E_{C}$とすると
+\begin{equation}
+	I=\frac{E_{C}}{R}\sin \omega t
+	\label{eq:I}
+\end{equation}
+となる．このとき$E_{C}$は，コンデンサの電荷を$q$とすれば
+\begin{equation}
+	E_{C}=\frac{q}{C}
+	\label{eq:qcv}
+\end{equation}
+と表せる．また，電荷$q$は電流を積分したものであることと，\weq{I}より
+\begin{align}
+	q&=\int I dt\nonumber \\
+	&=\int \frac{E}{R}\sin \omega tdt
+	\label{eq:int}
+\end{align}
+\weq{qcv}と\weq{int}より
+\begin{equation}
+	E_{C}=\int \frac{E}{RC} \sin \omega tdt
+	\label{eq:sekibun}
+\end{equation}
+\weq{sekibun}より，コンデンサ$C$の両端電圧$E_{C}$は入力信号$e$を積分した信号に比例した信号が得られる．
