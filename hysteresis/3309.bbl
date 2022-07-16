@@ -1,0 +1,251 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{1130282271832577152}{book}{}
+      \name{author}{2}{}{%
+        {{hash=05cc532f389990835c7878df6957b1d6}{%
+           family={坪島},
+           familyi={坪\bibinitperiod},
+           given={茂彦},
+           giveni={茂\bibinitperiod}}}%
+        {{hash=e897c710a07200c479e17f7f9f4fff13}{%
+           family={羽田},
+           familyi={羽\bibinitperiod},
+           given={正弘},
+           giveni={正\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {東京電機大学出版局}%
+      }
+      \strng{namehash}{161c0cf7b818640baebab265bc3a71cf}
+      \strng{fullhash}{161c0cf7b818640baebab265bc3a71cf}
+      \strng{bibnamehash}{161c0cf7b818640baebab265bc3a71cf}
+      \strng{authorbibnamehash}{161c0cf7b818640baebab265bc3a71cf}
+      \strng{authornamehash}{161c0cf7b818640baebab265bc3a71cf}
+      \strng{authorfullhash}{161c0cf7b818640baebab265bc3a71cf}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{図解変圧器 : 基礎から応用まで}
+      \field{year}{1981}
+      \field{pages}{71}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb https://cir.nii.ac.jp/crid/1130282271832577152
+      \endverb
+      \verb{url}
+      \verb https://cir.nii.ac.jp/crid/1130282271832577152
+      \endverb
+    \endentry
+    \entry{11302822718325772}{book}{}
+      \name{author}{2}{}{%
+        {{hash=05cc532f389990835c7878df6957b1d6}{%
+           family={坪島},
+           familyi={坪\bibinitperiod},
+           given={茂彦},
+           giveni={茂\bibinitperiod}}}%
+        {{hash=e897c710a07200c479e17f7f9f4fff13}{%
+           family={羽田},
+           familyi={羽\bibinitperiod},
+           given={正弘},
+           giveni={正\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {東京電機大学出版局}%
+      }
+      \strng{namehash}{161c0cf7b818640baebab265bc3a71cf}
+      \strng{fullhash}{161c0cf7b818640baebab265bc3a71cf}
+      \strng{bibnamehash}{161c0cf7b818640baebab265bc3a71cf}
+      \strng{authorbibnamehash}{161c0cf7b818640baebab265bc3a71cf}
+      \strng{authornamehash}{161c0cf7b818640baebab265bc3a71cf}
+      \strng{authorfullhash}{161c0cf7b818640baebab265bc3a71cf}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{図解変圧器 : 基礎から応用まで}
+      \field{year}{1981}
+      \field{pages}{73}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb https://cir.nii.ac.jp/crid/1130282271832577152
+      \endverb
+      \verb{url}
+      \verb https://cir.nii.ac.jp/crid/1130282271832577152
+      \endverb
+    \endentry
+    \entry{1130282270467697152}{book}{}
+      \name{author}{1}{}{%
+        {{hash=5c288a4ed557134f5e8cbd410515c99c}{%
+           family={佐藤},
+           familyi={佐\bibinitperiod},
+           given={博彦},
+           giveni={博\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {数理工学社}%
+        {サイエンス社 (発売)}%
+      }
+      \strng{namehash}{5c288a4ed557134f5e8cbd410515c99c}
+      \strng{fullhash}{5c288a4ed557134f5e8cbd410515c99c}
+      \strng{bibnamehash}{5c288a4ed557134f5e8cbd410515c99c}
+      \strng{authorbibnamehash}{5c288a4ed557134f5e8cbd410515c99c}
+      \strng{authornamehash}{5c288a4ed557134f5e8cbd410515c99c}
+      \strng{authorfullhash}{5c288a4ed557134f5e8cbd410515c99c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{新・工科系の物理学}
+      \field{title}{工学基礎電磁気学}
+      \field{year}{2019}
+      \field{pages}{58}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb https://cir.nii.ac.jp/crid/1130282270467697152
+      \endverb
+      \verb{url}
+      \verb https://cir.nii.ac.jp/crid/1130282270467697152
+      \endverb
+    \endentry
+    \entry{1130282270091029760}{book}{}
+      \name{author}{2}{}{%
+        {{hash=e919933954fcf23da840a30b555dea4f}{%
+           family={熊谷},
+           familyi={熊\bibinitperiod},
+           given={文宏},
+           giveni={文\bibinitperiod}}}%
+        {{hash=c7c7dc5842979587dd063d93b19ee93f}{%
+           family={深尾},
+           familyi={深\bibinitperiod},
+           given={正},
+           giveni={正\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {実教出版}%
+      }
+      \strng{namehash}{ce625f1ada021bbedc8cda602c6eafb0}
+      \strng{fullhash}{ce625f1ada021bbedc8cda602c6eafb0}
+      \strng{bibnamehash}{ce625f1ada021bbedc8cda602c6eafb0}
+      \strng{authorbibnamehash}{ce625f1ada021bbedc8cda602c6eafb0}
+      \strng{authornamehash}{ce625f1ada021bbedc8cda602c6eafb0}
+      \strng{authorfullhash}{ce625f1ada021bbedc8cda602c6eafb0}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{First stageシリーズ}
+      \field{title}{電気機器概論}
+      \field{year}{2015}
+      \field{pages}{71}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb https://cir.nii.ac.jp/crid/1130282270091029760
+      \endverb
+      \verb{url}
+      \verb https://cir.nii.ac.jp/crid/1130282270091029760
+      \endverb
+    \endentry
+    \entry{11302822718577152}{book}{}
+      \name{author}{2}{}{%
+        {{hash=05cc532f389990835c7878df6957b1d6}{%
+           family={坪島},
+           familyi={坪\bibinitperiod},
+           given={茂彦},
+           giveni={茂\bibinitperiod}}}%
+        {{hash=e897c710a07200c479e17f7f9f4fff13}{%
+           family={羽田},
+           familyi={羽\bibinitperiod},
+           given={正弘},
+           giveni={正\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {東京電機大学出版局}%
+      }
+      \strng{namehash}{161c0cf7b818640baebab265bc3a71cf}
+      \strng{fullhash}{161c0cf7b818640baebab265bc3a71cf}
+      \strng{bibnamehash}{161c0cf7b818640baebab265bc3a71cf}
+      \strng{authorbibnamehash}{161c0cf7b818640baebab265bc3a71cf}
+      \strng{authornamehash}{161c0cf7b818640baebab265bc3a71cf}
+      \strng{authorfullhash}{161c0cf7b818640baebab265bc3a71cf}
+      \field{extraname}{3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{図解変圧器 : 基礎から応用まで}
+      \field{year}{1981}
+      \field{pages}{70}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb https://cir.nii.ac.jp/crid/1130282271832577152
+      \endverb
+      \verb{url}
+      \verb https://cir.nii.ac.jp/crid/1130282271832577152
+      \endverb
+    \endentry
+    \entry{1130282270091060}{book}{}
+      \name{author}{2}{}{%
+        {{hash=e919933954fcf23da840a30b555dea4f}{%
+           family={熊谷},
+           familyi={熊\bibinitperiod},
+           given={文宏},
+           giveni={文\bibinitperiod}}}%
+        {{hash=c7c7dc5842979587dd063d93b19ee93f}{%
+           family={深尾},
+           familyi={深\bibinitperiod},
+           given={正},
+           giveni={正\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {実教出版}%
+      }
+      \strng{namehash}{ce625f1ada021bbedc8cda602c6eafb0}
+      \strng{fullhash}{ce625f1ada021bbedc8cda602c6eafb0}
+      \strng{bibnamehash}{ce625f1ada021bbedc8cda602c6eafb0}
+      \strng{authorbibnamehash}{ce625f1ada021bbedc8cda602c6eafb0}
+      \strng{authornamehash}{ce625f1ada021bbedc8cda602c6eafb0}
+      \strng{authorfullhash}{ce625f1ada021bbedc8cda602c6eafb0}
+      \field{extraname}{2}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{First stageシリーズ}
+      \field{title}{電気機器概論}
+      \field{year}{2015}
+      \field{pages}{66}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb https://cir.nii.ac.jp/crid/1130282270091029760
+      \endverb
+      \verb{url}
+      \verb https://cir.nii.ac.jp/crid/1130282270091029760
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

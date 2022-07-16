@@ -1,7 +1,7 @@
 \clearpage
 
 \section{原理}
-\subsection{磁気回路}
+\subsection{磁気回路(Magnetic circuit)}
 \wfig{hys:jikikairo}に示すように断面積$S\,[\mathrm{m}^2]$，平均磁路長$L\,[\mathrm{m}]$の鉄心に巻数$N_1\,[\mathrm{Turn}]$のコイルを巻き，これに$I\,[\mathrm{A}]$の電流を流すと，起磁力$N_1\cdot I\,[\mathrm{A}\cdot\mathrm{Turn}]$を生じる．
 この起磁力により
 \begin{equation}
@@ -30,7 +30,7 @@
 \end{figure}
 
 鉄心の磁化力$H$と磁束密度$B$との関係を示す曲線をB-H曲線といい，一般に\wfig{hys:bhcurve}(a)のような飽和特性になる．
-また磁化力$H$を正負の方向に増減すると，\wfig{hys:bhcurve}(b)の様なヒステリシス曲線になる．
+また磁化力$H$を正負の方向に増減すると，\wfig{hys:bhcurve}(b)の様なヒステリシス曲線(Hysteresis curve)になる．
 \begin{figure}[htbp]
 	\centering
 	\begin{tabular}{cc}
@@ -43,7 +43,8 @@
 \end{figure}
 
 \subsection{交流磁化特性}
-\wfig{hys:transformer}の変圧器のように，鉄心に巻かれた巻数$N_1$のコイルに交流電圧$V_1$を加えると，鉄心中に交番磁束$\phi$を作るための電流（励磁電流）$i_0$が流れる．このとき磁束密度$B$と磁化力$H$との間にはヒステリシス特性があるため，励磁電流は\wfig{hys:hizumi}のようにひずみを生ずる．この現象を逆に利用して，励磁電流$i_0$と交番磁束$\phi$の波形をなんらかの方法で取り出し，オシロスコープのX軸に励磁電流$i_0$の波形，Y軸に交番磁束$\phi$の波形を入力すれば，オシロスコープの画面に鉄心のヒステリシス特性（B-H曲線）が描かれる．
+\label{zika}
+\wfig{hys:transformer}の変圧器のように，鉄心に巻かれた巻数$N_1$のコイルに交流電圧$V_1$を加えると，鉄心中に交番磁束$\dot{\phi}$を作るための電流（励磁電流）$i_0$が流れる．このとき磁束密度$B$と磁化力$H$との間にはヒステリシス特性があるため，励磁電流は\wfig{hys:hizumi}のようにひずみを生ずる．この現象を逆に利用して，励磁電流$i_0$と交番磁束$\dot{\phi}$の波形をなんらかの方法で取り出し，オシロスコープのX軸に励磁電流$i_0$の波形，Y軸に交番磁束$\dot{\phi}$の波形を入力すれば，オシロスコープの画面に鉄心のヒステリシス特性（B-H曲線）が描かれる．
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=140mm]{fig/transformer.pdf}
@@ -55,7 +56,7 @@
 \begin{equation}
 	V_h = i_0R_h
 \end{equation}
-として取り出す．また，交番磁束$\phi$は次の様にして取り出す．
+として取り出す．また，交番磁束$\dot{\phi}$は次の様にして取り出す．
 
 \wfig{hys:transformer}において二次巻線$N_2$と鎖交する磁束の時間に対する変化が二次誘起電圧$e_2$として現れるため
 \begin{equation}
@@ -84,3 +85,24 @@
   \caption{ヒステリシス現象}
    \label{fig:hys:hizumi}
 \end{figure}
+
+\subsection{磁区}
+\subsection{理想変圧器}
+\subsection{実際の変圧器}
+\subsection{磁気飽和現象}\label{hohwa}
+\subsection{抵抗損と漂遊負荷損\cite{1130282271832577152}}
+ブリッジ法などで測定した巻線の抵抗(直線抵抗)を$r_{d}$とし，巻線に流れる交流電流を$I$とすると，抵抗損は$I^{2}r_{d}$である．しかし，実際の損失はこの値より大きくなる．その理由は次の2つである．
+\begin{enumerate}[(1)]
+	\item \textbf{導体内のうず電流損}\\
+	電流による漏れ磁束が導体自身の断面に鎖交するため，導体内にうず電流が発生し，電流密度が不均一になり，導体断面積が減少したのと同じ結果となり抵抗が増加する．またその増加分は$5 \sim 20\,\%$である．また，うず電流は抵抗に反比例するため，巻線の断面積が大きい場合はうず電流を低減することができる\cite{11302822718325772}\cite{1130282270467697152}．
+	\item \textbf{構造材料内の損失}\\
+	漏れ磁束の一部は，タンクの側板，締め付けボルトなどを通るため，それらの部分にうず電流損失やヒステリシス損失が生じる．以上の2つを合わせて漂遊負荷損といい，抵抗損の$5 \sim 20\,\%$になる．
+	抵抗損と漂遊負荷損の和が負荷損であるが，その値はほとんど電流の2乗に比例する．すなわち，二次負荷電流を$I_{2}$とすれば負荷損$W_{l}$は
+	\begin{equation}
+		W_{l}=I_{2}^{2}r
+	\end{equation}
+	で表される．
+\end{enumerate}
+
+\subsection{積分回路}
+\subsection{電流密度}
