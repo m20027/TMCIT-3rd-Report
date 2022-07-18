@@ -276,4 +276,118 @@
 	\end{align*}
 \end{enumerate}
 
+\clearpage
+\setcounter{section}{0}
+\section*{令和2年　電磁気学II　第1回小テスト}
+\section{以下に示す物理定数は電磁気学を修めた者であれば常識的に覚えていなければならない数値である．それぞれの値を示せ．}
+\begin{enumerate}[(a)]
+	\item 電子の電荷$e:-1.602 \times 10^{-19}\,\rm{C}$
+	\item 真空の誘電率$\varepsilon_{0}:8.854 \times 10^{-12}\,\rm{F/m}$
+	\item 真空の透磁率$\mu_{0}:1.257 \times 10^{-6}\,\rm{H/m}$
+	\item 電子の静止質量$m:9.109\times 10^{-31}\,\rm{kg}$
+\end{enumerate}
+
+\section{\wfig{1}に示すような，断面が半径$a$の円柱状の内導体と，内径$b$，外径$c$の厚みのある円筒 状の外導体を有する無限長同軸ケーブルある．この同軸ケーブルは内導体と外導体はそれぞれの中心軸を共有するように配置されている．いま，内導体に一様な電流$I$を，外導体に内導体とは逆方向に一様な電流$I$を流したとき，内外導体の中心軸に垂直な平面内における中心軸からの距離を$r$としたとき，同軸ケーブルの周囲に発生する磁界$H$をアンペールの法則を用いて導出せよ．}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.35]{./fig/R03_fig1.png}
+	\caption{}
+	\label{fig:1}
+\end{figure}
+
+\begin{align*}
+	r>cのとき&\\
+	閉局面に流れる&電流の総量は0であるため\\
+	H&=0\,[\rm{A/m}]\\
+	b<r<cのとき&\\
+	a<r<bのとき&\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\int_{S} JdS=I\,[\rm{A}]\\
+	アンペールの法則より&\\
+	H&=\frac{I}{2\pi r}\,[\rm{A/m}]\\
+	r<aのとき&\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\int_{S} JdS=\frac{I}{a^{2}\pi}r^{2}\pi=\frac{r^{2}}{a^{2}}I\,[\rm{A}]\\
+	アンペールの法則より&\\
+	H&=\frac{\frac{r^{2}}{a^{2}}I}{2\pi r}=\frac{I}{2\pi a^{2}}r\,[\rm{A/m}]\\\\
+	\therefore H&=
+	\left\{
+	\begin{matrix}
+	\frac{I}{2\pi a^{2}}r\,[\rm{A/m}] &(0 < r< a)\\\\
+	\frac{I}{2\pi r}\,[\rm{A/m}] & (a < r< b) \\\\
+	\frac{I}{2\pi r} \frac{c^{2}-r^{2}}{c^{2}-b^{2}}\,[\rm{A/m}] & (b < r <c)\\\\
+	0\,[\rm{A/m}] & (r >c)
+	\end{matrix}
+	\right .  
+\end{align*}
+
+\section{\wfig{2}に示すような，単位長さ当たり$n$巻の無限長ソレノイドコイルがある．コイルに電流$I$を流したとき，コイルの周囲に発生する磁界$H$をアンペールの法則を用いて導出せよ．}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.35]{./fig/R03_fig2.png}
+	\caption{}
+	\label{fig:2}
+\end{figure}
+
+\begin{align*}
+\end{align*}
+
+\section{\wfig{3}に示すように，断面積が半径$r$の円で，比透磁率$\mu_{r}$，半径$R$の円環鉄心に導線を$N$巻したコイルがある．このコイルに電流$I$を流したとき，以下に示す各問いに答えよ．ただし，$r \ll R$とし，発生した磁界はすべて鉄心内部に存在し，漏れ磁界は存在しないものとする}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.35]{./fig/R03_fig3.png}
+	\caption{}
+	\label{fig:3}
+\end{figure}
+
+\begin{enumerate}[(a)]
+	\item 発生する磁界$H$をアンペールの法則を用いて導出せよ．
+	\begin{align*}
+	\end{align*}
+	\item 鉄心内部に発生する磁束密度$B$を求めよ．
+	\begin{align*}
+	\end{align*}
+	\item 鉄心内部に発生する磁束$\Phi$を求めよ．
+	\begin{align*}
+	\end{align*}
+	\item 起磁力を$NI$とすると磁気抵抗$R_{m}$は$R_{m}=\frac{NI}{\Phi}$で求められる．この鉄心の磁気抵抗$R_{m}$を求めよ．
+	\begin{align*}
+	\end{align*}
+\end{enumerate}
+
+\newpage
+\section{\wfig{4}に示すように，半径$a$の円を断面にもつ無限長円柱導体に中心軸方向の電流密度が流れている．いま，中心からの距離を$r$とし，電流密度$J$が次に示す各場合のとき，導体の内外に発生する磁界$H$を求めよ．}
+\begin{enumerate}[(a)]
+	\item 
+	\begin{align*}
+	J=
+	\left\{
+	\begin{matrix}
+	J_{1}& (0\leq r \leq a/\sqrt{2})\\
+	-J_{1}&(a/\sqrt{2} < r \leq a)
+	\end{matrix}
+	\right .
+	\end{align*}
+	ただし，$J_{1}$は正の実定数．
+	\begin{align*}
+	\end{align*}
+	\item 
+	\begin{align*}
+	J=J_{0}r
+	\end{align*}
+	ただし，$J_{2}$は正の実定数．
+	\begin{align*}
+	\end{align*}
+\end{enumerate}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.35]{./fig/R03_fig4.png}
+	\caption{}
+	\label{fig:4}
+\end{figure}
+
 \end{document}
