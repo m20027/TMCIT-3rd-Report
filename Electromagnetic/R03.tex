@@ -105,7 +105,7 @@
 	&=-\frac{I}{4\pi a} \left(-\cos \beta +\cos \alpha \right)\boldsymbol{k}\\
 	&=-\frac{I}{4\pi a} \left(\cos \alpha -\cos \beta \right)\boldsymbol{k}\,[\rm{A/m}]\\
 	始点Aと終点B&の座標がそれぞれ(0, -\infty, 0), (0, \infty, 0)の場合は\\
-	\alpha=0,&\beta =\pi であるので\\
+	\alpha=0, &\beta =\pi であるので\\
 	\boldsymbol{H}&=-\frac{I}{4\pi a}\cdot 2 \boldsymbol{k}\\
 	&=-\frac{I}{2\pi a} \boldsymbol{k}\,[\rm{A/m}]
 	\end{align*}
@@ -171,6 +171,39 @@
 \end{figure}
 
 \begin{align*}
+	r>cのとき&\\
+	閉曲面に流れる&電流はI-I=0であるため\\
+	H&=0\,[\rm{A/m}]\\
+	b<r<cのとき&\\
+	dSが上向きである&ことを考慮すると\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\int_{S}JdS=I-\int_{S} \frac{I}{c^{2}\pi-b^{2}\pi}dS\\
+	&=I-\frac{I}{c^{2}\pi-b^{2}\pi}\pi(r^{2}-b^{2})=\left(1-\frac{r^{2}-b^{2}}{c^{2}-b^{2}}\right)I\\
+	&=\left(\frac{c^{2}-b^{2}-r^{2}+b^{2}}{c^{2}-b^{2}}\right)I=\frac{c^{2}-r^{2}}{c^{2}-b^{2}}I\,[\rm{A}]\\
+	2\pi r H&=\frac{c^{2}-r^{2}}{c^{2}-b^{2}}I\\
+	H&=\frac{I}{2\pi r}\frac{c^{2}-r^{2}}{c^{2}-b^{2}}\,[\rm{A/m}]\\
+	a<r<bのとき&\\
+	同様にdSは上向き&とする\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\int_{S} JdS=I\,[\rm{A}]\\
+	アンペールの法則より&\\
+	H&=\frac{I}{2\pi r}\,[\rm{A/m}]\\
+	r<aのとき&\\
+	同様にdSは上向き&とする\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\int_{S} JdS=\frac{I}{a^{2}\pi}r^{2}\pi=\frac{r^{2}}{a^{2}}I\,[\rm{A}]\\
+	アンペールの法則より&\\
+	H&=\frac{\frac{r^{2}}{a^{2}}I}{2\pi r}=\frac{I}{2\pi a^{2}}r\,[\rm{A/m}]\\\\
+	\therefore H&=
+	\left\{
+	\begin{matrix}
+	\frac{I}{2\pi a^{2}}r\,[\rm{A/m}] &(0 < r< a)\\\\
+	\frac{I}{2\pi r}\,[\rm{A/m}] & (a < r< b) \\\\
+	\frac{I}{2\pi r} \frac{c^{2}-r^{2}}{c^{2}-b^{2}}\,[\rm{A/m}] & (b < r <c)\\\\
+	0\,[\rm{A/m}] & (r >c)
+	\end{matrix}
+	\right .  \\
+	ただし向きは&左回り(反時計回り)
 \end{align*}
 
 \newpage

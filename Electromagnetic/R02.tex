@@ -298,15 +298,24 @@
 
 \begin{align*}
 	r>cのとき&\\
-	閉局面に流れる&電流の総量は0であるため\\
+	閉曲面に流れる&電流はI-I=0であるため\\
 	H&=0\,[\rm{A/m}]\\
 	b<r<cのとき&\\
+	dSが上向きである&ことを考慮すると\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\int_{S}JdS=I-\int_{S} \frac{I}{c^{2}\pi-b^{2}\pi}dS\\
+	&=I-\frac{I}{c^{2}\pi-b^{2}\pi}\pi(r^{2}-b^{2})=\left(1-\frac{r^{2}-b^{2}}{c^{2}-b^{2}}\right)I\\
+	&=\left(\frac{c^{2}-b^{2}-r^{2}+b^{2}}{c^{2}-b^{2}}\right)I=\frac{c^{2}-r^{2}}{c^{2}-b^{2}}I\,[\rm{A}]\\
+	2\pi r H&=\frac{c^{2}-r^{2}}{c^{2}-b^{2}}I\\
+	H&=\frac{I}{2\pi r}\frac{c^{2}-r^{2}}{c^{2}-b^{2}}\,[\rm{A/m}]\\
 	a<r<bのとき&\\
+	同様にdSは上向き&とする\\
 	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
 	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\int_{S} JdS=I\,[\rm{A}]\\
 	アンペールの法則より&\\
 	H&=\frac{I}{2\pi r}\,[\rm{A/m}]\\
 	r<aのとき&\\
+	同様にdSは上向き&とする\\
 	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
 	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\int_{S} JdS=\frac{I}{a^{2}\pi}r^{2}\pi=\frac{r^{2}}{a^{2}}I\,[\rm{A}]\\
 	アンペールの法則より&\\
@@ -319,7 +328,8 @@
 	\frac{I}{2\pi r} \frac{c^{2}-r^{2}}{c^{2}-b^{2}}\,[\rm{A/m}] & (b < r <c)\\\\
 	0\,[\rm{A/m}] & (r >c)
 	\end{matrix}
-	\right .  
+	\right .  \\
+	ただし向きは&左回り(反時計回り)
 \end{align*}
 
 \section{\wfig{2}に示すような，単位長さ当たり$n$巻の無限長ソレノイドコイルがある．コイルに電流$I$を流したとき，コイルの周囲に発生する磁界$H$をアンペールの法則を用いて導出せよ．}
@@ -366,19 +376,22 @@
 	J=
 	\left\{
 	\begin{matrix}
-	J_{1}& (0\leq r \leq a/\sqrt{2})\\
-	-J_{1}&(a/\sqrt{2} < r \leq a)
+	J_{1}& ( r \leq b)\\
+	-J_{1}&(b < r \leq a)
 	\end{matrix}
 	\right .
 	\end{align*}
-	ただし，$J_{1}$は正の実定数．
+	ただし，$a, b, J_{1}, J_{2}$は正の実定数で，$b<a$とする．
 	\begin{align*}
+	r\leq bのとき&\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\int_{S} JdS=\,[\rm{A}]
 	\end{align*}
 	\item 
 	\begin{align*}
 	J=J_{0}r
 	\end{align*}
-	ただし，$J_{2}$は正の実定数．
+	ただし，$J_{0}$は正の実定数．
 	\begin{align*}
 	\end{align*}
 \end{enumerate}
