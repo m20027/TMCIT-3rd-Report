@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.0.0-u1.28-220214-2.6 (utf8.uptex) (TeX Live 2022) (preloaded format=uplatex 2022.5.13)  22 JUL 2022 21:22
+This is e-upTeX, Version 3.141592653-p4.0.0-u1.28-220214-2.6 (utf8.uptex) (TeX Live 2022) (preloaded format=uplatex 2022.5.13)  23 JUL 2022 12:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1494,25 +1494,29 @@ File: ./fig/ad.pdf Graphic file (type pdf)
 )
 (/Users/ohyamasan/Downloads/TMCIT-3rd-Report/hysteresis/source/result.tex
 [9]
+File: ./data/graph/1.pdf Graphic file (type pdf)
+<./data/graph/1.pdf>
 
-LaTeX Warning: Reference `fig:' on page 10 undefined on input line 23.
-
-
-LaTeX Warning: Reference `fig:' on page 10 undefined on input line 23.
-
-
-LaTeX Warning: Reference `fig:' on page 10 undefined on input line 24.
+Overfull \hbox (6.13498pt too wide) in paragraph at lines 26--27
+ [][] 
+ []
 
 
-LaTeX Warning: Reference `fig:' on page 10 undefined on input line 24.
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:' on page 10 undefined on input line 30.
+
+
+LaTeX Warning: Reference `fig:' on page 10 undefined on input line 31.
 
 )
 (/Users/ohyamasan/Downloads/TMCIT-3rd-Report/hysteresis/source/consideration.te
 x [10
 
-] [11
+] [11] [12
 
-]) [12] [13
+]) [13] [14
 
 ]
 
@@ -1523,7 +1527,7 @@ Package biblatex Warning: No driver for entry type 'webpage'.
 Package biblatex Warning: No driver for entry type 'webpage'.
 (biblatex)                Using fallback driver on input line 44.
 
-[14] (./3309.aux)
+[15] (./3309.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1534,12 +1538,12 @@ Package logreq Info: Writing requests to '3309.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37186 strings out of 478751
- 735096 string characters out of 5857035
- 1457777 words of memory out of 5000000
- 54984 multiletter control sequences out of 15000+600000
+ 37194 strings out of 478751
+ 735258 string characters out of 5857035
+ 1457815 words of memory out of 5000000
+ 54989 multiletter control sequences out of 15000+600000
  520250 words of font info for 121 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  98i,12n,94p,1060b,1325s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 3309.dvi (15 pages, 64828 bytes).
+Output written on 3309.dvi (16 pages, 65648 bytes).
