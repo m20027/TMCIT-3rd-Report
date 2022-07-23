@@ -669,6 +669,30 @@
       \verb https://cir.nii.ac.jp/crid/1130000795154912128
       \endverb
     \endentry
+    \entry{fdls}{webpage}{}
+      \name{author}{1}{}{%
+        {{hash=bbcc11499d1b74098103c8bc700b2df5}{%
+           family={JMAG},
+           familyi={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{bbcc11499d1b74098103c8bc700b2df5}
+      \strng{fullhash}{bbcc11499d1b74098103c8bc700b2df5}
+      \strng{bibnamehash}{bbcc11499d1b74098103c8bc700b2df5}
+      \strng{authorbibnamehash}{bbcc11499d1b74098103c8bc700b2df5}
+      \strng{authornamehash}{bbcc11499d1b74098103c8bc700b2df5}
+      \strng{authorfullhash}{bbcc11499d1b74098103c8bc700b2df5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{はじめに・第1話：損失の分類}
+      \verb{urlraw}
+      \verb https://www.jmag-international.com/jp/loss_analysis/01/
+      \endverb
+      \verb{url}
+      \verb https://www.jmag-international.com/jp/loss_analysis/01/
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
