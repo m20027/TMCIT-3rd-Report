@@ -540,6 +540,34 @@
       \verb https://cir.nii.ac.jp/crid/1130000795154912128
       \endverb
     \endentry
+    \entry{genri}{webpage}{}
+      \name{author}{1}{}{%
+        {{hash=15f30824ebf698b3297051f27169f7e0}{%
+           family={技術者教育研究所},
+           familyi={技\bibinitperiod},
+           given={アイアール},
+           giveni={ア\bibinitperiod}}}%
+      }
+      \strng{namehash}{15f30824ebf698b3297051f27169f7e0}
+      \strng{fullhash}{15f30824ebf698b3297051f27169f7e0}
+      \strng{bibnamehash}{15f30824ebf698b3297051f27169f7e0}
+      \strng{authorbibnamehash}{15f30824ebf698b3297051f27169f7e0}
+      \strng{authornamehash}{15f30824ebf698b3297051f27169f7e0}
+      \strng{authorfullhash}{15f30824ebf698b3297051f27169f7e0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{7}
+      \field{title}{３分でわかる技術の超キホン「トランス」（変圧器）とは？構造・原理・使い方を解説}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://engineer-education.com/transformer/
+      \endverb
+      \verb{url}
+      \verb https://engineer-education.com/transformer/
+      \endverb
+    \endentry
     \entry{1130282270091029760}{book}{}
       \name{author}{2}{}{%
         {{hash=e919933954fcf23da840a30b555dea4f}{%
@@ -563,8 +591,8 @@
       \strng{authornamehash}{ce625f1ada021bbedc8cda602c6eafb0}
       \strng{authorfullhash}{ce625f1ada021bbedc8cda602c6eafb0}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{series}{First stageシリーズ}
