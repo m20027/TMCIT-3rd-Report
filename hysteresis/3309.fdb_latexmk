@@ -1,16 +1,16 @@
 # Fdb version 3
-["biber 3309"] 1658569628 "3309.bcf" "3309.bbl" "3309" 1658570519
+["biber 3309"] 1658571134 "3309.bcf" "3309.bbl" "3309" 1658571614
   "/usr/local/texlive/texmf-local/bibtex/bib/3rd_hysteresis.bib" 1658569626 7759 08362086d9926e7a901d4e4a685df1f1 ""
-  "3309.bcf" 1658570517 108693 82ab2182cfac9a1c63197fa8d3f5f3b0 ""
+  "3309.bcf" 1658571613 108693 82ab2182cfac9a1c63197fa8d3f5f3b0 ""
   (generated)
   "3309.bbl"
   "3309.blg"
-["dvipdf"] 1658570517 "3309.dvi" "3309.pdf" "3309" 1658570519
-  "3309.dvi" 1658570517 74216 5be0c10e8d72d5c22ca585dee40ed218 "latex"
+["dvipdf"] 1658571613 "3309.dvi" "3309.pdf" "3309" 1658571614
+  "3309.dvi" 1658571613 74584 d6d1e22aa3139aa6f0fdb42c013dd5f5 "latex"
   (generated)
   "3309.pdf"
-["latex"] 1658570512 "./source/3309.tex" "3309.dvi" "3309" 1658570519
-  "./source/3309.tex" 1658447860 1812 0be52ea38f1e47aa6f0e2c91ec7ff302 ""
+["latex"] 1658571608 "./source/3309.tex" "3309.dvi" "3309" 1658571614
+  "./source/3309.tex" 1658571128 1901 2e889f651fed4609dc60447a271a022f ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty" 1576016050 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/etexcmds/etexcmds.sty" 1576625273 7734 b98cbb34c81f667027c1e3ebdbfce34b ""
@@ -180,9 +180,9 @@
   "/usr/local/texlive/2022/texmf-dist/tex/uplatex/base/ujsize11.clo" 1601501193 8671 38ae6650cc4f672ed2eb94ee1d40ee3d ""
   "/usr/local/texlive/texmf-local/tex/platex/eee.sty" 1655860503 5892 3149be2b1adc8ad9d5b33973b2e84d8d ""
   "/usr/local/texlive/texmf-local/tex/platex/jlisting.sty" 1649911532 6311 39acaca7319a5dae73524888cbf7591f ""
-  "3309.aux" 1658570517 12670 272447237c3f6664fc4dafc0898d3ca7 "latex"
-  "3309.bbl" 1658569631 25461 ccbe6a39cf6e8136b825a5aecafe792e "biber 3309"
-  "3309.out" 1658570517 4017 ee4529932b9d2c82c26dea23e5190201 "latex"
+  "3309.aux" 1658571613 12700 e9a9885d180b38c3fc4b92f53fc62f7d "latex"
+  "3309.bbl" 1658571137 25461 ccbe6a39cf6e8136b825a5aecafe792e "biber 3309"
+  "3309.out" 1658571613 4017 ee4529932b9d2c82c26dea23e5190201 "latex"
   "data/graph/1.pdf" 1658546177 589151 4c4b2c8497bc3d9a1c78cfb4e729e8e8 ""
   "data/graph/2.pdf" 1658550148 692526 1003cdea2346a83781441e66c2ba62e7 ""
   "data/graph/3.pdf" 1658554618 669200 8cc84ae3f57def40856b76bfee7992ce ""
@@ -196,10 +196,11 @@
   "fig/loss_analysis.pdf" 1658569394 8294 a4eafc4177a4b98d8d112e2c5175ab12 ""
   "fig/magnetism_circuit.pdf" 1657975037 93656 b965edd1deb2faed3acde63c0dd80974 ""
   "fig/transformer.pdf" 1657975037 24550 2fac314d6506c25846f34616cfae1a93 ""
-  "source/3309.tex" 1658447860 1812 0be52ea38f1e47aa6f0e2c91ec7ff302 ""
-  "source/consideration.tex" 1658569822 7531 2227ee880f19220b96b516d1effbb0b6 ""
+  "source/3309.tex" 1658571128 1901 2e889f651fed4609dc60447a271a022f ""
+  "source/consideration.tex" 1658571109 5976 d4955c55f92d92caa3a5097a199ea07d ""
+  "source/consideration2.tex" 1658571608 1606 04dea7bf870e657c95cca58f650cc488 ""
   "source/howto.tex" 1658546982 3035 3a58e82c718504d3bf1c639e22ae61aa ""
-  "source/result.tex" 1658570512 1863 a4b2ae2b48bf8bb0fb5ec3afcbabb63b ""
+  "source/result.tex" 1658571395 2103 3b48587ffdedbd38f5759020f807f15d ""
   "source/theory.tex" 1658447860 12957 418b850a6a11bb404e54cc723834b668 ""
   (generated)
   "3309.aux"
