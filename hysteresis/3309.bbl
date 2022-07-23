@@ -362,6 +362,33 @@
       \verb https://cir.nii.ac.jp/crid/1130282271626280192
       \endverb
     \endentry
+    \entry{titech}{webpage}{}
+      \name{author}{1}{}{%
+        {{hash=a0d34c4d9421cef1a5d7e1fe6289f92e}{%
+           family={高橋和孝},
+           familyi={高\bibinitperiod}}}%
+      }
+      \strng{namehash}{a0d34c4d9421cef1a5d7e1fe6289f92e}
+      \strng{fullhash}{a0d34c4d9421cef1a5d7e1fe6289f92e}
+      \strng{bibnamehash}{a0d34c4d9421cef1a5d7e1fe6289f92e}
+      \strng{authorbibnamehash}{a0d34c4d9421cef1a5d7e1fe6289f92e}
+      \strng{authornamehash}{a0d34c4d9421cef1a5d7e1fe6289f92e}
+      \strng{authorfullhash}{a0d34c4d9421cef1a5d7e1fe6289f92e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{電磁気学基礎}
+      \field{year}{2019}
+      \field{pages}{125\bibrangedash 126}
+      \range{pages}{2}
+      \verb{urlraw}
+      \verb https://www.stat.phys.titech.ac.jp/~ktaka/files/em.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.stat.phys.titech.ac.jp/~ktaka/files/em.pdf
+      \endverb
+    \endentry
     \entry{1130282271832577152}{book}{}
       \name{author}{2}{}{%
         {{hash=05cc532f389990835c7878df6957b1d6}{%
@@ -473,6 +500,46 @@
       \verb https://cir.nii.ac.jp/crid/1130282270467697152
       \endverb
     \endentry
+    \entry{jknv}{book}{}
+      \name{author}{2}{}{%
+        {{hash=976dd6c832f0e77846bcbcc1e24ec068}{%
+           family={三木},
+           familyi={三\bibinitperiod},
+           given={一郎},
+           giveni={一\bibinitperiod}}}%
+        {{hash=4eeec8a6b3ee5591892ddc75d63d10ba}{%
+           family={下村},
+           familyi={下\bibinitperiod},
+           given={昭二},
+           giveni={昭\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {数理工学社}%
+        {サイエンス社 (発売)}%
+      }
+      \strng{namehash}{e9e372ebcb71aeffe1fe978932ec34d9}
+      \strng{fullhash}{e9e372ebcb71aeffe1fe978932ec34d9}
+      \strng{bibnamehash}{e9e372ebcb71aeffe1fe978932ec34d9}
+      \strng{authorbibnamehash}{e9e372ebcb71aeffe1fe978932ec34d9}
+      \strng{authornamehash}{e9e372ebcb71aeffe1fe978932ec34d9}
+      \strng{authorfullhash}{e9e372ebcb71aeffe1fe978932ec34d9}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{電気・電子工学ライブラリ}
+      \field{title}{電気機器学}
+      \field{year}{2017}
+      \field{pages}{56}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb https://cir.nii.ac.jp/crid/1130000795154912128
+      \endverb
+      \verb{url}
+      \verb https://cir.nii.ac.jp/crid/1130000795154912128
+      \endverb
+    \endentry
     \entry{1130282270091029760}{book}{}
       \name{author}{2}{}{%
         {{hash=e919933954fcf23da840a30b555dea4f}{%
@@ -535,8 +602,8 @@
       \strng{authornamehash}{161c0cf7b818640baebab265bc3a71cf}
       \strng{authorfullhash}{161c0cf7b818640baebab265bc3a71cf}
       \field{extraname}{3}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{図解変圧器 : 基礎から応用まで}
@@ -612,7 +679,7 @@
       \strng{authorbibnamehash}{e9e372ebcb71aeffe1fe978932ec34d9}
       \strng{authornamehash}{e9e372ebcb71aeffe1fe978932ec34d9}
       \strng{authorfullhash}{e9e372ebcb71aeffe1fe978932ec34d9}
-      \field{extraname}{1}
+      \field{extraname}{2}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -652,7 +719,7 @@
       \strng{authorbibnamehash}{e9e372ebcb71aeffe1fe978932ec34d9}
       \strng{authornamehash}{e9e372ebcb71aeffe1fe978932ec34d9}
       \strng{authorfullhash}{e9e372ebcb71aeffe1fe978932ec34d9}
-      \field{extraname}{2}
+      \field{extraname}{3}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -685,7 +752,9 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{month}{7}
       \field{title}{はじめに・第1話：損失の分類}
+      \field{year}{2022}
       \verb{urlraw}
       \verb https://www.jmag-international.com/jp/loss_analysis/01/
       \endverb

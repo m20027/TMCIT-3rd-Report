@@ -1,16 +1,16 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is '3309.blg'
-[101] biber-darwin:340> INFO - === 土  7 23, 2022, 19:12:16
-[123] Biber.pm:418> INFO - Reading '3309.bcf'
-[229] Biber.pm:972> INFO - Found 19 citekeys in bib section 0
-[248] Biber.pm:4383> INFO - Processing section 0
-[265] Biber.pm:4574> INFO - Looking for bibtex file '3rd_hysteresis.bib' for section 0
-[494] bibtex.pm:1713> INFO - LaTeX decoding ...
-[536] bibtex.pm:1518> INFO - Found BibTeX data source '/usr/local/texlive/texmf-local/bibtex/bib/3rd_hysteresis.bib'
-[681] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[681] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[682] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[682] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[705] bbl.pm:654> INFO - Writing '3309.bbl' with encoding 'UTF-8'
-[705] bbl.pm:655> INFO - Converting UTF-8 to TeX macros on output to .bbl
-[730] bbl.pm:757> INFO - Output to 3309.bbl
+[98] biber-darwin:340> INFO - === 土  7 23, 2022, 20:10:35
+[116] Biber.pm:418> INFO - Reading '3309.bcf'
+[226] Biber.pm:972> INFO - Found 21 citekeys in bib section 0
+[245] Biber.pm:4383> INFO - Processing section 0
+[259] Biber.pm:4574> INFO - Looking for bibtex file '3rd_hysteresis.bib' for section 0
+[443] bibtex.pm:1713> INFO - LaTeX decoding ...
+[481] bibtex.pm:1518> INFO - Found BibTeX data source '/usr/local/texlive/texmf-local/bibtex/bib/3rd_hysteresis.bib'
+[629] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[629] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[629] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[629] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[651] bbl.pm:654> INFO - Writing '3309.bbl' with encoding 'UTF-8'
+[651] bbl.pm:655> INFO - Converting UTF-8 to TeX macros on output to .bbl
+[681] bbl.pm:757> INFO - Output to 3309.bbl

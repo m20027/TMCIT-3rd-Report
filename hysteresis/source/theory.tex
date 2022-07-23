@@ -179,6 +179,37 @@ $\chi$を磁化率(単位は無次元)などと呼び，\weq{mo}に代入し，\
 	\oint_{C} \boldsymbol{\boldsymbol{r}}\cdot d\boldsymbol{l}=\mu_{0}I
 \end{equation}
 
+\subsection{電磁誘導(electromagnetic induction)\cite{titech}}
+電磁誘導の法則は，時間変化する磁場中において固定した回路にもたらされる起電力がその回路を貫く磁束の時間変化に比例しているというものである．
+また，磁束というものは回路に関係なく任意の曲面において定義できる．
+起電力は導体の2点間の電位差として定義されるが，それは電場の線積分として表現される．任意の閉じた経路$C$を考えると 
+\begin{equation}
+	\oint_{C=\partial S}d\boldsymbol{r}\cdot \boldsymbol{E}(\boldsymbol{r}, t)=-\frac{d}{dt}\int_{S}d\boldsymbol{S}(\boldsymbol{r})\cdot \boldsymbol{B}(\boldsymbol{r}, t)
+\end{equation}
+である．$S$は$C$を境界にもつ面領域を表す．
+この領域は回路に関係なく任意だが，時間に依存せず固定されているとする．
+$C$が回路に一致すれば左辺は起電力を表すが，回路でなくても電場はあるので意味をもつ．
+これがFaradayの法則の積分形である．
+
+また，\weq{sto}の関係より，
+
+\begin{equation}
+	\oint_{C}d\boldsymbol{r}\cdot \boldsymbol{E}(\boldsymbol{r})=0
+	\label{eq:sto}
+\end{equation}
+\begin{equation}
+\int_{S}d\boldsymbol{S}\cdot \left(\boldsymbol{\nabla} \times \boldsymbol{E}(\boldsymbol{r}, t)+\frac{\partial}{\partial t}\boldsymbol{B}(\boldsymbol{r}, t)\right)=0
+\end{equation}
+
+よって，微分形は以下のように示される．
+\begin{equation}
+\boldsymbol{\nabla} \times \boldsymbol{E}(\boldsymbol{r}, t)+\frac{\partial}{\partial t}\boldsymbol{B}(\boldsymbol{r}, t)=0
+\end{equation}
+この公式は磁場が時間変化する場所では電場もまた時間変化しながら存在していることを意味している．
+また，電場が空間的に変動しておりその回転が有限であるとき，時間依存する磁場が存在すると考えることもできる．
+静電場の場合，電場は渦をつくることができず電場の回転が$0$であったが，時間変化のある場合には時間依存する磁場があるので電場の回転は$0$にならない．
+時間依存性を無視すると静電場の法則に帰着する．
+
 \subsection{抵抗損と漂遊負荷損\cite{1130282271832577152}}
 ブリッジ法などで測定した巻線の抵抗(直線抵抗)を$r_{d}$とし，巻線に流れる交流電流を$I$とすると，抵抗損は$I^{2}r_{d}$である．しかし，実際の損失はこの値より大きくなる．その理由は次の2つである．
 \begin{enumerate}[(1)]
@@ -219,3 +250,7 @@ $\chi$を磁化率(単位は無次元)などと呼び，\weq{mo}に代入し，\
 	\label{eq:sekibun}
 \end{equation}
 \weq{sekibun}より，コンデンサ$C$の両端電圧$E_{C}$は入力信号$e$を積分した信号に比例した信号が得られる．
+
+\subsection{変圧器の原理\cite{jknv}}
+
+\subsection{変圧器の構造}
