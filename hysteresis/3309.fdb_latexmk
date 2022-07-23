@@ -1,15 +1,15 @@
 # Fdb version 3
-["biber 3309"] 1657959191 "3309.bcf" "3309.bbl" "3309" 1658547140
+["biber 3309"] 1657959191 "3309.bcf" "3309.bbl" "3309" 1658549019
   "/usr/local/texlive/texmf-local/bibtex/bib/3rd_hysteresis.bib" 1657959120 7459 d2976aa8ed69e19b6469e806fd91a33d ""
-  "3309.bcf" 1658547137 108552 d852ffbb3cb8baecb9156943be49240e ""
+  "3309.bcf" 1658549018 108552 d852ffbb3cb8baecb9156943be49240e ""
   (generated)
   "3309.bbl"
   "3309.blg"
-["dvipdf"] 1658547138 "3309.dvi" "3309.pdf" "3309" 1658547140
-  "3309.dvi" 1658547137 65648 6d8723ba4663324ec40a8edb2292a78b "latex"
+["dvipdf"] 1658549018 "3309.dvi" "3309.pdf" "3309" 1658549019
+  "3309.dvi" 1658549018 66608 3bb50ae2705b2a11e37a505e10c42b6c "latex"
   (generated)
   "3309.pdf"
-["latex"] 1658547131 "./source/3309.tex" "3309.dvi" "3309" 1658547140
+["latex"] 1658549014 "./source/3309.tex" "3309.dvi" "3309" 1658549019
   "./source/3309.tex" 1658447860 1812 0be52ea38f1e47aa6f0e2c91ec7ff302 ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty" 1576016050 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
@@ -180,9 +180,9 @@
   "/usr/local/texlive/2022/texmf-dist/tex/uplatex/base/ujsize11.clo" 1601501193 8671 38ae6650cc4f672ed2eb94ee1d40ee3d ""
   "/usr/local/texlive/texmf-local/tex/platex/eee.sty" 1655860503 5892 3149be2b1adc8ad9d5b33973b2e84d8d ""
   "/usr/local/texlive/texmf-local/tex/platex/jlisting.sty" 1649911532 6311 39acaca7319a5dae73524888cbf7591f ""
-  "3309.aux" 1658547137 10671 77e94bbfa67df4bac401f78f10ef4508 "latex"
+  "3309.aux" 1658549018 11220 02f822426064481ac62a628a5c41895f "latex"
   "3309.bbl" 1657975037 24473 5f6f1dfeb27d8ad950cf2a31b1b6bdf0 "biber 3309"
-  "3309.out" 1658547137 3473 1f8ac0ab1c2aa5ead760fbbf726d3c8a "latex"
+  "3309.out" 1658549018 4017 ee4529932b9d2c82c26dea23e5190201 "latex"
   "data/graph/1.pdf" 1658546177 589151 4c4b2c8497bc3d9a1c78cfb4e729e8e8 ""
   "fig/ad.pdf" 1658355816 12795 bfadcd5ab23647f84ab0edc8cc20f4a1 ""
   "fig/bhcurve.pdf" 1657975037 41961 27b99177061b71a354f7cd13cda3c3e7 ""
@@ -196,7 +196,7 @@
   "source/3309.tex" 1658447860 1812 0be52ea38f1e47aa6f0e2c91ec7ff302 ""
   "source/consideration.tex" 1658447860 4969 873c9bd029d950a3785c762bf775945e ""
   "source/howto.tex" 1658546982 3035 3a58e82c718504d3bf1c639e22ae61aa ""
-  "source/result.tex" 1658547130 1217 41b8501dcb224b46012e3298f93f3799 ""
+  "source/result.tex" 1658549013 1347 6a36e7c91cfae94c2502ba237d6fb178 ""
   "source/theory.tex" 1658447860 12957 418b850a6a11bb404e54cc723834b668 ""
   (generated)
   "3309.aux"
