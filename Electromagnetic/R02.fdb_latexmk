@@ -1,15 +1,15 @@
 # Fdb version 3
-["biber R02"] 1658099710 "R02.bcf" "R02.bbl" "R02" 1658802933
-  "R02.bcf" 1658802932 105888 8a2fd055f5518509acfc8a8e3877bc96 ""
+["biber R02"] 1658099710 "R02.bcf" "R02.bbl" "R02" 1658840104
+  "R02.bcf" 1658840102 105888 8a2fd055f5518509acfc8a8e3877bc96 ""
   (generated)
   "R02.bbl"
   "R02.blg"
-["dvipdf"] 1658802932 "R02.dvi" "R02.pdf" "R02" 1658802933
-  "R02.dvi" 1658802932 72736 ad98fe80c9a4e266f26a1c732ca8f6e1 "latex"
+["dvipdf"] 1658840102 "R02.dvi" "R02.pdf" "R02" 1658840104
+  "R02.dvi" 1658840102 78688 8b96ed8e9d0cd7ada7af0fe6e2bfb34c "latex"
   (generated)
   "R02.pdf"
-["latex"] 1658802929 "./R02.tex" "R02.dvi" "R02" 1658802933
-  "./R02.tex" 1658802928 25845 7be2667eff401dc4e1651215df318b5a ""
+["latex"] 1658840099 "./R02.tex" "R02.dvi" "R02" 1658840104
+  "./R02.tex" 1658840090 29053 a8986b52b7a5f3bc4261f7bdd2418bbd ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty" 1576016050 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/etexcmds/etexcmds.sty" 1576625273 7734 b98cbb34c81f667027c1e3ebdbfce34b ""
@@ -179,14 +179,15 @@
   "/usr/local/texlive/2022/texmf-dist/tex/uplatex/base/ujsize10.clo" 1601501193 8651 123e99f822cf71d9bd63f8ea0178a6a3 ""
   "/usr/local/texlive/texmf-local/tex/platex/eee.sty" 1655860503 5892 3149be2b1adc8ad9d5b33973b2e84d8d ""
   "/usr/local/texlive/texmf-local/tex/platex/jlisting.sty" 1649911532 6311 39acaca7319a5dae73524888cbf7591f ""
-  "R02.aux" 1658802932 7202 081d0d5e58668047af076472100dc3c0 "latex"
+  "R02.aux" 1658840102 7384 fbf6dc92f0303d512f60d96bf272516c "latex"
   "R02.bbl" 0 -1 0 "biber R02"
-  "R02.out" 1658802932 11619 f7d0bd3c01a2a21ffc026723cd494ae7 "latex"
-  "R02.tex" 1658802928 25845 7be2667eff401dc4e1651215df318b5a ""
+  "R02.out" 1658840102 11619 9663c991ccf69f1d7ffb5c9ed4470800 "latex"
+  "R02.tex" 1658840090 29053 a8986b52b7a5f3bc4261f7bdd2418bbd ""
   "fig/R03_fig1.png" 1658098820 79364 f5eba7a3aaec69b8712e05f0f31a9337 ""
   "fig/R03_fig2.png" 1658098814 114312 d6f8eedd8bcdf363271c64226a895b8a ""
   "fig/R03_fig3.png" 1658098797 111369 165b62400daac0d72571f17bdf3c2cb8 ""
   "fig/R03_fig4.png" 1658098788 47268 892d72100c089cfc65e7fe3bf0742b02 ""
+  "fig/fig.pdf" 1658791657 770054 bfdf65479cd2e17407b3b4e7eb5b02b1 ""
   (generated)
   "R02.aux"
   "R02.dvi"

@@ -309,11 +309,34 @@ H&=nI\,[\rm{A/m}]\left|_{コイル内部}\right .
 	\right .
 	\end{align*}
 	ただし，$J_{1}$は正の実定数．
-	\item 
 	\begin{align*}
-	J=\frac{J_{2}}{r}
+	r>aのとき&\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\frac{\pi a^{2} J_{1}}{2}-\pi J_{1}\left(a^{2}-\frac{a^{2}}{2}\right)=0\,[\rm{A}]\\
+	\frac{a}{\sqrt{2}}\leq r \leq aのとき&\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\frac{\pi a^{2} J_{1}}{2}-\pi J_{1}\left(r^{2}-\frac{a^{2}}{2}\right)=\pi(a^{2}-r^{2})J_{1}\,[\rm{A}]\\
+	H&=\frac{(a^{2}-r^{2})J_{1}}{2r}\,[\rm{A/m}]\\
+	0\leq r \leq \frac{a}{\sqrt{2}}のとき&\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\pi r^{2}J_{1}\,[\rm{A}]\\
+	H&=\frac{rJ_{1}}{2}\,[\rm{A/m}]\\
 	\end{align*}
+	\item 
+	\begin{equation*}
+	J=\frac{J_{2}}{r}
+	\end{equation*}
 	ただし，$J_{2}$は正の実定数．
+	\begin{align*}
+	コイルの内部&\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\int_{S}JdS=\int_{0}^{2\pi}\int_{0}^{r}\frac{J_{2}}{r}drd\theta=2\pi r J_{2}\,[\rm{A}]\\
+	H&=J_{2}\,[\rm{A/m}]\\
+	コイルの外部&\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\int_{S}JdS=\int_{0}^{2\pi}\int_{0}^{a}\frac{J_{2}}{r}drd\theta=2\pi a J_{2}\,[\rm{A}]\\
+	H&=\frac{a}{r}J_{2}\,[\rm{A/m}]
+	\end{align*}
 \end{enumerate}
 
 \begin{figure}[h]
