@@ -278,7 +278,7 @@
 
 \clearpage
 \setcounter{section}{0}
-\section*{令和2年　電磁気学II　第1回小テスト}
+\section*{令和2年　電磁気学II　前期期末試験}
 \section{以下に示す物理定数は電磁気学を修めた者であれば常識的に覚えていなければならない数値である．それぞれの値を示せ．}
 \begin{enumerate}[(a)]
 	\item 電子の電荷$e:-1.602 \times 10^{-19}\,\rm{C}$
@@ -431,6 +431,18 @@ H&=nI\,[\rm{A/m}]\left|_{コイル内部}\right .
 	\end{align*}
 	ただし，$a, b, J_{1}, J_{2}$は正の実定数で，$b<a$とする．
 	\begin{align*}
+	r>aのとき&\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\pi b^{2}J_{1}+\pi \left(a^{2}-b^2\right)J_{2}\,[\rm{A}]\\
+	H&=\frac{b^{2}J_{1}+(a^{2}-b^{2})J_{2}}{2r}\,[\rm{A/m}]\\
+	b < r \leq aのとき&\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\pi b^{2}J_{1}+\pi J_{1}\left(r^{2}-b^{2}\right)\,[\rm{A}]\\
+	H&=\frac{b^{2}J_{1}+(r^{2}-b^{2})J_{2}}{2r}\,[\rm{A/m}]\\
+	r \leq bのとき&\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\pi r^{2}J_{1}\,[\rm{A}]\\
+	H&=\frac{J_{1}}{2}r\,[\rm{A/m}]\\
 	\end{align*}
 	\item 
 	\begin{align*}
@@ -438,6 +450,14 @@ H&=nI\,[\rm{A/m}]\left|_{コイル内部}\right .
 	\end{align*}
 	ただし，$J_{0}$は正の実定数．
 	\begin{align*}
+	コイルの内部&\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\int_{S}JdS=\int_{0}^{2\pi}\int_{0}^{r}J_{0}r^{2}drd\theta=2\pi J_{0}\int _{0}^{r} r^{2} dr=2\pi J_{0} \left[\frac{1}{3}r^{3}\right]_{0}^{r}=\frac{2\pi r^{3}J_{0}}{3}\,[\rm{A}]\\
+	H&=\frac{\frac{2\pi r^{3}J_{0}}{3}}{2\pi r}=\frac{J_{0}}{3}r^{2}\,[\rm{A/m}]\\
+	コイルの外部&\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\int_{S}JdS=\int_{0}^{2\pi}\int_{0}^{a}J_{0}r^{2}drd\theta=2\pi J_{0}\int _{0}^{a} r^{2} dr=2\pi J_{0} \left[\frac{1}{3}r^{3}\right]_{0}^{a}=\frac{2\pi a^{3}J_{0}}{3}\,[\rm{A}]\\
+	H&=\frac{\frac{2\pi a^{3}J_{0}}{3}}{2\pi r}=\frac{J_{0}}{3}\frac{a^{3}}{r}\,[\rm{A/m}]\\
 	\end{align*}
 \end{enumerate}
 

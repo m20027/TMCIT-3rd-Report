@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.0.0-u1.28-220214-2.6 (utf8.uptex) (TeX Live 2022) (preloaded format=uplatex 2022.5.13)  26 JUL 2022 21:54
+This is e-upTeX, Version 3.141592653-p4.0.0-u1.28-220214-2.6 (utf8.uptex) (TeX Live 2022) (preloaded format=uplatex 2022.5.13)  27 JUL 2022 11:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2653,9 +2653,10 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 420.
 
+[17]
 File: ./fig/R03_fig4.png Graphic file (type bmp)
 <./fig/R03_fig4.png>
-[17] (./R02.aux)
+ [18] (./R02.aux)
 Package rerunfilecheck Info: File `R02.out' has not changed.
 (rerunfilecheck)             Checksum: 9663C991CCF69F1D7FFB5C9ED4470800;11619.
 Package logreq Info: Writing requests to 'R02.run.xml'.
@@ -2671,4 +2672,4 @@ Here is how much of TeX's memory you used:
  929 hyphenation exceptions out of 8191
  98i,18n,94p,1763b,805s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on R02.dvi (17 pages, 78688 bytes).
+Output written on R02.dvi (18 pages, 82528 bytes).
