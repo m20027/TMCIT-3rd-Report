@@ -1,15 +1,15 @@
 # Fdb version 3
-["biber H31"] 1658912822 "H31.bcf" "H31.bbl" "H31" 1658912968
-  "H31.bcf" 1658912967 105888 8a2fd055f5518509acfc8a8e3877bc96 ""
+["biber H31"] 1658912822 "H31.bcf" "H31.bbl" "H31" 1658961851
+  "H31.bcf" 1658961850 105888 8a2fd055f5518509acfc8a8e3877bc96 ""
   (generated)
   "H31.bbl"
   "H31.blg"
-["dvipdf"] 1658912967 "H31.dvi" "H31.pdf" "H31" 1658912968
-  "H31.dvi" 1658912967 30304 d493b8e91c14ffa23f7f46cf206a7b0d "latex"
+["dvipdf"] 1658961850 "H31.dvi" "H31.pdf" "H31" 1658961851
+  "H31.dvi" 1658961850 45680 1eb3289afd393a05205a8af6c650abb9 "latex"
   (generated)
   "H31.pdf"
-["latex"] 1658912963 "./H31.tex" "H31.dvi" "H31" 1658912968
-  "./H31.tex" 1658912959 11051 0783a4fcfd87d4276b7917be657e5944 ""
+["latex"] 1658961846 "./H31.tex" "H31.dvi" "H31" 1658961851
+  "./H31.tex" 1658961843 16930 7793c7d369106d9c178e4612df64fd2c ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty" 1576016050 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/etexcmds/etexcmds.sty" 1576625273 7734 b98cbb34c81f667027c1e3ebdbfce34b ""
@@ -179,10 +179,13 @@
   "/usr/local/texlive/2022/texmf-dist/tex/uplatex/base/ujsize10.clo" 1601501193 8651 123e99f822cf71d9bd63f8ea0178a6a3 ""
   "/usr/local/texlive/texmf-local/tex/platex/eee.sty" 1655860503 5892 3149be2b1adc8ad9d5b33973b2e84d8d ""
   "/usr/local/texlive/texmf-local/tex/platex/jlisting.sty" 1649911532 6311 39acaca7319a5dae73524888cbf7591f ""
-  "H31.aux" 1658912967 3282 82c8720f7c56eee0abf3749e4402c68d "latex"
+  "H31.aux" 1658961850 5112 61e0fc262e0d61fd38f02426396588e3 "latex"
   "H31.bbl" 0 -1 0 "biber H31"
-  "H31.out" 1658912967 4891 0ec2aa31e20818a59cb53d96de6a3504 "latex"
-  "H31.tex" 1658912959 11051 0783a4fcfd87d4276b7917be657e5944 ""
+  "H31.out" 1658961850 7417 f1cefb68f1cd509fc6127e90a519d738 "latex"
+  "H31.tex" 1658961843 16930 7793c7d369106d9c178e4612df64fd2c ""
+  "fig/R03_fig1.png" 1658098820 79364 f5eba7a3aaec69b8712e05f0f31a9337 ""
+  "fig/R03_fig2.png" 1658098814 114312 d6f8eedd8bcdf363271c64226a895b8a ""
+  "fig/fig.pdf" 1658791657 770054 bfdf65479cd2e17407b3b4e7eb5b02b1 ""
   (generated)
   "H31.aux"
   "H31.dvi"

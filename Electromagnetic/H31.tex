@@ -152,4 +152,110 @@
 \section*{平成31年　電磁気学II　前期期末試験}
 
 \section{以下に示す物理定数は電磁気学を修めた者であれば常識的に覚えていなければならない数値です．それぞれの値を示してください．お願いします．}
+\begin{enumerate}[(a)]
+	\item 電子の電荷$e:-1.602 \times 10^{-19}\,\rm{C}$
+	\item 真空の誘電率$\varepsilon_{0}:8.854 \times 10^{-12}\,\rm{F/m}$
+	\item 真空の透磁率$\mu_{0}:1.257 \times 10^{-6}\,\rm{H/m}$
+	\item 電子の静止質量$m:9.109\times 10^{-31}\,\rm{kg}$
+\end{enumerate}
+
+\section{\wfig{1}に示すような，断面が半径$a$の円柱状の内導体と，内径$b$，外径$c$の厚みのある円筒 状の外導体を有する無限長同軸ケーブルある．この同軸ケーブルは内導体と外導体はそれぞれの中心軸を共有するように配置されている．いま，内導体に一様な電流$I$を，外導体に内導体とは逆方向に一様な電流$I$を流したとき，内外導体の中心軸に垂直な平面内における中心軸からの距離を$r$としたとき，同軸ケーブルの周囲に発生する磁界$H$をアンペールの法則を用いて導出してください．お願いします．}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.35]{./fig/R03_fig1.png}
+	\caption{}
+	\label{fig:1}
+\end{figure}
+
+\begin{align*}
+	r>cのとき&\\
+	閉曲面に流れる&電流はI-I=0であるため\\
+	H&=0\,[\rm{A/m}]\\
+	b<r<cのとき&\\
+	dSが上向きである&ことを考慮すると\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\int_{S}JdS=I-\int_{S} \frac{I}{c^{2}\pi-b^{2}\pi}dS\\
+	&=I-\frac{I}{c^{2}\pi-b^{2}\pi}\pi(r^{2}-b^{2})=\left(1-\frac{r^{2}-b^{2}}{c^{2}-b^{2}}\right)I\\
+	&=\left(\frac{c^{2}-b^{2}-r^{2}+b^{2}}{c^{2}-b^{2}}\right)I=\frac{c^{2}-r^{2}}{c^{2}-b^{2}}I\,[\rm{A}]\\
+	2\pi r H&=\frac{c^{2}-r^{2}}{c^{2}-b^{2}}I\\
+	H&=\frac{I}{2\pi r}\frac{c^{2}-r^{2}}{c^{2}-b^{2}}\,[\rm{A/m}]\\
+	a<r<bのとき&\\
+	同様にdSは上向き&とする\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\int_{S} JdS=I\,[\rm{A}]\\
+	アンペールの法則より&\\
+	H&=\frac{I}{2\pi r}\,[\rm{A/m}]\\
+	r<aのとき&\\
+	同様にdSは上向き&とする\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\int_{S} JdS=\frac{I}{a^{2}\pi}r^{2}\pi=\frac{r^{2}}{a^{2}}I\,[\rm{A}]\\
+	アンペールの法則より&\\
+	H&=\frac{\frac{r^{2}}{a^{2}}I}{2\pi r}=\frac{I}{2\pi a^{2}}r\,[\rm{A/m}]\\\\
+	\therefore H&=
+	\left\{
+	\begin{matrix}
+	\frac{I}{2\pi a^{2}}r\,[\rm{A/m}] &(0 < r< a)\\\\
+	\frac{I}{2\pi r}\,[\rm{A/m}] & (a < r< b) \\\\
+	\frac{I}{2\pi r} \frac{c^{2}-r^{2}}{c^{2}-b^{2}}\,[\rm{A/m}] & (b < r <c)\\\\
+	0\,[\rm{A/m}] & (r >c)
+	\end{matrix}
+	\right .  \\
+	ただし向きは&左回り(反時計回り)
+\end{align*}
+
+\section{\wfig{2}に示すような，単位長さ当たり$n$巻の無限長ソレノイドコイルがある．コイルに電流$I$を流したとき，コイルの周囲に発生する磁界$H$をアンペールの法則を用いて導出せよ．}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.35]{./fig/R03_fig2.png}
+	\caption{}
+	\label{fig:2}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.35]{./fig/fig.pdf}
+	\caption{}
+	\label{fig:a}
+\end{figure}
+
+
+\begin{align*}
+このコイルによって発生する磁界はコイル&内部では右向き，コイル外部では左向きとなる．\\
+経路Cとしてコイル内に&長方形1234(左上から反時計回りの順)を決める\\
+また，経路23上&の磁界をH_{1}，経路14上の磁界をH_{2}，長さをlとする\\
+\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{12}\boldsymbol{H}\cdot d\boldsymbol{l}+\int_{23}\boldsymbol{H}\cdot d\boldsymbol{l}+\int_{34}\boldsymbol{H}\cdot d\boldsymbol{l}+\int_{41}\boldsymbol{H}\cdot d\boldsymbol{l}\\
+\boldsymbol{H}とd\boldsymbol{l}が直交するとき，&内積は0であるため\\
+&=\int_{0}^{l}H_{1}dl-\int_{0}^{l}H_{2}dl\\
+&=(H_{1}-H_{2})l\,[\rm{A}]\\
+\int_{S}\boldsymbol{J}\cdot \boldsymbol{S}&=0\,[\rm{A}]\\
+\therefore H_{1}-H_{2}&=0\\
+H_{1}&=H_{2}\tag{1}\\
+次に経路Cとしてコイル&外部に長方形5678(左上から反時計回りの順)を決める\\
+また，経路67上&の磁界をH_{3}，経路85上の磁界をH_{4}，長さをlとする\\
+コイル内の場合と同様の議論により&\\
+\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{56}\boldsymbol{H}\cdot d\boldsymbol{l}+\int_{67}\boldsymbol{H}\cdot d\boldsymbol{l}+\int_{78}\boldsymbol{H}\cdot d\boldsymbol{l}+\int_{85}\boldsymbol{H}\cdot d\boldsymbol{l}\\
+\boldsymbol{H}とd\boldsymbol{l}が直交するとき，&内積は0であるため\\
+&=-\int_{0}^{l}H_{3}dl+\int_{0}^{l}H_{4}dl\\
+&=(H_{4}-H_{3})l\,[\rm{A}]\\
+\int_{S}\boldsymbol{J}\cdot \boldsymbol{S}&=0\,[\rm{A}]\\
+\therefore H_{4}-H_{3}&=0\\
+H_{3}&=H_{4}\\
+ここでd \to \infty のときH_{4}&=0\\
+\therefore H&=0\,[\rm{A/m}]\left|_{コイル外部}\right .\tag{2}\\
+最後に経路Cとしてコイルの境界が経路の中心&となるような長方形9,10,11,12(左上から反時計回りの順)を決める\\
+また，経路10,11上&の磁界をH_{5}，経路12,9上の磁界をH_{6}，長さをlとする\\
+今までと同様の議論により&\\
+\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{9,10}\boldsymbol{H}\cdot d\boldsymbol{l}+\int_{10,11}\boldsymbol{H}\cdot d\boldsymbol{l}+\int_{11,12}\boldsymbol{H}\cdot d\boldsymbol{l}+\int_{12,9}\boldsymbol{H}\cdot d\boldsymbol{l}\\
+\boldsymbol{H}とd\boldsymbol{l}が直交するとき，&内積は0であり，式(2)よりコイル外部の磁界は0であるため\\
+&=H_{5}l\,[\rm{A}]\\
+\int_{S}\boldsymbol{J}\cdot \boldsymbol{S}&=\int_{S}JdS=nIl\,[\rm{A}]\\
+\therefore H_{5}l&=nIl\\
+H_{5}&=nI\,[\rm{A/m}]\\
+ここでH_{5}はコイルの内部の磁界であるあるため&式(1)より\\
+H&=nI\,[\rm{A/m}]\left|_{コイル内部}\right .
+\end{align*}
+
+\section{}
 \end{document}
