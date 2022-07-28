@@ -14,7 +14,7 @@
 \begin{equation}
 	\boldsymbol{m}=\mu_{0}IS\boldsymbol{n}
 \end{equation}
-ここで，$S$：ループ面の面積，$\boldsymbol{n}$：ループ面の単位法線ベクトルである．
+ここで，$S$はループ面の面積，$\boldsymbol{n}$はループ面の単位法線ベクトルである．
 
 \subsection{磁気モーメント(magnetic moment)\cite{7652}\cite{113028227162}}
 磁気モーメントは以下のように表すことができる．
@@ -64,7 +64,7 @@ $\chi$を磁化率(単位は無次元)などと呼び，\weq{mo}に代入し，\
 \begin{equation}
 	\chi=\frac{C}{T}\,[\rm{-}]
 \end{equation}
-ここで，$C$：キュリー定数$\,[\rm{K}]$，$T$：絶対温度$\,[\rm{K}]$
+ここで，$C$はキュリー定数$\,[\rm{K}]$，$T$は絶対温度$\,[\rm{K}]$
 
 \subsection{磁気回路(magnetic circuit)}
 \wfig{hys:jikikairo}に示すように断面積$S\,[\mathrm{m}^2]$，平均磁路長$L\,[\mathrm{m}]$の鉄心に巻数$N_1\,[\mathrm{Turn}]$のコイルを巻き，これに$I\,[\mathrm{A}]$の電流を流すと，起磁力$N_1\cdot I\,[\mathrm{A}\cdot\rm{Turn}]$を生じる．
@@ -179,6 +179,37 @@ $\chi$を磁化率(単位は無次元)などと呼び，\weq{mo}に代入し，\
 	\oint_{C} \boldsymbol{\boldsymbol{r}}\cdot d\boldsymbol{l}=\mu_{0}I
 \end{equation}
 
+\subsection{電磁誘導(electromagnetic induction)\cite{titech}}
+電磁誘導の法則は，時間変化する磁場中において固定した回路にもたらされる起電力がその回路を貫く磁束の時間変化に比例しているというものである．
+また，磁束というものは回路に関係なく任意の曲面において定義できる．
+起電力は導体の2点間の電位差として定義されるが，それは電場の線積分として表現される．任意の閉じた経路$C$を考えると 
+\begin{equation}
+	\oint_{C=\partial S}d\boldsymbol{r}\cdot \boldsymbol{E}(\boldsymbol{r}, t)=-\frac{d}{dt}\int_{S}d\boldsymbol{S}(\boldsymbol{r})\cdot \boldsymbol{B}(\boldsymbol{r}, t)
+\end{equation}
+である．$S$は$C$を境界にもつ面領域を表す．
+この領域は回路に関係なく任意だが，時間に依存せず固定されているとする．
+$C$が回路に一致すれば左辺は起電力を表すが，回路でなくても電場はあるので意味をもつ．
+これがFaradayの法則の積分形である．
+
+また，\weq{sto}の関係より，
+
+\begin{equation}
+	\oint_{C}d\boldsymbol{r}\cdot \boldsymbol{E}(\boldsymbol{r})=0
+	\label{eq:sto}
+\end{equation}
+\begin{equation}
+\int_{S}d\boldsymbol{S}\cdot \left(\boldsymbol{\nabla} \times \boldsymbol{E}(\boldsymbol{r}, t)+\frac{\partial}{\partial t}\boldsymbol{B}(\boldsymbol{r}, t)\right)=0
+\end{equation}
+
+よって，微分形は以下のように示される．
+\begin{equation}
+\boldsymbol{\nabla} \times \boldsymbol{E}(\boldsymbol{r}, t)+\frac{\partial}{\partial t}\boldsymbol{B}(\boldsymbol{r}, t)=0
+\end{equation}
+この公式は磁場が時間変化する場所では電場もまた時間変化しながら存在していることを意味している．
+また，電場が空間的に変動しておりその回転が有限であるとき，時間依存する磁場が存在すると考えることもできる．
+静電場の場合，電場は渦をつくることができず電場の回転が$0$であったが，時間変化のある場合には時間依存する磁場があるので電場の回転は$0$にならない．
+時間依存性を無視すると静電場の法則に帰着する．
+
 \subsection{抵抗損と漂遊負荷損\cite{1130282271832577152}}
 ブリッジ法などで測定した巻線の抵抗(直線抵抗)を$r_{d}$とし，巻線に流れる交流電流を$I$とすると，抵抗損は$I^{2}r_{d}$である．しかし，実際の損失はこの値より大きくなる．その理由は次の2つである．
 \begin{enumerate}[(1)]
@@ -191,6 +222,70 @@ $\chi$を磁化率(単位は無次元)などと呼び，\weq{mo}に代入し，\
 		W_{l}=I_{2}^{2}r
 	\end{equation}
 	で表される．
+\end{enumerate}
+
+\subsection{変圧器の原理\cite{jknv}}
+変圧器は磁気的に結合された複数の巻線の電磁誘導作用によって，電圧や電流の変成を行う静止誘導器である．
+\wfig{genri}は変圧器の原理図である．
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.75]{./fig/Transformer-structure-and-principle.jpg}
+	\caption{変圧器の原理図\cite{genri}}
+	\label{fig:genri}
+\end{figure}
+
+鉄心に絶縁した一次巻線と二次巻線を施している．一次巻線に電圧を印加すると，鉄心中に交番磁束$\dot{\phi}$が発生し，$\dot{\phi}$の時間的変化により一次巻線には誘導機電力$\dot{E}_{1}$が発生する．
+$\dot{\phi}$は二次巻線とも鎖交しているので同時に二次巻線にも誘導起電力$\dot{E}_{2}$を発生する．
+これらの誘導起電力の比は巻数比と等しく，以下のように$a$で表される．
+\begin{equation}
+	\frac{E_{1}}{E_{2}}=\frac{N_{1}}{N_{2}}=a
+\end{equation}
+
+次に，二次巻線に負荷を接続すると，二次電流$\dot{I}_{2}$が流れ，新たな起磁力$N_{2}I_{2}$が生じる．
+しかし，一次巻線に印加した電圧は変化せず，$\dot{\phi}$は一定に保たれるのでこの起磁力$N_{2}I_{2}$を打ち消すように一次巻線に電源より$\dot{I}_{1}$が流れ，次の関係が成立する．
+\begin{equation}
+	N_{1}I_{1}=N_{2}I_{2}
+\end{equation}
+したがって，電流と巻数比の関係比は以下のようになる．
+\begin{equation}
+	\frac{I_{2}}{I_{1}}=\frac{N_{1}}{N_{2}}=a
+\end{equation}
+
+\subsection{変圧器の構造}
+変圧器は磁気回路を構成する鉄心と，電流回路を構成する巻線とから成り立っており，\wfig{kouzo}に示すように内鉄形と外鉄形に分けられる．
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.45]{./fig/01-1.png}
+	\caption{変圧器の原理図\cite{genri}}
+	\label{fig:kouzo}
+\end{figure}
+内鉄形は鉄心が内部にあり，巻線が鉄心を囲んでいる．実際の変圧器では，一次巻線と二次巻線は\wfig{kouzo}に示したように別々の脚に巻くのではなく，各巻線とも両方の脚に等分に巻く．
+普通，絶縁の関係で低圧側巻線を内側に，高圧側巻線を外側に配置している．
+また，外鉄形は巻線が内側にあり，鉄心がその周囲を囲んでいる．
+巻線は低圧側巻線と高圧側巻線とが交互に配置されている．
+\begin{enumerate}
+	\item \textbf{鉄心}
+	
+	変圧器の鉄心には，透磁率が大きく，鐵損の小さい材料が用いられる．ヒステリシス損を減少させるために，ケイ素含有量が$3.5\,\%$程度，厚さが$0.35\,\rm{mm}$程度の方向性ケイ素銅帯が用いられる．
+	この銅帯は冷間圧延によって作られ，圧延方向に磁束を通すと鐵損，励磁電流が著しく小さくなるという性質がある．
+	銅帯の表面は絶縁が施され，積み重ねて成層鉄心としている．
+	このように成層鉄心は絶縁物を含むため，鉄心の断面積に対して実際に鉄が占める割合を占積率と呼び，一般的に$97\,\%$程度である．
+	\item \textbf{巻線}
+	
+	巻線には銅またはアルミの丸線や平角線が用いられる．小容量変圧器では多くの場合，細い丸線のホルマール線を用いている．
+	また，電力用変圧器では軟銅平角線が用いられる．断面積が大きい場合はうず電流を低減するために，断面積の小さい数個の並列回路に分割する．
+	
+	小容量の内鉄形変圧器では，鉄心に絶縁を施し，その上に巻線を直接巻く，直巻が採用されるが，中・大容量変圧器では絶縁処理された円筒コイルや板状コイルを鉄心に嵌め込む方法が採用されている．
+	\item \textbf{冷却}
+	
+	変圧器では鉄損や銅損などがあり，これらの損失が全て熱となる．しかも大容量になるほど熱発散が困難となり，温度上昇が大きくなるため容量に応じて適切な冷却が行われる．冷却方法として，変圧器本体を絶縁油に浸して冷却する油入式と空気によって冷却を行う乾式とに大別される．
+	また，乾式であるが，密閉式のもある．代表的な冷却方法を\wfig{cool}に示す．
+	\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.45]{./fig/kind.pdf}
+	\caption{変圧器の代表的な冷却方式\cite{jdksff}}
+	\label{fig:cool}
+\end{figure}
 \end{enumerate}
 
 \subsection{積分回路}
@@ -219,3 +314,4 @@ $\chi$を磁化率(単位は無次元)などと呼び，\weq{mo}に代入し，\
 	\label{eq:sekibun}
 \end{equation}
 \weq{sekibun}より，コンデンサ$C$の両端電圧$E_{C}$は入力信号$e$を積分した信号に比例した信号が得られる．
+

@@ -105,7 +105,7 @@
 	&=-\frac{I}{4\pi a} \left(-\cos \beta +\cos \alpha \right)\boldsymbol{k}\\
 	&=-\frac{I}{4\pi a} \left(\cos \alpha -\cos \beta \right)\boldsymbol{k}\,[\rm{A/m}]\\
 	始点Aと終点B&の座標がそれぞれ(0, -\infty, 0), (0, \infty, 0)の場合は\\
-	\alpha=0,&\beta =\pi であるので\\
+	\alpha=0, &\beta =\pi であるので\\
 	\boldsymbol{H}&=-\frac{I}{4\pi a}\cdot 2 \boldsymbol{k}\\
 	&=-\frac{I}{2\pi a} \boldsymbol{k}\,[\rm{A/m}]
 	\end{align*}
@@ -147,5 +147,204 @@
 	\end{align*}
 
 \section{磁化されていない強磁性体に磁界$H$を外部から印加し，強磁性体内部での磁束密度$B$を観測すると，図3に示すような結果が得られた．このとき，図中の行程1:点$\rm{O}\to$点$\rm{P_{1}}$，行程 2:点$\rm{P_{1}}\to$点$\rm{P_{2}}$，行程3:点$\rm{P_{2}}\to$点$\rm{P_{3}}$，行程4:点$\rm{P_{3}}\to$点P4，行程5:点P4 $\to$点$\rm{P_{5}}$， 行程6:点$\rm{P_{5}}\to$点P6，行程7:点$\rm{P_{6}}\to$点P1の7つの行程に着目して，測定結果を説明せよ．}
+$B-H$曲線が直線にならない理由は，磁気分子間の摩擦があるため，その磁化の状態を保とうとする抵抗があるからである．そのため，はじめ磁化されていない鉄は，その現状を維持しようとするため磁化が進みにくい．
+しかし，一旦磁化された鉄は，その磁化を維持しようとするため，磁界を減少させても，磁界の強さに応じた経路を辿らず，以前の磁束密度には減少しない．すなわち，強磁性体には以前の磁化の経路によって異なる特性を示す．このような現象を磁化特性のヒステリシス現象という．
+
+以下に行程について説明する．
+
+最初に磁化するときには磁化の強さ$H$を強くしていくと，磁束密度$B$は行程1の経路を通る．
+磁束密度が点$P_1$に達したとき，今度$H$を減少させていくと，$B$は元の行程1を通過せずに，新しい行程2に沿って減少していく．このとき，$H$が$0$になっても$B$は$0$にならずに$P_2$だけ残る．この$P_2$を残留磁束密度という．
+
+\clearpage
+\setcounter{section}{0}
+\section*{令和3年　電磁気学II　前期期末試験}
+\section{以下に示す物理定数は電磁気学を修めた者であれば常識的に覚えていなければならない数値です．それぞれの値を示していただければ幸いです．よろしくお願い申し上げます．}
+\begin{enumerate}[(a)]
+	\item 電子の電荷$e:-1.602 \times 10^{-19}\,\rm{C}$
+	\item 真空の誘電率$\varepsilon_{0}:8.854 \times 10^{-12}\,\rm{F/m}$
+	\item 真空の透磁率$\mu_{0}:1.257 \times 10^{-6}\,\rm{H/m}$
+	\item 電子の静止質量$m:9.109\times 10^{-31}\,\rm{kg}$
+\end{enumerate}
+
+\section{昔々あるところに\wfig{1}に示すような，断面が半径$a$の円柱状の内導体と，内径$b$，外径$c$の厚みのある円筒状の外導体を有する無限長同軸ケーブルありました．この同軸ケーブルは内導体と外導体はそれぞれの中心軸を共有するように配置されています．どこからともなく，内導体に一様な電流$I$が，外導体に内導体とは逆方向に一様な電流$I$が流れています．内外導体の中心軸に垂直な平面内における中心軸からの距離を$r$としたとき，同軸ケーブルの周囲に発生する磁界$H$を導出してみましょう．}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.35]{./fig/R03_fig1.png}
+	\caption{}
+	\label{fig:1}
+\end{figure}
+
+\begin{align*}
+	r>cのとき&\\
+	閉曲面に流れる&電流はI-I=0であるため\\
+	H&=0\,[\rm{A/m}]\\
+	b<r<cのとき&\\
+	dSが上向きである&ことを考慮すると\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\int_{S}JdS=I-\int_{S} \frac{I}{c^{2}\pi-b^{2}\pi}dS\\
+	&=I-\frac{I}{c^{2}\pi-b^{2}\pi}\pi(r^{2}-b^{2})=\left(1-\frac{r^{2}-b^{2}}{c^{2}-b^{2}}\right)I\\
+	&=\left(\frac{c^{2}-b^{2}-r^{2}+b^{2}}{c^{2}-b^{2}}\right)I=\frac{c^{2}-r^{2}}{c^{2}-b^{2}}I\,[\rm{A}]\\
+	2\pi r H&=\frac{c^{2}-r^{2}}{c^{2}-b^{2}}I\\
+	H&=\frac{I}{2\pi r}\frac{c^{2}-r^{2}}{c^{2}-b^{2}}\,[\rm{A/m}]\\
+	a<r<bのとき&\\
+	同様にdSは上向き&とする\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\int_{S} JdS=I\,[\rm{A}]\\
+	アンペールの法則より&\\
+	H&=\frac{I}{2\pi r}\,[\rm{A/m}]\\
+	r<aのとき&\\
+	同様にdSは上向き&とする\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\int_{S} JdS=\frac{I}{a^{2}\pi}r^{2}\pi=\frac{r^{2}}{a^{2}}I\,[\rm{A}]\\
+	アンペールの法則より&\\
+	H&=\frac{\frac{r^{2}}{a^{2}}I}{2\pi r}=\frac{I}{2\pi a^{2}}r\,[\rm{A/m}]\\\\
+	\therefore H&=
+	\left\{
+	\begin{matrix}
+	\frac{I}{2\pi a^{2}}r\,[\rm{A/m}] &(0 < r< a)\\\\
+	\frac{I}{2\pi r}\,[\rm{A/m}] & (a < r< b) \\\\
+	\frac{I}{2\pi r} \frac{c^{2}-r^{2}}{c^{2}-b^{2}}\,[\rm{A/m}] & (b < r <c)\\\\
+	0\,[\rm{A/m}] & (r >c)
+	\end{matrix}
+	\right .  \\
+	ただし向きは&左回り(反時計回り)
+\end{align*}
+
+\newpage
+\section{雨ニモマケズ，風ニモマケズ，\wfig{2}ニ示スヤウナ，単位長サ当タリ$n$巻ノ無限長ソレノイドコイルガアル．コイルニ電流$I$ヲ流シタトキ，コイルノ周囲ニ発生スル磁界$H$ヲアンペールノ法則ヲ用イテ導出スル．サウイフモノニワタシハナリタイ．}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.35]{./fig/R03_fig2.png}
+	\caption{}
+	\label{fig:2}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.35]{./fig/fig.pdf}
+	\caption{}
+	\label{fig:a}
+\end{figure}
+
+
+\begin{align*}
+このコイルによって発生する磁界はコイル&内部では右向き，コイル外部では左向きとなる．\\
+経路Cとしてコイル内に&長方形1234(左上から反時計回りの順)を決める\\
+また，経路23上&の磁界をH_{1}，経路14上の磁界をH_{2}，長さをlとする\\
+\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{12}\boldsymbol{H}\cdot d\boldsymbol{l}+\int_{23}\boldsymbol{H}\cdot d\boldsymbol{l}+\int_{34}\boldsymbol{H}\cdot d\boldsymbol{l}+\int_{41}\boldsymbol{H}\cdot d\boldsymbol{l}\\
+\boldsymbol{H}とd\boldsymbol{l}が直交するとき，&内積は0であるため\\
+&=\int_{0}^{l}H_{1}dl-\int_{0}^{l}H_{2}dl\\
+&=(H_{1}-H_{2})l\,[\rm{A}]\\
+\int_{S}\boldsymbol{J}\cdot \boldsymbol{S}&=0\,[\rm{A}]\\
+\therefore H_{1}-H_{2}&=0\\
+H_{1}&=H_{2}\tag{1}\\
+次に経路Cとしてコイル&外部に長方形5678(左上から反時計回りの順)を決める\\
+また，経路67上&の磁界をH_{3}，経路85上の磁界をH_{4}，長さをlとする\\
+コイル内の場合と同様の議論により&\\
+\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{56}\boldsymbol{H}\cdot d\boldsymbol{l}+\int_{67}\boldsymbol{H}\cdot d\boldsymbol{l}+\int_{78}\boldsymbol{H}\cdot d\boldsymbol{l}+\int_{85}\boldsymbol{H}\cdot d\boldsymbol{l}\\
+\boldsymbol{H}とd\boldsymbol{l}が直交するとき，&内積は0であるため\\
+&=-\int_{0}^{l}H_{3}dl+\int_{0}^{l}H_{4}dl\\
+&=(H_{4}-H_{3})l\,[\rm{A}]\\
+\int_{S}\boldsymbol{J}\cdot \boldsymbol{S}&=0\,[\rm{A}]\\
+\therefore H_{4}-H_{3}&=0\\
+H_{3}&=H_{4}\\
+ここでd \to \infty のときH_{4}&=0\\
+\therefore H&=0\,[\rm{A/m}]\left|_{コイル外部}\right .\tag{2}\\
+最後に経路Cとしてコイルの境界が経路の中心&となるような長方形9,10,11,12(左上から反時計回りの順)を決める\\
+また，経路10,11上&の磁界をH_{5}，経路12,9上の磁界をH_{6}，長さをlとする\\
+今までと同様の議論により&\\
+\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{9,10}\boldsymbol{H}\cdot d\boldsymbol{l}+\int_{10,11}\boldsymbol{H}\cdot d\boldsymbol{l}+\int_{11,12}\boldsymbol{H}\cdot d\boldsymbol{l}+\int_{12,9}\boldsymbol{H}\cdot d\boldsymbol{l}\\
+\boldsymbol{H}とd\boldsymbol{l}が直交するとき，&内積は0であり，式(2)よりコイル外部の磁界は0であるため\\
+&=H_{5}l\,[\rm{A}]\\
+\int_{S}\boldsymbol{J}\cdot \boldsymbol{S}&=\int_{S}JdS=nIl\,[\rm{A}]\\
+\therefore H_{5}l&=nIl\\
+H_{5}&=nI\,[\rm{A/m}]\\
+ここでH_{5}はコイルの内部の磁界であるあるため&式(1)より\\
+H&=nI\,[\rm{A/m}]\left|_{コイル内部}\right .
+\end{align*}
+
+\newpage
+\section{これはこの辺りに住まい致すものにて候．\wfig{3}に示すように，断面積が半径$r$の円で，比透磁率$\mu_{r}$，半径$R$の円環鉄心に導線を$N$巻したコイルが御座ります．このコイルに電流$I$を流したとき，以下に示す各問いに解答頂きたく候．ただし，$r \ll R$ とし，発生した 磁界はすべて鉄心内部に存在し，漏れ磁界は存在致さず候．}
+\begin{enumerate}[(a)]
+	\item 発生する磁界$H$をアンペールの法則を用いて導出されたく候．
+	\begin{align*}
+	r&\ll Rであるため\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi RH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=NI\,[\rm{A}]\\
+	\therefore H&=\frac{NI}{2\pi R}\,[\rm{A/m}]
+	\end{align*}
+	\item 鉄心内部に発生する磁束密度$B$を求められ候．
+	\begin{equation*}
+	B=\mu H=\mu_{0}\mu_{s}H=\frac{\mu_{0}\mu_{s}NI}{2\pi R}\,[\rm{T}]
+	\end{equation*}
+	\item 鉄心内部に発生する磁束$\Phi$を求められ候．
+	\begin{equation*}
+	\Phi=BS=\frac{\mu_{0}\mu_{s}NI}{2\pi R}\pi r^{2}=\frac{\mu_{0}\mu_{s}r^{2}NI}{2R}\,[\rm{Wb}]
+	\end{equation*}
+	\item 起磁力を$NI$とすると磁気抵抗$R_{m}$は$R_{m}=\frac{NI}{\Phi}$で求められるとこによって，この鉄心の磁気抵抗$R_{m}$を求めていただきたくお願い申し上げ候．
+	\begin{equation*}
+	R_{m}=\frac{NI}{\Phi}=\frac{NI}{\frac{\mu_{0}\mu_{s}r^{2}NI}{2R}}=\frac{2R}{\mu_{0}\mu_{s}r^{2}}\,[\rm{A/Wb}]
+	\end{equation*}
+\end{enumerate}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.35]{./fig/R03_fig3.png}
+	\caption{}
+	\label{fig:3}
+\end{figure}
+
+\newpage
+\section{とざいとうざい．\wfig{4}に示すように，半径$a$の円を断面にもつ無限長円柱導体に中心軸方向の電流密度が流れてさせていただいております．いま，中心からの距離を$r$とし，電流密度$J$が次に示す各場合のとき，導体の内外に発生する磁界$H$を求めて頂きますよう，ひとえにお願い申し上げ奉ります．}
+\begin{enumerate}[(a)]
+	\item 
+	\begin{align*}
+	J=
+	\left\{
+	\begin{matrix}
+	J_{1}& (0\leq r \leq a/\sqrt{2})\\
+	-J_{1}&(a/\sqrt{2} < r \leq a)
+	\end{matrix}
+	\right .
+	\end{align*}
+	ただし，$J_{1}$は正の実定数．
+	\begin{align*}
+	r>aのとき&\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\frac{\pi a^{2} J_{1}}{2}-\pi \left(a^{2}-\frac{a^{2}}{2}\right)J_{1}=0\,[\rm{A}]\\
+	H&=0\,[\rm{A/m}]\\
+	\frac{a}{\sqrt{2}}\leq r \leq aのとき&\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\frac{\pi a^{2} J_{1}}{2}-\pi J_{1}\left(r^{2}-\frac{a^{2}}{2}\right)=\pi(a^{2}-r^{2})J_{1}\,[\rm{A}]\\
+	H&=\frac{(a^{2}-r^{2})J_{1}}{2r}\,[\rm{A/m}]\\
+	r \leq \frac{a}{\sqrt{2}}のとき&\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\pi r^{2}J_{1}\,[\rm{A}]\\
+	H&=\frac{J_{1}}{2}r\,[\rm{A/m}]\\
+	\end{align*}
+	\item 
+	\begin{equation*}
+	J=\frac{J_{2}}{r}
+	\end{equation*}
+	ただし，$J_{2}$は正の実定数．
+	\begin{align*}
+	コイルの内部&\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\int_{S}JdS=\int_{0}^{2\pi}\int_{0}^{r}\frac{J_{2}}{r}rdrd\theta=2\pi r J_{2}\,[\rm{A}]\\
+	H&=J_{2}\,[\rm{A/m}]\\
+	コイルの外部&\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\int_{S}JdS=\int_{0}^{2\pi}\int_{0}^{a}\frac{J_{2}}{r}rdrd\theta=2\pi a J_{2}\,[\rm{A}]\\
+	H&=\frac{a}{r}J_{2}\,[\rm{A/m}]
+	\end{align*}
+\end{enumerate}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.35]{./fig/R03_fig4.png}
+	\caption{}
+	\label{fig:4}
+\end{figure}
 
 \end{document}
