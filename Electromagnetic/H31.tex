@@ -204,7 +204,7 @@
 	ただし向きは&左回り(反時計回り)
 \end{align*}
 
-\section{\wfig{2}に示すような，単位長さ当たり$n$巻の無限長ソレノイドコイルがある．コイルに電流$I$を流したとき，コイルの周囲に発生する磁界$H$をアンペールの法則を用いて導出せよ．}
+\section{\wfig{2}に示すような，単位長さ当たり$n$巻の無限長ソレノイドコイルがある．コイルに電流$I$を流したとき，コイルの周囲に発生する磁界$H$をアンペールの法則を用いて導出してください．お願いします．}
 
 \begin{figure}[h]
 	\centering
@@ -257,5 +257,45 @@ H_{5}&=nI\,[\rm{A/m}]\\
 H&=nI\,[\rm{A/m}]\left|_{コイル内部}\right .
 \end{align*}
 
-\section{}
+\section{\wfig{3}に示すように，断面積が半径$r$の円で，比透磁率$\mu_{r}$，半径$R$の円環鉄心に導線を$N$巻したコイルがある．このコイルに電流$I$を流したとき，以下に示す各問いに答えてください．ただし，$r \ll R$とし，発生した磁界はすべて鉄心内部に存在し，漏れ磁界は存在しないものとします．よろしくお願いします．}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.35]{./fig/R03_fig3.png}
+	\caption{}
+	\label{fig:3}
+\end{figure}
+
+\begin{enumerate}[(a)]
+	\item 発生する磁界$H$をアンペールの法則を用いて導出してください．お願いします．
+	\begin{align*}
+	r&\ll Rであるため\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi RH\,[\rm{A}]\\
+	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=NI\,[\rm{A}]\\
+	\therefore H&=\frac{NI}{2\pi R}\,[\rm{A/m}]
+	\end{align*}
+	\item 鉄心内部に発生する磁束密度$B$を求めてください．お願いします．
+	\begin{equation*}
+	B=\mu H\mu_{0}\mu_{s}H=\frac{\mu_{0}\mu_{s}NI}{2\pi R}\,[\rm{T}]
+	\end{equation*}
+	\item 鉄心内部に発生する磁束$\Phi$を求めてください．お願いします．
+	\begin{equation*}
+	\Phi=BS=\frac{\mu_{0}\mu_{s}NI}{2\pi R}\pi r^{2}=\frac{\mu_{0}\mu_{s}r^{2}NI}{2R}\,[\rm{Wb}]
+	\end{equation*}
+	\item 起磁力を$NI$とすると磁気抵抗$R_{m}$は$R_{m}=\frac{NI}{\Phi}$で求められる．この鉄心の磁気抵抗$R_{m}$を求めてください．お願いします．
+	\begin{equation*}
+	R_{m}=\frac{NI}{\Phi}=\frac{NI}{\frac{\mu_{0}\mu_{s}r^{2}NI}{2R}}=\frac{2R}{\mu_{0}\mu_{s}r^{2}}\,[\rm{A/Wb}]
+	\end{equation*}
+\end{enumerate}
+
+\section{An infinitely long tubular conductor has outer radius b and inner radius a offset by a distance c from the axis of the outer cylinder, as shown in figure 4. This eccentric tubular conductor carries a direct current of $I$ amperres. Find the H field at point A shown in the figure. Hint: Consider the tube to be a superposition of two solid cylinders that have radii $b$ and $a$ and that carry uniform current density J in opposite directions.}
+Word List\\
+infinitely:(adv) 無限に，tubular:(a) 管状の，conductor:(n) 導体，outer:(a) 外の，radius:(n) 半径，inner:(a) 内の，offset:(n) 偏り，distance:(n) 距離，axis:(n) 軸，cylinder:(n) 円筒，fig- ure:(n) 図，eccentric:(a) 偏心的な，direct current:(n) 直流，amperre:(n) アンペア，field:(n) 場・界，consider:(v) 考える，superoposition:(n) 重ね合わせ，solid:(a) 個体，radii:radius の複数形，uniform:(a) 一様な，density:(n) 密度，opposite:(a) 逆の，direction:(n) 方向
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.35]{./fig/c.png}
+	\caption{}
+	\label{fig:c}
+\end{figure}
+
 \end{document}

@@ -568,6 +568,46 @@
       \verb https://engineer-education.com/transformer/
       \endverb
     \endentry
+    \entry{jdksff}{book}{}
+      \name{author}{2}{}{%
+        {{hash=976dd6c832f0e77846bcbcc1e24ec068}{%
+           family={三木},
+           familyi={三\bibinitperiod},
+           given={一郎},
+           giveni={一\bibinitperiod}}}%
+        {{hash=4eeec8a6b3ee5591892ddc75d63d10ba}{%
+           family={下村},
+           familyi={下\bibinitperiod},
+           given={昭二},
+           giveni={昭\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {数理工学社}%
+        {サイエンス社 (発売)}%
+      }
+      \strng{namehash}{e9e372ebcb71aeffe1fe978932ec34d9}
+      \strng{fullhash}{e9e372ebcb71aeffe1fe978932ec34d9}
+      \strng{bibnamehash}{e9e372ebcb71aeffe1fe978932ec34d9}
+      \strng{authorbibnamehash}{e9e372ebcb71aeffe1fe978932ec34d9}
+      \strng{authornamehash}{e9e372ebcb71aeffe1fe978932ec34d9}
+      \strng{authorfullhash}{e9e372ebcb71aeffe1fe978932ec34d9}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{電気・電子工学ライブラリ}
+      \field{title}{電気機器学}
+      \field{year}{2017}
+      \field{pages}{59}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb https://cir.nii.ac.jp/crid/1130000795154912128
+      \endverb
+      \verb{url}
+      \verb https://cir.nii.ac.jp/crid/1130000795154912128
+      \endverb
+    \endentry
     \entry{1130282270091029760}{book}{}
       \name{author}{2}{}{%
         {{hash=e919933954fcf23da840a30b555dea4f}{%
@@ -707,7 +747,7 @@
       \strng{authorbibnamehash}{e9e372ebcb71aeffe1fe978932ec34d9}
       \strng{authornamehash}{e9e372ebcb71aeffe1fe978932ec34d9}
       \strng{authorfullhash}{e9e372ebcb71aeffe1fe978932ec34d9}
-      \field{extraname}{2}
+      \field{extraname}{3}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -747,9 +787,9 @@
       \strng{authorbibnamehash}{e9e372ebcb71aeffe1fe978932ec34d9}
       \strng{authornamehash}{e9e372ebcb71aeffe1fe978932ec34d9}
       \strng{authorfullhash}{e9e372ebcb71aeffe1fe978932ec34d9}
-      \field{extraname}{3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extraname}{4}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{series}{電気・電子工学ライブラリ}
@@ -776,8 +816,8 @@
       \strng{authorbibnamehash}{bbcc11499d1b74098103c8bc700b2df5}
       \strng{authornamehash}{bbcc11499d1b74098103c8bc700b2df5}
       \strng{authorfullhash}{bbcc11499d1b74098103c8bc700b2df5}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{7}

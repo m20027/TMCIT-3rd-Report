@@ -1,15 +1,15 @@
 # Fdb version 3
-["biber H31"] 1658912822 "H31.bcf" "H31.bbl" "H31" 1658961851
-  "H31.bcf" 1658961850 105888 8a2fd055f5518509acfc8a8e3877bc96 ""
+["biber H31"] 1658912822 "H31.bcf" "H31.bbl" "H31" 1658962319
+  "H31.bcf" 1658962318 105888 8a2fd055f5518509acfc8a8e3877bc96 ""
   (generated)
   "H31.bbl"
   "H31.blg"
-["dvipdf"] 1658961850 "H31.dvi" "H31.pdf" "H31" 1658961851
-  "H31.dvi" 1658961850 45680 1eb3289afd393a05205a8af6c650abb9 "latex"
+["dvipdf"] 1658962318 "H31.dvi" "H31.pdf" "H31" 1658962319
+  "H31.dvi" 1658962318 54760 222a15f69baa692cca802bc40def18e9 "latex"
   (generated)
   "H31.pdf"
-["latex"] 1658961846 "./H31.tex" "H31.dvi" "H31" 1658961851
-  "./H31.tex" 1658961843 16930 7793c7d369106d9c178e4612df64fd2c ""
+["latex"] 1658962314 "./H31.tex" "H31.dvi" "H31" 1658962319
+  "./H31.tex" 1658962312 19776 c1a2ab9a978f6154f32c23b131485261 ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty" 1576016050 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/etexcmds/etexcmds.sty" 1576625273 7734 b98cbb34c81f667027c1e3ebdbfce34b ""
@@ -179,12 +179,14 @@
   "/usr/local/texlive/2022/texmf-dist/tex/uplatex/base/ujsize10.clo" 1601501193 8651 123e99f822cf71d9bd63f8ea0178a6a3 ""
   "/usr/local/texlive/texmf-local/tex/platex/eee.sty" 1655860503 5892 3149be2b1adc8ad9d5b33973b2e84d8d ""
   "/usr/local/texlive/texmf-local/tex/platex/jlisting.sty" 1649911532 6311 39acaca7319a5dae73524888cbf7591f ""
-  "H31.aux" 1658961850 5112 61e0fc262e0d61fd38f02426396588e3 "latex"
+  "H31.aux" 1658962318 6483 78b0f23db9c3bf5d3f54efd8aeb3e2d9 "latex"
   "H31.bbl" 0 -1 0 "biber H31"
-  "H31.out" 1658961850 7417 f1cefb68f1cd509fc6127e90a519d738 "latex"
-  "H31.tex" 1658961843 16930 7793c7d369106d9c178e4612df64fd2c ""
+  "H31.out" 1658962318 11062 282ebdd4e246d7f7b63107ca5010d4b1 "latex"
+  "H31.tex" 1658962312 19776 c1a2ab9a978f6154f32c23b131485261 ""
   "fig/R03_fig1.png" 1658098820 79364 f5eba7a3aaec69b8712e05f0f31a9337 ""
   "fig/R03_fig2.png" 1658098814 114312 d6f8eedd8bcdf363271c64226a895b8a ""
+  "fig/R03_fig3.png" 1658098797 111369 165b62400daac0d72571f17bdf3c2cb8 ""
+  "fig/c.png" 1658962096 66910 3cea4772035df3d5f3be39d23ebd15f7 ""
   "fig/fig.pdf" 1658791657 770054 bfdf65479cd2e17407b3b4e7eb5b02b1 ""
   (generated)
   "H31.aux"

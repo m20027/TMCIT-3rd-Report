@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.0.0-u1.28-220214-2.6 (utf8.uptex) (TeX Live 2022) (preloaded format=uplatex 2022.5.13)  28 JUL 2022 07:44
+This is e-upTeX, Version 3.141592653-p4.0.0-u1.28-220214-2.6 (utf8.uptex) (TeX Live 2022) (preloaded format=uplatex 2022.5.13)  28 JUL 2022 07:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1816,20 +1816,110 @@ Overfull \hbox (15.80602pt too wide) detected at line 258
 []
  []
 
-[8] [9] [10] (./H31.aux)
+[8]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mu' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\ll' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 260.
+
+File: ./fig/R03_fig3.png Graphic file (type bmp)
+<./fig/R03_fig3.png>
+[9]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 291.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 291.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 291.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 291.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 291.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 291.
+
+File: ./fig/c.png Graphic file (type bmp)
+<./fig/c.png>
+[10] [11] (./H31.aux)
 Package rerunfilecheck Info: File `H31.out' has not changed.
-(rerunfilecheck)             Checksum: F1CEFB68F1CD509FC6127E90A519D738;7417.
+(rerunfilecheck)             Checksum: 282EBDD4E246D7F7B63107CA5010D4B1;11062.
 Package logreq Info: Writing requests to 'H31.run.xml'.
 \openout1 = `H31.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36814 strings out of 478751
- 725613 string characters out of 5857035
- 1471545 words of memory out of 5000000
- 54635 multiletter control sequences out of 15000+600000
+ 36826 strings out of 478751
+ 725810 string characters out of 5857035
+ 1471609 words of memory out of 5000000
+ 54645 multiletter control sequences out of 15000+600000
  518858 words of font info for 111 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 98i,18n,94p,1850b,805s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,18n,94p,2492b,805s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on H31.dvi (10 pages, 45680 bytes).
+Output written on H31.dvi (11 pages, 54760 bytes).
