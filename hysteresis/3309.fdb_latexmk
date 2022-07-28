@@ -1,15 +1,15 @@
 # Fdb version 3
-["biber 3309"] 1658978228 "3309.bcf" "3309.bbl" "3309" 1658985612
+["biber 3309"] 1658987199 "3309.bcf" "3309.bbl" "3309" 1658987213
   "/usr/local/texlive/texmf-local/bibtex/bib/3rd_hysteresis.bib" 1658978182 9737 644393bbefb7cb46bbfb0cf99382dcb8 ""
-  "3309.bcf" 1658985611 109272 6e8197f0f14918fb5aa6b5a38080b515 ""
+  "3309.bcf" 1658987212 109272 6e8197f0f14918fb5aa6b5a38080b515 ""
   (generated)
   "3309.bbl"
   "3309.blg"
-["dvipdf"] 1658985611 "3309.dvi" "3309.pdf" "3309" 1658985612
-  "3309.dvi" 1658985611 94760 0675c3ae6bfef1708615067d3892d5f4 "latex"
+["dvipdf"] 1658987212 "3309.dvi" "3309.pdf" "3309" 1658987213
+  "3309.dvi" 1658987212 94760 2fb856dbb24df2279cd48239e98bb7c3 "latex"
   (generated)
   "3309.pdf"
-["latex"] 1658985605 "./source/3309.tex" "3309.dvi" "3309" 1658985612
+["latex"] 1658987207 "./source/3309.tex" "3309.dvi" "3309" 1658987213
   "./source/3309.tex" 1658571128 1901 2e889f651fed4609dc60447a271a022f ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty" 1576016050 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
@@ -180,9 +180,9 @@
   "/usr/local/texlive/2022/texmf-dist/tex/uplatex/base/ujsize11.clo" 1601501193 8671 38ae6650cc4f672ed2eb94ee1d40ee3d ""
   "/usr/local/texlive/texmf-local/tex/platex/eee.sty" 1655860503 5892 3149be2b1adc8ad9d5b33973b2e84d8d ""
   "/usr/local/texlive/texmf-local/tex/platex/jlisting.sty" 1649911532 6311 39acaca7319a5dae73524888cbf7591f ""
-  "3309.aux" 1658985611 14829 b3276705c51f68b521f0c89696a0e8fc "latex"
-  "3309.bbl" 1658978231 30682 a652a1887b587d106f3950d81d9686de "biber 3309"
-  "3309.out" 1658985611 4516 47ca14994496581d2449b62fee354d37 "latex"
+  "3309.aux" 1658987212 14829 b3276705c51f68b521f0c89696a0e8fc "latex"
+  "3309.bbl" 1658987203 30682 a652a1887b587d106f3950d81d9686de "biber 3309"
+  "3309.out" 1658987212 4516 47ca14994496581d2449b62fee354d37 "latex"
   "data/graph/1.pdf" 1658546177 589151 4c4b2c8497bc3d9a1c78cfb4e729e8e8 ""
   "data/graph/2.pdf" 1658550148 692526 1003cdea2346a83781441e66c2ba62e7 ""
   "data/graph/3.pdf" 1658984138 753445 507407b580c2f53373883a7158a9eab1 ""
@@ -203,7 +203,7 @@
   "source/consideration.tex" 1658984138 6113 d0bd62afe7ba00361b7019e8e3c09a13 ""
   "source/consideration2.tex" 1658985605 2690 8078ae7b9dc69ce5c1001729fbf2e1b3 ""
   "source/howto.tex" 1658546982 3035 3a58e82c718504d3bf1c639e22ae61aa ""
-  "source/result.tex" 1658984643 2244 74bbe24e965568cd0e6a816b19540cc4 ""
+  "source/result.tex" 1658987194 2241 f95663124c78ef3750118bbef2db079b ""
   "source/theory.tex" 1658978221 19804 22d86973bed99bc49ba0eba80f12fa22 ""
   (generated)
   "3309.aux"
