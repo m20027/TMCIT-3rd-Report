@@ -17,6 +17,15 @@
 	\item 鉄心中に鉄損が存在する．
 	\item 鉄心の磁気飽和を無視することは実際上できないが，ここでは特に考慮しない．
 \end{itemize}
+\item $\omega_{h}=\sigma_{h}fB_{m}^{2}=k_{1}\frac{E^{2}}{f}$を示す．
+\begin{align*}
+	\omega_{h}&=\sigma_{h}fB_{m}^{2}\\
+	E&=-N\frac{d\phi_{m}}{d t}\\
+	E\sin \omega t&=-N\frac{d}{dt}(\phi_{m} \cos \omega t)\\ 
+	&=2\pi f \phi_{m} N\sin \omega t\\
+	E&=2\pi f \phi_{m} N\\
+	&=k_{1}\frac{E^{2}}{f}
+\end{align*}
 \item モータなどにおける損失は大きく分けて，コアに発生する鉄損，コイル巻線(誘導機の場合は二次導体も含む)に発生する銅損，そして，摩擦や空気抵抗に起因する機械損に分類できる．
 さらに，負荷によって導体，鉄に生じる損失のうち鉄損，銅損に含まれないものを漂遊負荷損と呼ぶ．
 これらをまとめたものを\wfig{loss_analysis}に示す．
