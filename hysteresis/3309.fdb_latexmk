@@ -1,15 +1,15 @@
 # Fdb version 3
-["biber 3309"] 1658987199 "3309.bcf" "3309.bbl" "3309" 1658987213
+["biber 3309"] 1658987199 "3309.bcf" "3309.bbl" "3309" 1658988029
   "/usr/local/texlive/texmf-local/bibtex/bib/3rd_hysteresis.bib" 1658978182 9737 644393bbefb7cb46bbfb0cf99382dcb8 ""
-  "3309.bcf" 1658987212 109272 6e8197f0f14918fb5aa6b5a38080b515 ""
+  "3309.bcf" 1658988027 109272 6e8197f0f14918fb5aa6b5a38080b515 ""
   (generated)
   "3309.bbl"
   "3309.blg"
-["dvipdf"] 1658987212 "3309.dvi" "3309.pdf" "3309" 1658987213
-  "3309.dvi" 1658987212 94760 2fb856dbb24df2279cd48239e98bb7c3 "latex"
+["dvipdf"] 1658988027 "3309.dvi" "3309.pdf" "3309" 1658988029
+  "3309.dvi" 1658988027 94760 1d19111f5601d089db8897efb73a3529 "latex"
   (generated)
   "3309.pdf"
-["latex"] 1658987207 "./source/3309.tex" "3309.dvi" "3309" 1658987213
+["latex"] 1658988022 "./source/3309.tex" "3309.dvi" "3309" 1658988029
   "./source/3309.tex" 1658571128 1901 2e889f651fed4609dc60447a271a022f ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty" 1576016050 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
@@ -180,12 +180,12 @@
   "/usr/local/texlive/2022/texmf-dist/tex/uplatex/base/ujsize11.clo" 1601501193 8671 38ae6650cc4f672ed2eb94ee1d40ee3d ""
   "/usr/local/texlive/texmf-local/tex/platex/eee.sty" 1655860503 5892 3149be2b1adc8ad9d5b33973b2e84d8d ""
   "/usr/local/texlive/texmf-local/tex/platex/jlisting.sty" 1649911532 6311 39acaca7319a5dae73524888cbf7591f ""
-  "3309.aux" 1658987212 14829 b3276705c51f68b521f0c89696a0e8fc "latex"
+  "3309.aux" 1658988027 14829 b3276705c51f68b521f0c89696a0e8fc "latex"
   "3309.bbl" 1658987203 30682 a652a1887b587d106f3950d81d9686de "biber 3309"
-  "3309.out" 1658987212 4516 47ca14994496581d2449b62fee354d37 "latex"
+  "3309.out" 1658988027 4516 47ca14994496581d2449b62fee354d37 "latex"
   "data/graph/1.pdf" 1658546177 589151 4c4b2c8497bc3d9a1c78cfb4e729e8e8 ""
   "data/graph/2.pdf" 1658550148 692526 1003cdea2346a83781441e66c2ba62e7 ""
-  "data/graph/3.pdf" 1658984138 753445 507407b580c2f53373883a7158a9eab1 ""
+  "data/graph/3.pdf" 1658987999 713252 404e3d750eacf52b17946f33ccec267b ""
   "fig/01-1.png" 1658579212 37528 a4e4bbf645c3188892399821c1346d6e ""
   "fig/Transformer-structure-and-principle.jpg" 1658578255 64310 c93c3235e1a700ca68f7f2bd8683ddae ""
   "fig/ad.pdf" 1658976206 15539 74e8ace0d9ce0899a9a2951c68ba4461 ""
