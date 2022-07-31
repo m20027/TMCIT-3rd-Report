@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.0.0-u1.28-220214-2.6 (utf8.uptex) (TeX Live 2022) (preloaded format=uplatex 2022.5.13)  30 JUL 2022 12:29
+This is e-upTeX, Version 3.141592653-p4.0.0-u1.28-220214-2.6 (utf8.uptex) (TeX Live 2022) (preloaded format=uplatex 2022.5.13)  31 JUL 2022 13:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3156,7 +3156,7 @@ File: ./fig/e.png Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[16] [17] (./H30.aux)
+[16] [17] [18] (./H30.aux)
 Package rerunfilecheck Info: File `H30.out' has not changed.
 (rerunfilecheck)             Checksum: 7D4CFCF4FDE8EEDE72198A83240C6A23;15989.
 Package logreq Info: Writing requests to 'H30.run.xml'.
@@ -3172,4 +3172,4 @@ Here is how much of TeX's memory you used:
  929 hyphenation exceptions out of 8191
  98i,18n,94p,1809b,805s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on H30.dvi (17 pages, 80928 bytes).
+Output written on H30.dvi (18 pages, 82764 bytes).

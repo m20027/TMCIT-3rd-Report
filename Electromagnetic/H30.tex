@@ -437,10 +437,23 @@ H&=nI\,[\rm{A/m}]\left|_{コイル内部}\right .
 \end{figure}
 
 \begin{align*}
-	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}\\
-	\int_{S}JdS&=\int_{C}Hdl\\
-	J(r)\cdot \pi a^{2}&=H\cdot 2\pi r\\
-	J(r)&=\frac{2r}{a^{2}}H\\
-	\frac{d}{dr}J(r)&=\frac{2}{a^{2}}H\\
+	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}\\
+	\int_{C}H(r)dl&=\int_{S}J(r)dS\\
+	2\pi rH&=\int_{S}J(r)rdrd\theta\\
+	&=\int_{S'}\int_{0}^{2\pi} J(r)rdr \\
+	rH&=\int_{S'}J(r)rdr\\
+	&=\int_{0}^{r}J(r)rdr\\
+	\frac{d}{dx}\int_{0}^{x}f(t)dt&=f(x)より\\
+	H&=J(r)r\\
+	\frac{d}{dr}H&=r\frac{d}{dr}J(r)+J(r)\tag{a}\\
+	ここでr<aにおいてHが&一定であることより式(a)=0\\
+	r\frac{d}{dr}J(r)+J(r)&=0\\
+	r\frac{dJ(r)}{dr}&=-J(r)\\
+	-\frac{1}{J(r)}dJ(r)&=\frac{1}{r}dr\\
+	-\int \frac{1}{J(r)}dJ(r)&=\int\frac{1}{r}dr\\
+	-\log J(r)&=\log r+C_{1}\\
+	\log J(r)r&=C_{2}\\
+	J(r)r&=C\\
+	\therefore J(r)&=\frac{C}{r} (C:定数)
 \end{align*}
 \end{document}
