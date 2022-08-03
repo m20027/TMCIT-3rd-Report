@@ -208,7 +208,7 @@ $B-H$曲線が直線にならない理由は，磁気分子間の摩擦がある
 	0\,[\rm{A/m}] & (r >c)
 	\end{matrix}
 	\right .  \\
-	ただし向きは&左回り(反時計回り)
+	ただし向きは&反時計回り
 \end{align*}
 
 \newpage
@@ -237,8 +237,8 @@ $B-H$曲線が直線にならない理由は，磁気分子間の摩擦がある
 &=\int_{0}^{l}H_{1}dl-\int_{0}^{l}H_{2}dl\\
 &=(H_{1}-H_{2})l\,[\rm{A}]\\
 \int_{S}\boldsymbol{J}\cdot \boldsymbol{S}&=0\,[\rm{A}]\\
-\therefore H_{1}-H_{2}&=0\\
-H_{1}&=H_{2}\tag{1}\\
+H_{1}-H_{2}&=0\\
+\therefore H_{1}&=H_{2}\tag{1}\\
 次に経路Cとしてコイル&外部に長方形5678(左上から反時計回りの順)を決める\\
 また，経路67上&の磁界をH_{3}，経路85上の磁界をH_{4}，長さをlとする\\
 コイル内の場合と同様の議論により&\\
@@ -247,10 +247,10 @@ H_{1}&=H_{2}\tag{1}\\
 &=-\int_{0}^{l}H_{3}dl+\int_{0}^{l}H_{4}dl\\
 &=(H_{4}-H_{3})l\,[\rm{A}]\\
 \int_{S}\boldsymbol{J}\cdot \boldsymbol{S}&=0\,[\rm{A}]\\
-\therefore H_{4}-H_{3}&=0\\
-H_{3}&=H_{4}\\
-ここでd \to \infty のときH_{4}&=0\\
-\therefore H&=0\,[\rm{A/m}]\left|_{コイル外部}\right .\tag{2}\\
+H_{4}-H_{3}&=0\\
+\therefore H_{3}&=H_{4}\tag{2}\\
+H_{4}が無限遠にある時も&式(2)は成立するため\\
+\therefore H&=0\,[\rm{A/m}]\left|_{コイル外部}\right .\\
 最後に経路Cとしてコイルの境界が経路の中心&となるような長方形9,10,11,12(左上から反時計回りの順)を決める\\
 また，経路10,11上&の磁界をH_{5}，経路12,9上の磁界をH_{6}，長さをlとする\\
 今までと同様の議論により&\\
@@ -258,10 +258,10 @@ H_{3}&=H_{4}\\
 \boldsymbol{H}とd\boldsymbol{l}が直交するとき，&内積は0であり，式(2)よりコイル外部の磁界は0であるため\\
 &=H_{5}l\,[\rm{A}]\\
 \int_{S}\boldsymbol{J}\cdot \boldsymbol{S}&=\int_{S}JdS=nIl\,[\rm{A}]\\
-\therefore H_{5}l&=nIl\\
+H_{5}l&=nIl\\
 H_{5}&=nI\,[\rm{A/m}]\\
-ここでH_{5}はコイルの内部の磁界であるあるため&式(1)より\\
-H&=nI\,[\rm{A/m}]\left|_{コイル内部}\right .
+ここでH_{5}はコイルの内部の&磁界であるあるため式(1)より\\
+\therefore H&=nI\,[\rm{A/m}]\left|_{コイル内部}\right .
 \end{align*}
 
 \newpage
@@ -329,14 +329,22 @@ H&=nI\,[\rm{A/m}]\left|_{コイル内部}\right .
 	\end{equation*}
 	ただし，$J_{2}$は正の実定数．
 	\begin{align*}
-	コイルの内部&\\
+	導体内部&\\
 	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
 	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\int_{S}JdS=\int_{0}^{2\pi}\int_{0}^{r}\frac{J_{2}}{r}rdrd\theta=2\pi r J_{2}\,[\rm{A}]\\
 	H&=J_{2}\,[\rm{A/m}]\\
-	コイルの外部&\\
+	導体外部&\\
 	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
 	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\int_{S}JdS=\int_{0}^{2\pi}\int_{0}^{a}\frac{J_{2}}{r}rdrd\theta=2\pi a J_{2}\,[\rm{A}]\\
-	H&=\frac{a}{r}J_{2}\,[\rm{A/m}]
+	H&=\frac{a}{r}J_{2}\,[\rm{A/m}]\\
+	\therefore H&=
+	\left\{
+	\begin{matrix}
+	J_2\,[\rm{A/m}] & 導体内部\\\\
+	\frac{a}{r}J_{2}\,[\rm{A/m}] & 導体外部
+	\end{matrix}
+	\right.  \\
+	ただし向きは&反時計回り
 	\end{align*}
 \end{enumerate}
 
