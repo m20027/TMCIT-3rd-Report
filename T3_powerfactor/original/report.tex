@@ -1,0 +1,114 @@
+\documentclass[11pt,dvipdfmx]{jarticle}
+
+\usepackage{eee}
+\usepackage{subfig}
+
+\renewcommand{\labelenumi}{\alph{enumi}}
+\renewcommand{\labelenumii}{\roman{enumii}}
+
+\begin{document}
+% トップページを書く
+\begin{jikkenTitle}
+ \gakunen{3} % 学年を記述。この行で全体の枠を表示
+ \numTitle{3}{電力と力率} % 実験番号、タイトルを記述
+ \subTitle{} % サブタイトルがあれば記述
+ \jikkenbi{平成　　年　　月　　日(　　)} % 実験日を記述
+ \jikkenbiII{平成　　年　　月　　日(　　)} % 実験日を記述(二日目がある場合。ない場合はこの行をコメントアウト)
+ \kyoudou{共同実験者名} % 共同実験者名を記述
+ \kyoudouII{} % その他の共同実験者名を記述
+ \yoteibi{/ 　}% 予定日を記述
+ \yoteibiII{}% 予定日2を記述
+ \yoteibiIII{}% 予定日3を記述
+ \hanNumberName{}{}{} % 班番号・学生番号・氏名を記述。この行でタイトルページの描画を終了
+\end{jikkenTitle}
+
+\section{目的}
+本実験では
+\begin{itemize}
+	\item 単相交流回路における電圧・電流・電力・力率を測定するための結線方法を学ぶ。
+	\item 単相電力計と力率計の扱い方を習得する。
+	\item 有効電力と力率、皮相電力と無効電力に関する理解を深める
+\end{itemize}
+ことを目的とする。
+
+\section{原理}
+\subsection{瞬時電力}
+インピーダンス$\dot{Z}\,[\Omega]$へ印加された時刻$t\,[\mathrm{s}]$における交流電圧$v(t)\,[\mathrm{V}]$と、$\dot{Z}$に流れる交流電流$i(t)\,[\mathrm{A}]$がそれぞれ次式で表されるとする。
+\begin{eqnarray}
+	v(t) &=& V_m\sin(\omega t+\theta_V)\\
+	i(t) &=& I_m\sin(\omega t + \theta_I)
+\end{eqnarray}
+ここで、$V_m$、$I_m$は最大値、$\omega\,[\mathrm{rad/s}]$は角周波数、$\theta_V\,[\mathrm{rad}]$と$\theta_I\,[\mathrm{rad}]$はそれぞれの位相である。
+この$v(t)$と$i(t)$の積を瞬時電力$p(t)$と呼び、次式で表される。
+\begin{eqnarray}
+	p(t)&=& v(t)i(t)\nonumber\\
+	&=&V_mI_m\sin(\omega t+\theta_V)\sin(\omega t + \theta_I)\nonumber\\
+	&=& \frac{V_mI_m}{2}\Bigl(\cos(2\omega t + \theta_I+\theta_V)+\cos(\theta_I - \theta_V)\Bigr)
+	\label{eq:ip}
+\end{eqnarray}
+
+
+\subsection{有効電力と力率}
+\weq{ip}は$v(t)$や$i(t)$の2倍の角速度を持つ周期関数であることが確認できる。
+そのため、時間的な平均を算出することができ、この値を有効電力$P\,[\mathrm{W}]$と呼ぶ。
+\begin{eqnarray}
+	P &=& \frac{1}{T}\int_0^T \frac{V_mI_m}{2}\Bigl(\cos(2\omega t + \theta_I+\theta_V)+\cos(\theta_I - \theta_V)\Bigr) dt\nonumber\\
+	&=&\frac{V_mI_m}{2}\cos(\theta_I - \theta_V)
+\end{eqnarray}
+
+この上式が得られたとき、交流回路における実効値表現に置き換えると
+\begin{equation}
+	P = VI\cos\theta
+	\label{eq:power}
+\end{equation}
+を得ることができる。ここで、$V$、$I$はそれぞれの実効値、$\theta=\theta_I-\theta_V$である。
+\weq{power}の右辺は電圧と電流の実効値の積と、$\cos\theta$から構成されている。$\theta$は$\dot{Z}$の実部（抵抗）と虚部（リアクタンス）の比によって決定される値であり、
+\begin{equation}
+	-\frac{\pi}{2}\leq\theta\leq\frac{\pi}{2}
+\end{equation}
+であるので、
+\begin{equation}
+	0\leq\cos\theta\leq 1
+\end{equation}
+の不等式が成立する。
+
+以上の関係から、インピーダンス$\dot{Z}$の端子電圧と流れる電流値の積とは必ずしも等しくなく、有効に消費される電力の比が$\cos\theta$に相当することが分かる。
+この比として見なせる$\cos\theta$を力率、$\theta$を力率角と呼ぶ。
+
+\subsection{無効電力と皮相電力}
+\weq{ip}において、インピーダンスがリアクタンス成分のみ（$\dot{Z}=jX$）の場合について考える。
+この時、電圧と電流の位相差$\theta_I-\theta_V$は$\pm\pi/2$となり、括弧内の第二項の値は0となる。
+従って、瞬時電力$p(t)$の振る舞いは平均値が0の正弦波（あるいは余弦波）になることが分かる。
+これは、電源から負荷へ、負荷から電源へ電力供給が交互に行われていることを示し、電力として消費されず仕事をしない。
+この電力を無効電力$Q$とよび、単位には$\mathrm{var}$（バール）を用い、次式で計算される。
+\begin{equation}
+	Q = VI \sin \theta
+\end{equation}
+
+電圧の実効値と電流の実効値の積$VI$は、インピーダンス$\dot{Z}$が純抵抗（リアクタンス$X=0$）の場合にのみ有効電力と等しくなり、それ以外の場合では$VI> P$となる。
+この、見かけ上の電力を皮相電力$S$とよび、単位には$\mathrm{VA}$（ボルトアンペア）を用いる。
+また、皮相電力と有効電力、無効電力には次の関係が成り立つ。
+\begin{eqnarray}
+	S &=& VI\nonumber\\
+	&=& \sqrt{P^2+Q^2}
+\end{eqnarray}
+
+
+\section{方法}
+\subsection{使用器具}
+今回の実験で使用した器具を
+
+\subsection{実験手順}
+
+
+\section{結果}
+\section{考察}
+\section{結論}
+
+\begin{thebibliography}{9}%参考文献数が10以上の場合は9を99に変更
+	%\bibitem{xxx}の引用を本文中で行うには\cite{xxx}と記述。
+	\bibitem{a} 著者名, 書名，出版社，発行年．
+\end{thebibliography}
+
+
+\end{document}

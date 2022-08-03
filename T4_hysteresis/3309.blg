@@ -1,0 +1,16 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is '3309.blg'
+[95] biber-darwin:340> INFO - === 木  7 28, 2022, 14:46:42
+[117] Biber.pm:418> INFO - Reading '3309.bcf'
+[218] Biber.pm:972> INFO - Found 23 citekeys in bib section 0
+[235] Biber.pm:4383> INFO - Processing section 0
+[250] Biber.pm:4574> INFO - Looking for bibtex file '3rd_hysteresis.bib' for section 0
+[421] bibtex.pm:1713> INFO - LaTeX decoding ...
+[461] bibtex.pm:1518> INFO - Found BibTeX data source '/usr/local/texlive/texmf-local/bibtex/bib/3rd_hysteresis.bib'
+[613] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[613] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[613] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[614] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[637] bbl.pm:654> INFO - Writing '3309.bbl' with encoding 'UTF-8'
+[637] bbl.pm:655> INFO - Converting UTF-8 to TeX macros on output to .bbl
+[665] bbl.pm:757> INFO - Output to 3309.bbl

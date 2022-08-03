@@ -1,0 +1,52 @@
+\documentclass[11pt,dvipdfmx]{ujarticle}
+\usepackage{eee}
+\usepackage{subfig}
+
+\renewcommand{\labelenumi}{\alph{enumi}}
+\renewcommand{\labelenumii}{\roman{enumii}}
+
+\bibliography{3rd_power}
+\begin{document}
+
+\begin{jikkenTitle}
+ \gakunen{3} 
+ \numTitle{3}{総合負荷装置を用いた電力と力率の計測}
+ \subTitle{\small{(Measurement of power and power factor by comprehensive load device)}} 
+ \jikkenbi{令和04年06月23日(木)} 
+ \jikkenbiII{令和04年06月30日(木)} 
+ \kyoudou{3301 青木 柊人，3305 市川 潤} 
+ \kyoudouII{3326 塚原 秀翔}
+ \yoteibi{06/30}
+ \yoteibiII{07/07}
+ \yoteibiIII{07/14}
+ \hanNumberName{1}{3309}{大山 主朗}
+ \end{jikkenTitle}
+
+\section{目的}
+本実験では
+\begin{itemize}
+	\item 単相交流回路における電圧・電流・電力・力率を測定するための結線方法を学ぶ．
+	\item 単相電力計と力率計の扱い方を習得する．
+	\item 有効電力と力率，皮相電力と無効電力に関する理解を深める．
+\end{itemize}
+ことを目的とする．
+
+\input{/Users/ohyamasan/Downloads/TMCIT-3rd-Report/powerfactor/source/theory.tex}
+\input{/Users/ohyamasan/Downloads/TMCIT-3rd-Report/powerfactor/source/how-to.tex}
+\input{/Users/ohyamasan/Downloads/TMCIT-3rd-Report/powerfactor/source/result.tex}
+\input{/Users/ohyamasan/Downloads/TMCIT-3rd-Report/powerfactor/source/consideration.tex}
+
+\clearpage
+\section{結論}
+本実験を通して
+\begin{itemize}
+	\item 単相交流回路における電力・電流・電圧・力率の測定方法
+	\item 単相電力計及び力率計の使用方法
+	\item 電力に関する諸知識
+\end{itemize}
+を習得することができた．
+
+\newpage
+\printbibliography[title=参考文献]
+
+\end{document}

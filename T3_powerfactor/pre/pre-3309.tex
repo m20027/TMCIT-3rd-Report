@@ -1,0 +1,121 @@
+\documentclass[11pt,dvipdfmx]{ujarticle}
+\usepackage{eee}
+\usepackage{subfig}
+
+\bibliography{3rd_power}
+\begin{document}
+
+\title{電力と力率　事前レポート}
+\author{3309 大山 主朗}
+\date{}
+\maketitle
+\section{瞬時電力(in-stantaneous power)\cite{11300007922816}\cite{1130282271973066112}}
+インピーダンス$\dot{Z}\,[\Omega]$へ印加された時刻$t\,[\rm{s}]$における交流電圧$v(t)\,[\rm{V}]$と，$\dot{Z}$に流れる交流電流$i(t)\,[\rm{A}]$がそれぞれ次式で表されるとする．
+\begin{align}
+	v(t) &= V_m\sin(\omega t+\theta_V)\\
+	i(t) &= I_m\sin(\omega t + \theta_I)
+\end{align}
+ここで，$V_m$，$I_m$は最大値，$\omega\,[\rm{rad/s}]$は角周波数，$\theta_V\,[\rm{rad}]$と$\theta_I\,[\rm{rad}]$はそれぞれの位相である．
+この$v(t)$と$i(t)$の積を瞬時電力$p(t)$と呼び，次式で表される．
+\begin{align}
+	p(t)&= v(t)i(t)\nonumber\\
+	&=V_mI_m\sin(\omega t+\theta_V)\sin(\omega t + \theta_I)\nonumber\\
+	&= \frac{V_mI_m}{2}\Bigl(\cos(2\omega t + \theta_I+\theta_V)+\cos(\theta_I - \theta_V)\Bigr)
+	\label{eq:ip}
+\end{align}
+
+\section{有効電力(effective power)\cite{11300007922816}\cite{113028223066112}}
+\weq{ip}は$v(t)$や$i(t)$の2倍の角速度を持つ周期関数であることが確認できる．
+そのため，時間的な平均を算出することができ，この値を有効電力$P\,[\rm{W}]$と呼ぶ．
+\begin{align}
+	P &=\frac{1}{T}\int_0^T \frac{V_mI_m}{2}\Bigl(\cos(2\omega t + \theta_I+\theta_V)+\cos(\theta_I - \theta_V)\Bigr) dt\nonumber\\
+	&=\frac{V_mI_m}{2}\cos(\theta_I - \theta_V)
+\end{align}
+
+この上式が得られたとき，交流回路における実効値表現に置き換えると瞬時値電力$p$の平均値，すなわち平均電力(mean power)$P$[$\rm{W}$]は以下のように表せる．
+\begin{equation}
+	P = VI\cos\theta
+	\label{eq:power}
+\end{equation}
+を得ることができる．ここで，$V$，$I$はそれぞれの実効値，$\theta=\theta_I-\theta_V$である．
+\weq{power}の右辺は電圧と電流の実効値の積と，$\cos\theta$から構成されている．$\theta$は$\dot{Z}$の実部（抵抗）と虚部（リアクタンス）の比によって決定される値であり，
+\begin{equation}
+	-\frac{\pi}{2}\leq\theta\leq\frac{\pi}{2}
+\end{equation}
+であるので，
+\begin{equation}
+	0\leq\cos\theta\leq 1
+	\label{eq:angle}
+\end{equation}
+の不等式が成立する．
+
+\section{皮相電力(apparent power)\cite{11300007922816}}
+電圧の実効値と電流の実効値の積$VI$は，インピーダンス$\dot{Z}$が純抵抗（リアクタンス$X=0$）の場合にのみ有効電力と等しくなり，それ以外の場合では$VI> P$となる．
+この，見かけ上の電力を皮相電力$S$とよび，単位には$\rm{VA}$（ボルトアンペア）を用いる．
+また，皮相電力と有効電力，無効電力には次の関係が成り立つ．
+\begin{align}
+	S &= VI\nonumber\\
+	&= \sqrt{P^2+Q^2}
+\end{align}
+
+
+\section{無効電力(reactive power)\cite{11300007922816}}
+コンデンサあるいはコンデンサに蓄えられている電力は\weq{mukoh}で与えられ，
+この値$Q$を無効電力という．単位は$\rm{var}$(バール)である．$\rm{var}$はvolt, ampere, reactive powerの頭文字をとったもので，人名ではないため，vは大文字にしない．
+
+上記のことは，\weq{ip}において，インピーダンスがリアクタンス成分のみ（$\dot{Z}=jX$）の場合について考えた場合と同値である．
+この時，電圧と電流の位相差$\theta_I-\theta_V$は$\pm\pi/2$となり，括弧内の第二項の値は0となる．
+従って，瞬時電力$p(t)$の振る舞いは平均値が0の正弦波（あるいは余弦波）になることが分かる．
+これは，電源から負荷へ，負荷から電源へ電力供給が交互に行われていることを示し，電力として消費されず仕事をしない．
+\begin{equation}
+	Q = VI \sin \theta
+	\label{eq:mukoh}
+\end{equation}
+
+
+\section{力率(power factor)\cite{11300007922816}}
+\weq{angle}の関係より，$\cos \theta$と有効電力および皮相電力の間には
+\begin{equation}
+	\cos \theta =\frac{P}{S}
+\end{equation}
+の関係がある．したがって，$\cos \theta$は皮相電力のどれだけの割合が抵抗で熱となって消費されているのかを表す量で力率と呼ばれる．また，$\theta$を力率角という．
+
+\section{式(4.7)の途中式}
+\begin{align*}
+	p&=ei=\sqrt{2}|Z|I\sin (\omega t+ \angle Z)  \cdot \sqrt{2}I\sin \omega t\\
+	ここで&\sin \alpha \sin \beta=-\frac{1}{2}\left(\cos (\alpha +\beta)-\cos (\alpha -\beta)\right)より\\
+	&=2|Z|I^{2}\cdot \left(-\frac{1}{2}\cos (2\omega t +\angle Z)+\frac{1}{2}\cos \angle Z\right)\\
+	&=-|Z|I^{2}\cos (2\omega t+\angle Z)+|Z|I^{2}\cos \angle Z
+\end{align*}
+
+\section{式(4.8)の途中式}
+\begin{align*}
+	p_{a}&=2RI^{2}\sin ^{2} \omega t\\
+	ここで&\cos \angle Z=\frac{R}{|Z|}より\\
+	&=2|Z|I^{2}\cos \angle Z\sin ^{2} \omega t\\
+	また&\sin ^{2} \alpha =\frac{1}{2}\left(1-\cos 2 \alpha\right)より\\
+	&=|Z|I^{2}\cos \angle Z(1-\cos 2\omega t)
+\end{align*}
+
+\section{式(4.12)の途中式}
+\begin{align*}
+	p_{r}&=ei\\
+	&=(\sqrt{2}XI\cos \omega t) \cdot (\sqrt{2}I\sin \omega t)\\
+	&=2XI^{2}\cos \omega t \sin \omega t\\
+	ここで&\sin \angle Z=\frac{X}{|Z|}より\\
+	&=2|Z|I^{2}\sin \angle Z\cos \omega t \sin \omega t\\
+	また，&\sin \alpha \cos \beta=\frac{1}{2}\left(\sin (\alpha +\beta)+\sin (\alpha -\beta)\right)より\\
+	&=2|Z|I^{2}\sin \angle Z \cdot \left(\frac{1}{2}\sin 2 \omega t+\sin 0\right)\\
+	&=|Z|I^{2}\sin \angle Z \sin 2\omega t
+\end{align*}
+
+\section{式(4.15)の途中式}
+\begin{align*}
+	e&=\sqrt{2}|Z|I\sin (\omega t +\angle Z)\\
+	|E|&=|I||Z|, E\neq 0, I\neq 0より\\
+	&=\sqrt{2}E\sin (\omega t +\angle Z)
+\end{align*}
+
+\section{回路図は指導書に直接記入した}
+\printbibliography[title=参考文献]
+\end{document}

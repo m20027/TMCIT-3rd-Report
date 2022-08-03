@@ -280,15 +280,15 @@ H_{5}&=nI\,[\rm{A/m}]\\
 	\end{align*}
 	\item 鉄心内部に発生する磁束密度$B$を求められ候．
 	\begin{equation*}
-	B=\mu H=\mu_{0}\mu_{s}H=\frac{\mu_{0}\mu_{s}NI}{2\pi R}\,[\rm{T}]
+	B=\mu H=\mu_{0}\mu_{r}H=\frac{\mu_{0}\mu_{r}NI}{2\pi R}\,[\rm{T}]
 	\end{equation*}
 	\item 鉄心内部に発生する磁束$\Phi$を求められ候．
 	\begin{equation*}
-	\Phi=BS=\frac{\mu_{0}\mu_{s}NI}{2\pi R}\pi r^{2}=\frac{\mu_{0}\mu_{s}r^{2}NI}{2R}\,[\rm{Wb}]
+	\Phi=BS=\frac{\mu_{0}\mu_{r}NI}{2\pi R}\pi r^{2}=\frac{\mu_{0}\mu_{r}r^{2}NI}{2R}\,[\rm{Wb}]
 	\end{equation*}
 	\item 起磁力を$NI$とすると磁気抵抗$R_{m}$は$R_{m}=\frac{NI}{\Phi}$で求められるとこによって，この鉄心の磁気抵抗$R_{m}$を求めていただきたくお願い申し上げ候．
 	\begin{equation*}
-	R_{m}=\frac{NI}{\Phi}=\frac{NI}{\frac{\mu_{0}\mu_{s}r^{2}NI}{2R}}=\frac{2R}{\mu_{0}\mu_{s}r^{2}}\,[\rm{A/Wb}]
+	R_{m}=\frac{NI}{\Phi}=\frac{NI}{\frac{\mu_{0}\mu_{r}r^{2}NI}{2R}}=\frac{2R}{\mu_{0}\mu_{r}r^{2}}\,[\rm{A/Wb}]
 	\end{equation*}
 \end{enumerate}
 
@@ -326,7 +326,17 @@ H_{5}&=nI\,[\rm{A/m}]\\
 	\int_{C}\boldsymbol{H}\cdot d\boldsymbol{l}&=\int_{C}Hdl=2\pi rH\,[\rm{A}]\\
 	\int_{S}\boldsymbol{J}\cdot d\boldsymbol{S}&=\pi r^{2}J_{1}\,[\rm{A}]\\
 	H&=\frac{J_{1}}{2}r\,[\rm{A/m}]\\
+	\therefore H&=
+	\left\{
+	\begin{matrix}
+	0\,[\rm{A/m}] & (r>a)\\\\
+	\frac{(a^{2}-r^{2})J_{1}}{2r}\,[\rm{A/m}] & \left(\frac{a}{\sqrt{2}}\leq r \leq a\right)\\\\
+	\frac{J_{1}}{2}r\,[\rm{A/m}]& \left(r \leq \frac{a}{\sqrt{2}}\right)
+	\end{matrix}
+	\right.  
+	\quad ただし向きは反時計回り
 	\end{align*}
+	\newpage
 	\item 
 	\begin{equation*}
 	J=\frac{J_{2}}{r}
@@ -347,8 +357,8 @@ H_{5}&=nI\,[\rm{A/m}]\\
 	J_2\,[\rm{A/m}] & 導体内部\\\\
 	\frac{a}{r}J_{2}\,[\rm{A/m}] & 導体外部
 	\end{matrix}
-	\right.  \\
-	ただし向きは&反時計回り
+	\right.  
+	\quad ただし向きは反時計回り
 	\end{align*}
 \end{enumerate}
 
